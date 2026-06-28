@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Avtomaktab Web App</title>
+    <!-- Telegram Web App SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Background elements for glassmorphism -->
+        <div class="bg-shape shape1"></div>
+        <div class="bg-shape shape2"></div>
+        <div class="bg-shape shape3"></div>
+
+        <!-- MAIN DASHBOARD -->
+        <main id="view-dashboard" class="view active">
+            <!-- Header section -->
+            <header class="glass-panel profile-header">
+                <div class="user-info">
+                    <div class="avatar-container">
+                        <img id="user-photo" src="https://ui-avatars.com/api/?name=User&background=random" alt="Avatar">
+                        <div class="online-indicator"></div>
+                    </div>
+                    <div class="user-details">
+                        <h1 id="user-name">Foydalanuvchi</h1>
+                        <span class="user-status">⚡ O'rganuvchi</span>
+                    </div>
+                </div>
+                <div class="premium-badge hidden" id="premium-badge">
+                    <i class="fas fa-crown"></i> PRO
+                </div>
+            </header>
+
+            <!-- Stats Section -->
+            <section class="stats-grid">
+                <div class="stat-card glass-panel">
+                    <i class="fas fa-star text-gold"></i>
+                    <div class="stat-info">
+                        <h3>Reyting</h3>
+                        <p id="stat-points">0 ball</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-panel">
+                    <i class="fas fa-check-circle text-green"></i>
+                    <div class="stat-info">
+                        <h3>Testlar</h3>
+                        <p id="stat-tests">0 ta</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Menu -->
+            <section class="menu-grid">
+                <div class="menu-item glass-panel" onclick="navigate('view-test')">
+                    <div class="menu-icon bg-gradient-purple">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div class="menu-text">
+                        <h3>Test Ishlash</h3>
+                        <p>Bilimingizni sinang</p>
+                    </div>
+                    <i class="fas fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="menu-item glass-panel" onclick="Telegram.WebApp.showAlert('Tez kunda ishga tushadi!')">
+                    <div class="menu-icon bg-gradient-blue">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="menu-text">
+                        <h3>YHQ Qoidalari</h3>
+                        <p>Barcha qoidalar to'plami</p>
+                    </div>
+                    <i class="fas fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="menu-item glass-panel" onclick="Telegram.WebApp.showAlert('Tez kunda ishga tushadi!')">
+                    <div class="menu-icon bg-gradient-orange">
+                        <i class="fas fa-traffic-light"></i>
+                    </div>
+                    <div class="menu-text">
+                        <h3>Yo'l Belgilari</h3>
+                        <p>Belgilar va ularning izohi</p>
+                    </div>
+                    <i class="fas fa-chevron-right arrow-icon"></i>
+                </div>
+                
+                <div class="menu-item glass-panel highlight-item" onclick="Telegram.WebApp.showAlert('Tez kunda ishga tushadi!')">
+                    <div class="menu-icon bg-gradient-gold">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="menu-text">
+                        <h3>Video Darslar</h3>
+                        <p>Mukammal o'rganish</p>
+                    </div>
+                    <i class="fas fa-chevron-right arrow-icon"></i>
+                </div>
+            </section>
+        </main>
+
+        <!-- TEST VIEW -->
+        <main id="view-test" class="view">
+            <div class="test-header">
+                <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="progress-container glass-panel">
+                    <span id="question-counter">1/10</span>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" style="width: 10%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-container glass-panel">
+                <h2 id="question-text">Svetoforning miltillovchi sariq signali qanday ma'noni bildiradi?</h2>
+                <div class="question-image hidden" id="question-image">
+                    <img src="" alt="Question Image">
+                </div>
+            </div>
+
+            <div class="options-container">
+                <button class="option-btn glass-panel" onclick="selectOption(this, false)">
+                    <span class="option-letter">A</span>
+                    <span class="option-text">Harakatlanishga ruxsat beradi</span>
+                </button>
+                <button class="option-btn glass-panel" onclick="selectOption(this, false)">
+                    <span class="option-letter">B</span>
+                    <span class="option-text">Tezlikni pasaytirishni va chorrahaga yaqinlashishni bildiradi</span>
+                </button>
+                <button class="option-btn glass-panel" onclick="selectOption(this, true)">
+                    <span class="option-letter">C</span>
+                    <span class="option-text">Tartibga solinmagan chorraha ekanligini bildiradi va harakatlanishga ruxsat beradi</span>
+                </button>
+                <button class="option-btn glass-panel" onclick="selectOption(this, false)">
+                    <span class="option-letter">D</span>
+                    <span class="option-text">Harakatlanish taqiqlanadi</span>
+                </button>
+            </div>
+            
+            <button id="next-btn" class="primary-btn hidden" onclick="nextQuestion()">Keyingi savol <i class="fas fa-arrow-right"></i></button>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
