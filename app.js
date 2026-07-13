@@ -453,7 +453,7 @@ function renderOrg() {
         ${docs.map((d,i)=>`<div style="display:flex;gap:10px;margin-bottom:8px"><span style="color:#1a56db;font-weight:800">${i+1}.</span><span style="color:#cbd5e1">${d}</span></div>`).join('')}
       </div>
 
-      <button class="contact-btn" onclick="openLink('https://t.me/avto_admin')">
+      <button class="contact-btn" onclick="openLink('https://t.me/avtovatanparvar')">
         <i class="fas fa-paper-plane"></i> Adminga murojaat
       </button>
     </div>
