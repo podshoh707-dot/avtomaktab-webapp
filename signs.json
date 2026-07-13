@@ -1,810 +1,5 @@
 [
   {
-    "id": 1,
-    "category": "ogohlantiruvchi",
-    "name": "1.1 Shlagbaumli temir yo&#039;l kesishmasi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a8caf81b9eeee75855b0131ead902470.gif",
-    "description": "Yaqinlashib kelayotgan xavfli burilish haqida ogohlantiradi. Sariq uchburchak ichida o'ngga buruvchi strelka."
-  },
-  {
-    "id": 2,
-    "category": "ogohlantiruvchi",
-    "name": "1.2 Shlagbaumsiz temir yo’l kesishmasi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e83b727d9af45b28716a71c93d6074d5.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 3,
-    "category": "ogohlantiruvchi",
-    "name": "1.3. Diqqat &quot;UZP&quot;",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/80b8391df4387c020926f01683b1aab6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 4,
-    "category": "ogohlantiruvchi",
-    "name": "1.3.1 Bir izli temir yo’l",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ebe823d34b7af01006e43750e938056d.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 5,
-    "category": "ogohlantiruvchi",
-    "name": "1.3.2 Ko’p izli temir yo’l",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/586f5b40660520d788fb029af5b78f84.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 6,
-    "category": "ogohlantiruvchi",
-    "name": "1.4.1 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/546dba3eb922f17c7dedde4c3ad1d9ff.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 7,
-    "category": "ogohlantiruvchi",
-    "name": "1.4.2 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/bc8f8547be20d4544f6593fa8b608bfe.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 8,
-    "category": "ogohlantiruvchi",
-    "name": "1.4.3 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fa415321a4afbf525686dd5e9383d786.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 9,
-    "category": "ogohlantiruvchi",
-    "name": "1.4.4 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2b0b7f5fadeff1fa97bd2631773a8c0b.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 10,
-    "category": "ogohlantiruvchi",
-    "name": "1.4.5 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/834198bb4620263bc12326c160e067c2.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 11,
-    "category": "ogohlantiruvchi",
-    "name": "1.4.6 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a40d8b3056ec1c41ab3bc8b63659b5ce.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 12,
-    "category": "ogohlantiruvchi",
-    "name": "1.5 Tramvay yo’li bilan kesishuv",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f99f4262ec68a79fd72fe2d60938ed5e.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 13,
-    "category": "ogohlantiruvchi",
-    "name": "1.6 Teng ahamiyatli yo’llar kesishuvi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f23606dbe3369a1351da77ecbd8b9c01.gif",
-    "description": "Yo'l bir yo'nalishda torayishi haqida ogohlantiradi. Sariq uchburchak ichida torayuvchi yo'l tasviri."
-  },
-  {
-    "id": 14,
-    "category": "ogohlantiruvchi",
-    "name": "1.7 Aylanma harakatlanish bilan kesishuv",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c1314181b59e575342e61ed95ff3fcef.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 15,
-    "category": "ogohlantiruvchi",
-    "name": "1.8 Svetofor tartibga soladi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/51f502cbd2f70dfdaa492969bd49e10b.gif",
-    "description": "Ko'prik, estakada yoki o'tish joyi yaqinligini bildiradi. Sariq uchburchak ichida ko'prik tasviri."
-  },
-  {
-    "id": 16,
-    "category": "ogohlantiruvchi",
-    "name": "1.9 Ko’tarma ko’prik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6744e6eefc43a73926d39931a44efb42.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 17,
-    "category": "ogohlantiruvchi",
-    "name": "1.10 Sohilga chiqish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6fe4a1e22515c6e14dca99afec2b752d.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 18,
-    "category": "ogohlantiruvchi",
-    "name": "1.11.1 Xavfli burilish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6a3a8414f98723a65fc87ce1803a7796.png",
-    "description": "Bir nechta ketma-ket burilishlar haqida ogohlantiradi. Sariq uchburchak ichida zigzag yo'l tasviri."
-  },
-  {
-    "id": 19,
-    "category": "ogohlantiruvchi",
-    "name": "1.11.2 Xavfli burilish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/77896ea86da4cc353f60ede6908340cd.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 20,
-    "category": "ogohlantiruvchi",
-    "name": "1.12.1 Xavfli burilishlar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b3320d03b55fcd62b1d9764df1685339.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 21,
-    "category": "ogohlantiruvchi",
-    "name": "1.12.2 Xavfli burilishlar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a3e14a14d45d40fe870b9b6079be1c04.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 22,
-    "category": "ogohlantiruvchi",
-    "name": "1.13 Tik nishablik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/3fa40fa664a273648d765b8264e52b5c.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 23,
-    "category": "ogohlantiruvchi",
-    "name": "1.14 Tik balandlik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/475ce8fa28942575c1e1404a2d773ff2.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 24,
-    "category": "ogohlantiruvchi",
-    "name": "1.15 Sirpanchiq yo’l",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d4f511d4f579c77de8cdacf4cfc152bb.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 25,
-    "category": "ogohlantiruvchi",
-    "name": "1.16 Notekis yo’l",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8c8cad81a9c5efcbef38ca8afe375275.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 26,
-    "category": "ogohlantiruvchi",
-    "name": "1.17 Tosh otilish xavfi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d477c601327c81ff1cfc0271fe6fbca4.gif",
-    "description": "Boshqa belgilarda ko'rsatilmagan xavf haqida ogohlantiradi. Sariq uchburchak ichida undov belgisi."
-  },
-  {
-    "id": 27,
-    "category": "ogohlantiruvchi",
-    "name": "1.18.1 Yo’lning torayishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/78cb48b16e831406507b4ec05e432a2f.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 28,
-    "category": "ogohlantiruvchi",
-    "name": "1.18.2 Yo’lning torayishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c869672cba84d6bcfad97406925e10ea.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 29,
-    "category": "ogohlantiruvchi",
-    "name": "1.18.3Yo’lning torayishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/984c9999a26162645d2d3fa4566d7e98.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 30,
-    "category": "ogohlantiruvchi",
-    "name": "1.19 Ikki tomonlama harakatlanish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c32aa75e2f2e33c313afe4feb3f86195.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 31,
-    "category": "ogohlantiruvchi",
-    "name": "1.20 Piyodalar o’tish joyi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e6fcea8ed20a3f1aebaffa7517c0a1d2.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 32,
-    "category": "ogohlantiruvchi",
-    "name": "1.21 Bolalar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c6335fc95c5da31d0e73feda98987326.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 33,
-    "category": "ogohlantiruvchi",
-    "name": "1.22 Velosiped yo’lkasi bilan kesishuv",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/75db9cf5eb8ecbe1fd0607c2fff944a2.gif",
-    "description": "Piyodalar o'tish joyi yaqinligi haqida ogohlantiradi. Sariq uchburchak ichida yurgan odam tasviri."
-  },
-  {
-    "id": 34,
-    "category": "ogohlantiruvchi",
-    "name": "1.23 Ta’mirlash ishlari",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6c2d637625e1da0415e9d33a3cd15533.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 35,
-    "category": "ogohlantiruvchi",
-    "name": "1.24 Mol haydab o’tish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d7f21ef20287bed9d36c7d75e1d5b79f.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 36,
-    "category": "ogohlantiruvchi",
-    "name": "1.25 Yovvoyi hayvonlar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63ad8057ae1de8a130ef5ca252add9e4.gif",
-    "description": "Yo'l ta'miri va qurilish ishlari olib borilayotganini bildiradi. Sariq uchburchak ichida ishchi tasviri."
-  },
-  {
-    "id": 37,
-    "category": "ogohlantiruvchi",
-    "name": "1.26 Toshlar tushishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/bbb241133dc8470e6648efbaa4b9b8cc.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 38,
-    "category": "ogohlantiruvchi",
-    "name": "1.27 Yonlama shamol",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c2d4d10d4a6f44006ee79bfe5c28a549.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 39,
-    "category": "ogohlantiruvchi",
-    "name": "1.28 Pastlab uchuvchi samolyotlar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/27004a8f064cd6a9580e8d1b9a9a3e80.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 40,
-    "category": "ogohlantiruvchi",
-    "name": "1.29 Tonnel",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b3279666e83799c66f6b8bcf7350a26c.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 41,
-    "category": "ogohlantiruvchi",
-    "name": "1.30 Boshqa xavf-xatar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6e044eb4c65fd2cc1ac86f1add7e7a10.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 42,
-    "category": "ogohlantiruvchi",
-    "name": "1.31 Sun&#039;iy yo&#039;l notekisliklari",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/7f642fdc08febbb9acdabe97010fc33a.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 43,
-    "category": "ogohlantiruvchi",
-    "name": "1.31.1 Burilishning yo’nalishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/16ef147c04b1efca255291fe74ca61b7.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 44,
-    "category": "ogohlantiruvchi",
-    "name": "1.31.2 Burilishning yo’nalishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/593cd4c651b191ce9babe56e381a97e0.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 45,
-    "category": "ogohlantiruvchi",
-    "name": "1.31.3 Burilishning yo’nalishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ed52d0c9310caed44750df77497c7413.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 46,
-    "category": "ogohlantiruvchi",
-    "name": "1.32 Tirbandlik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/652fe11a16ae7fd2491b1a7589d28773.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 47,
-    "category": "imtiyoz",
-    "name": "2.1. Asosiy yo’l",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/af19556297023cbecc8f964b11c62bf1.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 48,
-    "category": "imtiyoz",
-    "name": "2.2. Asosiy yo’lning oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/3c4a19cf6f5cab3089bcf4cf26cf7b75.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 49,
-    "category": "imtiyoz",
-    "name": "2.3.1. Ikkinchi darajali yo’l bilan kesishuv",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/067ec4c9384f29bf10ce2e57ddae8aaa.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 50,
-    "category": "imtiyoz",
-    "name": "2.3.2 – tutashuv o’ngdan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b96402005ae7dda06667166c5361217c.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 51,
-    "category": "imtiyoz",
-    "name": "2.3.3 – tutashuv chapdan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8150dc2d380518ebe1ec01103b7f75f8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 52,
-    "category": "imtiyoz",
-    "name": "2.4 Yo’l bering",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b8f8cfa8ec28abff0208eecf130b1df2.gif",
-    "description": "Chorrahada boshqa yo'l transportiga yo'l berish majburiy. Teskari sariq uchburchak."
-  },
-  {
-    "id": 53,
-    "category": "imtiyoz",
-    "name": "2.5 To’xtamasdan harakatlanish taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0e37af0ce40967f045f243d800743850.gif",
-    "description": "To'xtash chizig'idan oldin to'liq to'xtash majburiy. Qizil chegarali oq olti burchak ichida STOP yozuvi."
-  },
-  {
-    "id": 54,
-    "category": "imtiyoz",
-    "name": "2.6 Ro’para harakatlanishning ustunligi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d65a3509fbf588adcdb715f98b4ea5ad.gif",
-    "description": "Tor yo'lda qarshi kelayotgan transport ustunlikka ega. Qizil strelka bor belgi."
-  },
-  {
-    "id": 55,
-    "category": "imtiyoz",
-    "name": "2.7 Ro’paradagi harakatlanishga nisbatan imtiyoz",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63148eca2345abd5eb1c047ac4b0fb51.gif",
-    "description": "Tor yo'lda shu yo'nalishdagi harakatga ustunlik beriladi. Sariq strelka bor belgi."
-  },
-  {
-    "id": 56,
-    "category": "taqiqlovchi",
-    "name": "3.1 Kirish ta&#039;qiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/bc0128ccfc6b5e65be5f7f7fa4c6652e.gif",
-    "description": "Barcha transport vositalarining harakatini taqiqlaydi. Qizil doira ichida oq gorizontal chiziq. Bu belgi odatda bir tomonlama yo'llar va qarama-qarshi yo'nalishlarga o'rnatiladi."
-  },
-  {
-    "id": 57,
-    "category": "taqiqlovchi",
-    "name": "3.2. Harakatlanish ta&#039;qiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/14d3662dd3036887c0498a2613ca1893.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 58,
-    "category": "taqiqlovchi",
-    "name": "3.3. Mexanik transport vositalarining harakatlanishi taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a53843ab33763616bf96d216933ef0f5.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 59,
-    "category": "taqiqlovchi",
-    "name": "3.4. Yuk avtomobillarining harakatlanishi taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b3bb92e4d6491abc968b3b882f13800d.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 60,
-    "category": "taqiqlovchi",
-    "name": "3.5. Mototsikllar harakatlanishi taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f4e966e243626a53b17af3da9539c633.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 61,
-    "category": "taqiqlovchi",
-    "name": "3.6 Traktorlar harakatlanishi taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/49bb1b7776d8651d2156bc47c0413eec.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 62,
-    "category": "taqiqlovchi",
-    "name": "3.7 Tirkama bilan harakatlanish taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c5c8eb93719ea2cc1d2d76686dc70089.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 63,
-    "category": "taqiqlovchi",
-    "name": "3.8 Ot-arava harakatlanishi taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/efd87c0c7edccadae2ffd30b7abbb861.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 64,
-    "category": "taqiqlovchi",
-    "name": "3.9 Velosipedda harakatlanish ta&#039;qiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/372acb948e6387606672606f013958d9.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 65,
-    "category": "taqiqlovchi",
-    "name": "3.10 Piyodalarning harakatlanishi ta&#039;qiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/7294235c1347b3a8e51e02053441cf1d.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 66,
-    "category": "taqiqlovchi",
-    "name": "3.11 Vazn cheklangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8d94749fee94e5e59bb9ac880222ad2a.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 67,
-    "category": "taqiqlovchi",
-    "name": "3.12 O‘qqa tushadigan og‘irlik cheklangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ec20ee9025fdcb5763729f70374d36a4.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 68,
-    "category": "taqiqlovchi",
-    "name": "3.13 Cheklangan balandlik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/79a0dad6a45c0f08c9a74da1f091289a.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 69,
-    "category": "taqiqlovchi",
-    "name": "3.14 Cheklangan kenglik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/211fcda3ada02abdc4b7d1addcdbc1a5.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 70,
-    "category": "taqiqlovchi",
-    "name": "3.15 Cheklangan uzunlik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2ad5d845bdc33387406a5c5de73ae155.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 71,
-    "category": "taqiqlovchi",
-    "name": "3.16 Eng kam oraliq",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/1e75cfbabd92864006544047b3d74abb.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 72,
-    "category": "taqiqlovchi",
-    "name": "3.17.1 Bojxona",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d8f277c73ba9efd46f69ba1e6ae01648.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 73,
-    "category": "taqiqlovchi",
-    "name": "3.17.2 Xavf-xatar",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/145f7caaff1657354092ef6576f3abd0.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 74,
-    "category": "taqiqlovchi",
-    "name": "3.18.1 O’ngga burilish ta&#039;qiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e31c8892a50fcf4932e646c57b3a7785.gif",
-    "description": "O'ngga burilishni taqiqlaydi. Qizil doira ichida pastga va o'ngga burilgan o'q."
-  },
-  {
-    "id": 75,
-    "category": "taqiqlovchi",
-    "name": "3.18.2 Chapga burilish taqiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0fb97281067cc1ae7a3d76fb22c63fca.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 76,
-    "category": "taqiqlovchi",
-    "name": "3.19. Qayrilish ta&#039;qiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/94b5b1d4ee812b9370fce53c110b2a7f.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 77,
-    "category": "taqiqlovchi",
-    "name": "3.20 Quvib o’tish taqiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fe429857f2fb9e95498f16972158ca73.gif",
-    "description": "Harakatlanayotgan barcha transport vositalari uchun quvib o'tishni taqiqlaydi. Qizil doira ichida ikki mashina tasviri: qora va qizil."
-  },
-  {
-    "id": 78,
-    "category": "taqiqlovchi",
-    "name": "3.21 Quvib o’tish ta&#039;qiqlangan hududning oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fe85ee2f4f86f92eb4bdb23651449f69.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 79,
-    "category": "taqiqlovchi",
-    "name": "3.22 Yuk avtomobillarida quvib o’tish taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f83506ea4b598e1bb01243fbedab2f7d.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 80,
-    "category": "taqiqlovchi",
-    "name": "3.23 Yuk avtommobillarida quvib o’tish taqiqlangan hududning oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/36eda1b3b795a005d220abb2d7a1ab95.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 81,
-    "category": "taqiqlovchi",
-    "name": "3.24 Yuqori tezlik cheklangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0bf7b8ee40de51f674a5973145ebc5f7.gif",
-    "description": "Belgilangan tezlikdan ortiq harakatlanishni taqiqlaydi. Qizil doira ichida tezlik raqami (40) ko'rsatilgan."
-  },
-  {
-    "id": 82,
-    "category": "taqiqlovchi",
-    "name": "3.25 Yuqori tezlik cheklangan hududning oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d4d248dfd6e88f3e38d380b99489aa0d.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 83,
-    "category": "taqiqlovchi",
-    "name": "3.26 Tovuch moslamalaridan foydalanish ta&#039;qiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d385e5891dd3be865bbf25e12231b259.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 84,
-    "category": "taqiqlovchi",
-    "name": "3.27 To’xtash taqiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e734905ba1e43ec0bcf024c02adbd25f.gif",
-    "description": "Transport vositalarini to'xtatish va to'xtab turishni taqiqlaydi. Qizil chiziq (P harfi ustidan o'tilgan) belgisi."
-  },
-  {
-    "id": 85,
-    "category": "taqiqlovchi",
-    "name": "3.28 To’xtab turish ta&#039;qiqlangan",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2ab1449751905e44ff51b6ef77286f40.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 86,
-    "category": "taqiqlovchi",
-    "name": "3.29 Oyning toq kunlarida to’xtab turish taqiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/5649c0b024a685830a8f0939f5cad016.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 87,
-    "category": "taqiqlovchi",
-    "name": "3.30 Oyning juft kunlarida to’xtab turish taqiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f453580dada8e416bfd494fce89f3d2c.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 88,
-    "category": "taqiqlovchi",
-    "name": "3.31 Barcha cheklovlarning oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/17059de17511ae559596dc96fb9e7675.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 89,
-    "category": "taqiqlovchi",
-    "name": "3.32 Xavfli yuklarga ega transport vositalarining harakati ta&#039;qiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/aeffdb44174e2461a75c1cc9223e903c.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 90,
-    "category": "taqiqlovchi",
-    "name": "3.33 Portlovchi va yonuvchan yuklarga ega transport vositalarining harakatlanishi ta&#039;qiqlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ef269f7aa275c0231e8277cae522664b.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 91,
-    "category": "buyuruvchi",
-    "name": "4.1.1 Harakatlanish to’g’riga",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/4c8df6d372201036595056fc6710322e.gif",
-    "description": "Faqat to'g'ri harakatlanish majburiy. Ko'k doira ichida oq yuqoriga ko'rsatuvchi strelka."
-  },
-  {
-    "id": 92,
-    "category": "buyuruvchi",
-    "name": "4.1.2 Harakatlanish o’ngga",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8a7a931694689f9f61fcca81918ae309.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 93,
-    "category": "buyuruvchi",
-    "name": "4.1.3 Harakatlanish chapga",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/86c7e024f6c58c1bded86eaf5229d979.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 94,
-    "category": "buyuruvchi",
-    "name": "4.1.4 Harakatlanish to’g’riga yoki o’ngga",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d0fa9daa28528a3587936c9096223948.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 95,
-    "category": "buyuruvchi",
-    "name": "4.1.5 Harakatlanish to’g’riga yoki chapga",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b424e0cd4b73976316fdf1a8932091d4.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 96,
-    "category": "buyuruvchi",
-    "name": "4.1.6 Harakatlanish o’ngga yoki chapga",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/342edc74e298a60894b6579b06c3d3c7.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 97,
-    "category": "buyuruvchi",
-    "name": "4.2.1 To’siqni o’ngdan chetlab o’tish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a3eb9bcd80a7b6aca946787b6a6586ac.gif",
-    "description": "O'ngga burilish majburiy. Ko'k doira ichida o'ngga burilgan oq strelka."
-  },
-  {
-    "id": 98,
-    "category": "buyuruvchi",
-    "name": "4.2.2 To’siqni chapdan chetlab o’tish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f18205c959d15a8febb7b84c5533e6be.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 99,
-    "category": "buyuruvchi",
-    "name": "4.2.3 To’siqni o’ngdan yoki chapdan chetlab o’tish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/15162f5475521a379326a750b734989f.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 100,
-    "category": "buyuruvchi",
-    "name": "4.3 Aylanma harakatlanish",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f31384162d4af93b417779aacc008fca.gif",
-    "description": "Aylanma harakatlanish majburiy. Ko'k doira ichida aylana ko'rsatuvchi uch strelka. Aylanma chorrahalarda o'rnatiladi."
-  },
-  {
-    "id": 101,
-    "category": "buyuruvchi",
-    "name": "4.4 Yengil avtomobillar harakatlanadi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e8f631e7d188f9c9f55d8bdfc833f3c1.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 102,
-    "category": "buyuruvchi",
-    "name": "4.5 Velosiped yo’lkasi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/57a603e46df425bff59a805934643724.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 103,
-    "category": "buyuruvchi",
-    "name": "4.6 Piyodalar yo’lkasi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/669265baf1c54d979e7f311f127f1181.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 104,
-    "category": "buyuruvchi",
-    "name": "4.6.1 Piyoda va velosipedlar birgalikda harakatlanish yo&#039;li",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/23b76430964595a76f04616feb3d8d88.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 105,
-    "category": "buyuruvchi",
-    "name": "4.6.2 Piyoda va velosipedlar birgalikda harakatlanish yo&#039;li oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a098be5c2c9c5d29197b46844e7b5687.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 106,
-    "category": "buyuruvchi",
-    "name": "4.6.3 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/cfae42144c19c0fcac0a2e97f1379e56.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 107,
-    "category": "buyuruvchi",
-    "name": "4.6.4 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63329ad861f3847ef2c38d7cc91f3c95.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 108,
-    "category": "buyuruvchi",
-    "name": "4.6.5 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6b98ac33089244a7b9fa50d261b6e0a7.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 109,
-    "category": "buyuruvchi",
-    "name": "4.6.6 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/9128fc2b567d8b243713d47ee82a2815.jpg",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 110,
-    "category": "buyuruvchi",
-    "name": "4.7 Eng kam tezlik",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/55ba8f5b2b0ed14037681f93172b9554.gif",
-    "description": "Minimal harakatlanish tezligini belgilaydi. Ko'k doira ichida tezlik raqami. Haydovchi bu tezlikdan past ketishi mumkin emas."
-  },
-  {
-    "id": 111,
-    "category": "buyuruvchi",
-    "name": "4.8 Eng kam tezlik belgilangan yo’lning oxiri",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/264ca3a611f6f143e792e22839541513.gif",
-    "description": "Qish sharoitida g'ildiraklarga zanjir taqqash majburiy. Ko'k doira ichida zanjirli g'ildirak tasviri."
-  },
-  {
-    "id": 112,
-    "category": "buyuruvchi",
-    "name": "4.9.1 Transport vositalarining xavfli yuklar bilan harakatlanish yo&#039;nalishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/94b523c9c80b8a9079c1f99e7761ee0d.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 113,
-    "category": "buyuruvchi",
-    "name": "4.9.2 Transport vositalarining xavfli yuklar bilan harakatlanish yo&#039;nalishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/773b2a09a9730ec12f07f0474915b2c3.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 114,
-    "category": "buyuruvchi",
-    "name": "4.9.3 Transport vositalarining xavfli yuklar bilan harakatlanish yo&#039;nalishi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d7f97ee5ee1b92d5686ff3a2b4ec8b18.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
-    "id": 115,
-    "category": "buyuruvchi",
-    "name": "4.10 Otda yurish  yo&#039;li",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6d7bff162f1e5a95482be626f10e2275.gif",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
-  },
-  {
     "id": 116,
     "category": "axborot",
     "name": "5.1  Avtomagistral",
@@ -1379,123 +574,711 @@
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 198,
-    "category": "servis",
-    "name": "6.1 Tibbiy yordam ko’rsatish joyi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c16b315e8d7870ba94a999290885b9dc.gif",
-    "description": "Birinchi tibbiy yordam punkti joylashganligi haqida xabar beradi. Ko'k to'rtburchak ichida oq xoch."
+    "id": 280,
+    "category": "axborot",
+    "name": "5.1 Avtomagistral",
+    "image_url": null,
+    "description": "Avtomagistral qoidalari amal qiladigan yo'lning boshlanishi."
   },
   {
-    "id": 199,
-    "category": "servis",
-    "name": "6.2 Shifoxona",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/1f7501e761ab4adf572933e93853184d.gif",
+    "id": 281,
+    "category": "axborot",
+    "name": "5.2 Avtomagistral oxiri",
+    "image_url": null,
+    "description": "Avtomagistral qoidalari amal qiladigan yo'lning tugashi."
+  },
+  {
+    "id": 282,
+    "category": "axborot",
+    "name": "5.5 Bir tomonlama harakatlanish yo'li",
+    "image_url": null,
+    "description": "Butun kengligi bo'yicha harakat faqat bir yo'nalishda bo'lgan yo'l."
+  },
+  {
+    "id": 283,
+    "category": "axborot",
+    "name": "5.16.1 Piyodalar o'tish joyi",
+    "image_url": null,
+    "description": "Piyodalar uchun ajratilgan maxsus yo'lak."
+  },
+  {
+    "id": 284,
+    "category": "axborot",
+    "name": "5.19.1 Oxiri berk ko'cha",
+    "image_url": null,
+    "description": "Teskari tomondan chiqish imkoni bo'lmagan yo'l."
+  },
+  {
+    "id": 269,
+    "category": "boshqa",
+    "name": "To&#039;siq",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8139f18ba2dc17b152189f4d4624af31.jpg",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 200,
-    "category": "servis",
-    "name": "6.3 Yonilg’i shaxobchasi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fb6b6282bb710902ccd949286091a12a.gif",
-    "description": "Yaqin atrofda benzin quyish stantsiyasi (AZS) joylashganligini bildiradi. Ko'k to'rtburchak ichida benzin quyadigan tasvir."
+    "id": 91,
+    "category": "buyuruvchi",
+    "name": "4.1.1 Harakatlanish to’g’riga",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/4c8df6d372201036595056fc6710322e.gif",
+    "description": "Faqat to'g'ri harakatlanish majburiy. Ko'k doira ichida oq yuqoriga ko'rsatuvchi strelka."
   },
   {
-    "id": 201,
-    "category": "servis",
-    "name": "6.4 Texnik xizmat ko’rsatish joyi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/73844391424c494a98c9326ae001fc88.gif",
-    "description": "Texnik xizmat ko'rsatish (avtoservis) stantsiyasi yaqinligini bildiradi. Ko'k to'rtburchak ichida kalit tasviri."
-  },
-  {
-    "id": 202,
-    "category": "servis",
-    "name": "6.5 Transport vositalarini yuvish joyi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f6aa7add832f2954a5512a22bf6d18b4.gif",
-    "description": "Transport vositalarini to'xtatib qo'yish joyi yaqinligini bildiradi. Ko'k to'rtburchak ichida 'P' harfi."
-  },
-  {
-    "id": 203,
-    "category": "servis",
-    "name": "6.6 Telefon",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/93bb0f3e26f9269c4165815b5b3b780f.gif",
-    "description": "Kafe, restoran yoki oshxona yaqinligini bildiradi. Ko'k to'rtburchak ichida vilka va pichoq tasviri."
-  },
-  {
-    "id": 204,
-    "category": "servis",
-    "name": "6.7 Oshxona",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0f7ae1a174ecbdd1e54b6c06bfd304d8.gif",
+    "id": 92,
+    "category": "buyuruvchi",
+    "name": "4.1.2 Harakatlanish o’ngga",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8a7a931694689f9f61fcca81918ae309.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 205,
-    "category": "servis",
-    "name": "6.8 Ichimlik suvi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/951ea3ba2c277734fad12c032e56f36f.gif",
+    "id": 93,
+    "category": "buyuruvchi",
+    "name": "4.1.3 Harakatlanish chapga",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/86c7e024f6c58c1bded86eaf5229d979.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 206,
-    "category": "servis",
-    "name": "6.9 Mehmonxona",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63af23f80d8589264651c2e6dfcb0fd2.gif",
+    "id": 94,
+    "category": "buyuruvchi",
+    "name": "4.1.4 Harakatlanish to’g’riga yoki o’ngga",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d0fa9daa28528a3587936c9096223948.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 207,
-    "category": "servis",
-    "name": "6.10 Kemping",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/cb96102187a0b6cdfa49776a3029b7e2.gif",
+    "id": 95,
+    "category": "buyuruvchi",
+    "name": "4.1.5 Harakatlanish to’g’riga yoki chapga",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b424e0cd4b73976316fdf1a8932091d4.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 208,
-    "category": "servis",
-    "name": "6.11 Dam olish joyi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2f522edf1046a131124890c0237a8528.gif",
+    "id": 96,
+    "category": "buyuruvchi",
+    "name": "4.1.6 Harakatlanish o’ngga yoki chapga",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/342edc74e298a60894b6579b06c3d3c7.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 209,
-    "category": "servis",
-    "name": "6.12 Yo’l patrul xizmati maskani",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/53ff2b90122f5b8f6ff49cc7be1b0344.jpg",
+    "id": 97,
+    "category": "buyuruvchi",
+    "name": "4.2.1 To’siqni o’ngdan chetlab o’tish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a3eb9bcd80a7b6aca946787b6a6586ac.gif",
+    "description": "O'ngga burilish majburiy. Ko'k doira ichida o'ngga burilgan oq strelka."
+  },
+  {
+    "id": 98,
+    "category": "buyuruvchi",
+    "name": "4.2.2 To’siqni chapdan chetlab o’tish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f18205c959d15a8febb7b84c5533e6be.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 210,
-    "category": "servis",
-    "name": "6.13 Xalqaro avtomobillarni tashish nazorat punkti",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c211b48c034020d8bdbd4002340c74d6.jpg",
+    "id": 99,
+    "category": "buyuruvchi",
+    "name": "4.2.3 To’siqni o’ngdan yoki chapdan chetlab o’tish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/15162f5475521a379326a750b734989f.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 211,
-    "category": "servis",
-    "name": "6.14 Xojatxona",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f5e1b422b47b025c23778d6f3119a1b6.gif",
+    "id": 100,
+    "category": "buyuruvchi",
+    "name": "4.3 Aylanma harakatlanish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f31384162d4af93b417779aacc008fca.gif",
+    "description": "Aylanma harakatlanish majburiy. Ko'k doira ichida aylana ko'rsatuvchi uch strelka. Aylanma chorrahalarda o'rnatiladi."
+  },
+  {
+    "id": 101,
+    "category": "buyuruvchi",
+    "name": "4.4 Yengil avtomobillar harakatlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e8f631e7d188f9c9f55d8bdfc833f3c1.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 212,
-    "category": "servis",
-    "name": "6.15 Axlat quti",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/24fefd4cab75ca2dc7244156eb19c62d.jpg",
+    "id": 102,
+    "category": "buyuruvchi",
+    "name": "4.5 Velosiped yo’lkasi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/57a603e46df425bff59a805934643724.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 213,
-    "category": "servis",
-    "name": "6.16 Basseyn yoki sohil bo&#039;yi",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/1011ab35a00d48dd6f518f8681f524ea.gif",
+    "id": 103,
+    "category": "buyuruvchi",
+    "name": "4.6 Piyodalar yo’lkasi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/669265baf1c54d979e7f311f127f1181.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 214,
-    "category": "servis",
-    "name": "6.17 Polisiya",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/48846f41b391baa951db2a4236e27137.png",
+    "id": 104,
+    "category": "buyuruvchi",
+    "name": "4.6.1 Piyoda va velosipedlar birgalikda harakatlanish yo&#039;li",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/23b76430964595a76f04616feb3d8d88.jpg",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 105,
+    "category": "buyuruvchi",
+    "name": "4.6.2 Piyoda va velosipedlar birgalikda harakatlanish yo&#039;li oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a098be5c2c9c5d29197b46844e7b5687.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 106,
+    "category": "buyuruvchi",
+    "name": "4.6.3 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/cfae42144c19c0fcac0a2e97f1379e56.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 107,
+    "category": "buyuruvchi",
+    "name": "4.6.4 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63329ad861f3847ef2c38d7cc91f3c95.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 108,
+    "category": "buyuruvchi",
+    "name": "4.6.5 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6b98ac33089244a7b9fa50d261b6e0a7.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 109,
+    "category": "buyuruvchi",
+    "name": "4.6.6 Ajratilgan piyoda va velosiped harakatlanish yo&#039;li oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/9128fc2b567d8b243713d47ee82a2815.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 110,
+    "category": "buyuruvchi",
+    "name": "4.7 Eng kam tezlik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/55ba8f5b2b0ed14037681f93172b9554.gif",
+    "description": "Minimal harakatlanish tezligini belgilaydi. Ko'k doira ichida tezlik raqami. Haydovchi bu tezlikdan past ketishi mumkin emas."
+  },
+  {
+    "id": 111,
+    "category": "buyuruvchi",
+    "name": "4.8 Eng kam tezlik belgilangan yo’lning oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/264ca3a611f6f143e792e22839541513.gif",
+    "description": "Qish sharoitida g'ildiraklarga zanjir taqqash majburiy. Ko'k doira ichida zanjirli g'ildirak tasviri."
+  },
+  {
+    "id": 112,
+    "category": "buyuruvchi",
+    "name": "4.9.1 Transport vositalarining xavfli yuklar bilan harakatlanish yo&#039;nalishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/94b523c9c80b8a9079c1f99e7761ee0d.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 113,
+    "category": "buyuruvchi",
+    "name": "4.9.2 Transport vositalarining xavfli yuklar bilan harakatlanish yo&#039;nalishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/773b2a09a9730ec12f07f0474915b2c3.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 114,
+    "category": "buyuruvchi",
+    "name": "4.9.3 Transport vositalarining xavfli yuklar bilan harakatlanish yo&#039;nalishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d7f97ee5ee1b92d5686ff3a2b4ec8b18.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 115,
+    "category": "buyuruvchi",
+    "name": "4.10 Otda yurish  yo&#039;li",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6d7bff162f1e5a95482be626f10e2275.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 285,
+    "category": "buyuruvchi",
+    "name": "4.1.1 To'g'riga harakatlanish",
+    "image_url": null,
+    "description": "Faqat to'g'riga harakatlanishga ruxsat beradi."
+  },
+  {
+    "id": 286,
+    "category": "buyuruvchi",
+    "name": "4.1.2 O'ngga harakatlanish",
+    "image_url": null,
+    "description": "Faqat o'ngga harakatlanishga ruxsat beradi."
+  },
+  {
+    "id": 287,
+    "category": "buyuruvchi",
+    "name": "4.1.3 Chapga harakatlanish",
+    "image_url": null,
+    "description": "Faqat chapga yoki qayrilishga ruxsat beradi."
+  },
+  {
+    "id": 288,
+    "category": "buyuruvchi",
+    "name": "4.3 Aylana harakatlanish",
+    "image_url": null,
+    "description": "Aylana shaklidagi chorrahada harakatlanish qoidasini ko'rsatadi."
+  },
+  {
+    "id": 289,
+    "category": "buyuruvchi",
+    "name": "4.4 Yengil avtomobillar harakati",
+    "image_url": null,
+    "description": "Faqat yengil avtomobillar va motosikllar harakatlanishi ruxsat etiladi."
+  },
+  {
+    "id": 47,
+    "category": "imtiyoz",
+    "name": "2.1. Asosiy yo’l",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/af19556297023cbecc8f964b11c62bf1.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 48,
+    "category": "imtiyoz",
+    "name": "2.2. Asosiy yo’lning oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/3c4a19cf6f5cab3089bcf4cf26cf7b75.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 49,
+    "category": "imtiyoz",
+    "name": "2.3.1. Ikkinchi darajali yo’l bilan kesishuv",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/067ec4c9384f29bf10ce2e57ddae8aaa.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 50,
+    "category": "imtiyoz",
+    "name": "2.3.2 – tutashuv o’ngdan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b96402005ae7dda06667166c5361217c.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 51,
+    "category": "imtiyoz",
+    "name": "2.3.3 – tutashuv chapdan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8150dc2d380518ebe1ec01103b7f75f8.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 52,
+    "category": "imtiyoz",
+    "name": "2.4 Yo’l bering",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b8f8cfa8ec28abff0208eecf130b1df2.gif",
+    "description": "Chorrahada boshqa yo'l transportiga yo'l berish majburiy. Teskari sariq uchburchak."
+  },
+  {
+    "id": 53,
+    "category": "imtiyoz",
+    "name": "2.5 To’xtamasdan harakatlanish taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0e37af0ce40967f045f243d800743850.gif",
+    "description": "To'xtash chizig'idan oldin to'liq to'xtash majburiy. Qizil chegarali oq olti burchak ichida STOP yozuvi."
+  },
+  {
+    "id": 54,
+    "category": "imtiyoz",
+    "name": "2.6 Ro’para harakatlanishning ustunligi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d65a3509fbf588adcdb715f98b4ea5ad.gif",
+    "description": "Tor yo'lda qarshi kelayotgan transport ustunlikka ega. Qizil strelka bor belgi."
+  },
+  {
+    "id": 55,
+    "category": "imtiyoz",
+    "name": "2.7 Ro’paradagi harakatlanishga nisbatan imtiyoz",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63148eca2345abd5eb1c047ac4b0fb51.gif",
+    "description": "Tor yo'lda shu yo'nalishdagi harakatga ustunlik beriladi. Sariq strelka bor belgi."
+  },
+  {
+    "id": 290,
+    "category": "imtiyoz",
+    "name": "2.1 Asosiy yo'l",
+    "image_url": null,
+    "description": "Teng ahamiyatli bo'lmagan chorrahada birinchi o'tish huquqini beradi."
+  },
+  {
+    "id": 291,
+    "category": "imtiyoz",
+    "name": "2.2 Asosiy yo'lning oxiri",
+    "image_url": null,
+    "description": "2.1 belgisi o'z kuchini yo'qotganligini bildiradi."
+  },
+  {
+    "id": 292,
+    "category": "imtiyoz",
+    "name": "2.4 Yo'l bering",
+    "image_url": null,
+    "description": "Kesishayotgan yo'ldagi transportlarga yo'l berish majburiyligini bildiradi."
+  },
+  {
+    "id": 293,
+    "category": "imtiyoz",
+    "name": "2.5 To'xtamasdan harakatlanish taqiqlangan",
+    "image_url": null,
+    "description": "To'xtash chizig'i yoki chorraha oldida to'xtamasdan o'tish qat'iyan man etiladi."
+  },
+  {
+    "id": 294,
+    "category": "imtiyoz",
+    "name": "2.6 Ro'para harakatlanishning ustunligi",
+    "image_url": null,
+    "description": "Tor qismda ro'paradan kelayotgan transportga yo'l berish kerakligini bildiradi."
+  },
+  {
+    "id": 1,
+    "category": "ogohlantiruvchi",
+    "name": "1.1 Shlagbaumli temir yo&#039;l kesishmasi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a8caf81b9eeee75855b0131ead902470.gif",
+    "description": "Yaqinlashib kelayotgan xavfli burilish haqida ogohlantiradi. Sariq uchburchak ichida o'ngga buruvchi strelka."
+  },
+  {
+    "id": 2,
+    "category": "ogohlantiruvchi",
+    "name": "1.2 Shlagbaumsiz temir yo’l kesishmasi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e83b727d9af45b28716a71c93d6074d5.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 3,
+    "category": "ogohlantiruvchi",
+    "name": "1.3. Diqqat &quot;UZP&quot;",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/80b8391df4387c020926f01683b1aab6.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 4,
+    "category": "ogohlantiruvchi",
+    "name": "1.3.1 Bir izli temir yo’l",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ebe823d34b7af01006e43750e938056d.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 5,
+    "category": "ogohlantiruvchi",
+    "name": "1.3.2 Ko’p izli temir yo’l",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/586f5b40660520d788fb029af5b78f84.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 6,
+    "category": "ogohlantiruvchi",
+    "name": "1.4.1 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/546dba3eb922f17c7dedde4c3ad1d9ff.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 7,
+    "category": "ogohlantiruvchi",
+    "name": "1.4.2 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/bc8f8547be20d4544f6593fa8b608bfe.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 8,
+    "category": "ogohlantiruvchi",
+    "name": "1.4.3 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fa415321a4afbf525686dd5e9383d786.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 9,
+    "category": "ogohlantiruvchi",
+    "name": "1.4.4 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2b0b7f5fadeff1fa97bd2631773a8c0b.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 10,
+    "category": "ogohlantiruvchi",
+    "name": "1.4.5 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/834198bb4620263bc12326c160e067c2.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 11,
+    "category": "ogohlantiruvchi",
+    "name": "1.4.6 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a40d8b3056ec1c41ab3bc8b63659b5ce.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 12,
+    "category": "ogohlantiruvchi",
+    "name": "1.5 Tramvay yo’li bilan kesishuv",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f99f4262ec68a79fd72fe2d60938ed5e.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 13,
+    "category": "ogohlantiruvchi",
+    "name": "1.6 Teng ahamiyatli yo’llar kesishuvi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f23606dbe3369a1351da77ecbd8b9c01.gif",
+    "description": "Yo'l bir yo'nalishda torayishi haqida ogohlantiradi. Sariq uchburchak ichida torayuvchi yo'l tasviri."
+  },
+  {
+    "id": 14,
+    "category": "ogohlantiruvchi",
+    "name": "1.7 Aylanma harakatlanish bilan kesishuv",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c1314181b59e575342e61ed95ff3fcef.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 15,
+    "category": "ogohlantiruvchi",
+    "name": "1.8 Svetofor tartibga soladi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/51f502cbd2f70dfdaa492969bd49e10b.gif",
+    "description": "Ko'prik, estakada yoki o'tish joyi yaqinligini bildiradi. Sariq uchburchak ichida ko'prik tasviri."
+  },
+  {
+    "id": 16,
+    "category": "ogohlantiruvchi",
+    "name": "1.9 Ko’tarma ko’prik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6744e6eefc43a73926d39931a44efb42.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 17,
+    "category": "ogohlantiruvchi",
+    "name": "1.10 Sohilga chiqish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6fe4a1e22515c6e14dca99afec2b752d.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 18,
+    "category": "ogohlantiruvchi",
+    "name": "1.11.1 Xavfli burilish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6a3a8414f98723a65fc87ce1803a7796.png",
+    "description": "Bir nechta ketma-ket burilishlar haqida ogohlantiradi. Sariq uchburchak ichida zigzag yo'l tasviri."
+  },
+  {
+    "id": 19,
+    "category": "ogohlantiruvchi",
+    "name": "1.11.2 Xavfli burilish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/77896ea86da4cc353f60ede6908340cd.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 20,
+    "category": "ogohlantiruvchi",
+    "name": "1.12.1 Xavfli burilishlar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b3320d03b55fcd62b1d9764df1685339.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 21,
+    "category": "ogohlantiruvchi",
+    "name": "1.12.2 Xavfli burilishlar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a3e14a14d45d40fe870b9b6079be1c04.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 22,
+    "category": "ogohlantiruvchi",
+    "name": "1.13 Tik nishablik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/3fa40fa664a273648d765b8264e52b5c.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 23,
+    "category": "ogohlantiruvchi",
+    "name": "1.14 Tik balandlik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/475ce8fa28942575c1e1404a2d773ff2.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 24,
+    "category": "ogohlantiruvchi",
+    "name": "1.15 Sirpanchiq yo’l",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d4f511d4f579c77de8cdacf4cfc152bb.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 25,
+    "category": "ogohlantiruvchi",
+    "name": "1.16 Notekis yo’l",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8c8cad81a9c5efcbef38ca8afe375275.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 26,
+    "category": "ogohlantiruvchi",
+    "name": "1.17 Tosh otilish xavfi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d477c601327c81ff1cfc0271fe6fbca4.gif",
+    "description": "Boshqa belgilarda ko'rsatilmagan xavf haqida ogohlantiradi. Sariq uchburchak ichida undov belgisi."
+  },
+  {
+    "id": 27,
+    "category": "ogohlantiruvchi",
+    "name": "1.18.1 Yo’lning torayishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/78cb48b16e831406507b4ec05e432a2f.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 28,
+    "category": "ogohlantiruvchi",
+    "name": "1.18.2 Yo’lning torayishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c869672cba84d6bcfad97406925e10ea.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 29,
+    "category": "ogohlantiruvchi",
+    "name": "1.18.3Yo’lning torayishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/984c9999a26162645d2d3fa4566d7e98.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 30,
+    "category": "ogohlantiruvchi",
+    "name": "1.19 Ikki tomonlama harakatlanish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c32aa75e2f2e33c313afe4feb3f86195.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 31,
+    "category": "ogohlantiruvchi",
+    "name": "1.20 Piyodalar o’tish joyi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e6fcea8ed20a3f1aebaffa7517c0a1d2.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 32,
+    "category": "ogohlantiruvchi",
+    "name": "1.21 Bolalar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c6335fc95c5da31d0e73feda98987326.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 33,
+    "category": "ogohlantiruvchi",
+    "name": "1.22 Velosiped yo’lkasi bilan kesishuv",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/75db9cf5eb8ecbe1fd0607c2fff944a2.gif",
+    "description": "Piyodalar o'tish joyi yaqinligi haqida ogohlantiradi. Sariq uchburchak ichida yurgan odam tasviri."
+  },
+  {
+    "id": 34,
+    "category": "ogohlantiruvchi",
+    "name": "1.23 Ta’mirlash ishlari",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6c2d637625e1da0415e9d33a3cd15533.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 35,
+    "category": "ogohlantiruvchi",
+    "name": "1.24 Mol haydab o’tish",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d7f21ef20287bed9d36c7d75e1d5b79f.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 36,
+    "category": "ogohlantiruvchi",
+    "name": "1.25 Yovvoyi hayvonlar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63ad8057ae1de8a130ef5ca252add9e4.gif",
+    "description": "Yo'l ta'miri va qurilish ishlari olib borilayotganini bildiradi. Sariq uchburchak ichida ishchi tasviri."
+  },
+  {
+    "id": 37,
+    "category": "ogohlantiruvchi",
+    "name": "1.26 Toshlar tushishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/bbb241133dc8470e6648efbaa4b9b8cc.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 38,
+    "category": "ogohlantiruvchi",
+    "name": "1.27 Yonlama shamol",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c2d4d10d4a6f44006ee79bfe5c28a549.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 39,
+    "category": "ogohlantiruvchi",
+    "name": "1.28 Pastlab uchuvchi samolyotlar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/27004a8f064cd6a9580e8d1b9a9a3e80.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 40,
+    "category": "ogohlantiruvchi",
+    "name": "1.29 Tonnel",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b3279666e83799c66f6b8bcf7350a26c.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 41,
+    "category": "ogohlantiruvchi",
+    "name": "1.30 Boshqa xavf-xatar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/6e044eb4c65fd2cc1ac86f1add7e7a10.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 42,
+    "category": "ogohlantiruvchi",
+    "name": "1.31 Sun&#039;iy yo&#039;l notekisliklari",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/7f642fdc08febbb9acdabe97010fc33a.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 43,
+    "category": "ogohlantiruvchi",
+    "name": "1.31.1 Burilishning yo’nalishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/16ef147c04b1efca255291fe74ca61b7.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 44,
+    "category": "ogohlantiruvchi",
+    "name": "1.31.2 Burilishning yo’nalishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/593cd4c651b191ce9babe56e381a97e0.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 45,
+    "category": "ogohlantiruvchi",
+    "name": "1.31.3 Burilishning yo’nalishi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ed52d0c9310caed44750df77497c7413.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 46,
+    "category": "ogohlantiruvchi",
+    "name": "1.32 Tirbandlik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/652fe11a16ae7fd2491b1a7589d28773.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 275,
+    "category": "ogohlantiruvchi",
+    "name": "1.1 Shlagbaumli temir yo'l kesishmasi",
+    "image_url": null,
+    "description": "Shlagbaum bilan jihozlangan temir yo'l kesishmasiga yaqinlashayotganligi haqida ogohlantiradi."
+  },
+  {
+    "id": 276,
+    "category": "ogohlantiruvchi",
+    "name": "1.2 Shlagbaumsiz temir yo'l kesishmasi",
+    "image_url": null,
+    "description": "Shlagbaumsiz temir yo'l kesishmasiga yaqinlashayotganligi haqida ogohlantiradi."
+  },
+  {
+    "id": 277,
+    "category": "ogohlantiruvchi",
+    "name": "1.11.1 Xavfli burilish (o'ngga)",
+    "image_url": null,
+    "description": "O'ng tomonga xavfli burilish borligini bildiradi."
+  },
+  {
+    "id": 278,
+    "category": "ogohlantiruvchi",
+    "name": "1.15 Sirpanchiq yo'l",
+    "image_url": null,
+    "description": "Yo'lning sirpanchiq qismi boshlanayotganini bildiradi."
+  },
+  {
+    "id": 279,
+    "category": "ogohlantiruvchi",
+    "name": "1.20 Piyodalar o'tish joyi",
+    "image_url": null,
+    "description": "Oldinda piyodalar o'tish joyi borligi haqida ogohlantiradi."
   },
   {
     "id": 215,
@@ -1876,10 +1659,437 @@
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
   },
   {
-    "id": 269,
-    "category": "boshqa",
-    "name": "To&#039;siq",
-    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8139f18ba2dc17b152189f4d4624af31.jpg",
+    "id": 198,
+    "category": "servis",
+    "name": "6.1 Tibbiy yordam ko’rsatish joyi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c16b315e8d7870ba94a999290885b9dc.gif",
+    "description": "Birinchi tibbiy yordam punkti joylashganligi haqida xabar beradi. Ko'k to'rtburchak ichida oq xoch."
+  },
+  {
+    "id": 199,
+    "category": "servis",
+    "name": "6.2 Shifoxona",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/1f7501e761ab4adf572933e93853184d.gif",
     "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 200,
+    "category": "servis",
+    "name": "6.3 Yonilg’i shaxobchasi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fb6b6282bb710902ccd949286091a12a.gif",
+    "description": "Yaqin atrofda benzin quyish stantsiyasi (AZS) joylashganligini bildiradi. Ko'k to'rtburchak ichida benzin quyadigan tasvir."
+  },
+  {
+    "id": 201,
+    "category": "servis",
+    "name": "6.4 Texnik xizmat ko’rsatish joyi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/73844391424c494a98c9326ae001fc88.gif",
+    "description": "Texnik xizmat ko'rsatish (avtoservis) stantsiyasi yaqinligini bildiradi. Ko'k to'rtburchak ichida kalit tasviri."
+  },
+  {
+    "id": 202,
+    "category": "servis",
+    "name": "6.5 Transport vositalarini yuvish joyi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f6aa7add832f2954a5512a22bf6d18b4.gif",
+    "description": "Transport vositalarini to'xtatib qo'yish joyi yaqinligini bildiradi. Ko'k to'rtburchak ichida 'P' harfi."
+  },
+  {
+    "id": 203,
+    "category": "servis",
+    "name": "6.6 Telefon",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/93bb0f3e26f9269c4165815b5b3b780f.gif",
+    "description": "Kafe, restoran yoki oshxona yaqinligini bildiradi. Ko'k to'rtburchak ichida vilka va pichoq tasviri."
+  },
+  {
+    "id": 204,
+    "category": "servis",
+    "name": "6.7 Oshxona",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0f7ae1a174ecbdd1e54b6c06bfd304d8.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 205,
+    "category": "servis",
+    "name": "6.8 Ichimlik suvi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/951ea3ba2c277734fad12c032e56f36f.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 206,
+    "category": "servis",
+    "name": "6.9 Mehmonxona",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/63af23f80d8589264651c2e6dfcb0fd2.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 207,
+    "category": "servis",
+    "name": "6.10 Kemping",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/cb96102187a0b6cdfa49776a3029b7e2.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 208,
+    "category": "servis",
+    "name": "6.11 Dam olish joyi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2f522edf1046a131124890c0237a8528.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 209,
+    "category": "servis",
+    "name": "6.12 Yo’l patrul xizmati maskani",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/53ff2b90122f5b8f6ff49cc7be1b0344.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 210,
+    "category": "servis",
+    "name": "6.13 Xalqaro avtomobillarni tashish nazorat punkti",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c211b48c034020d8bdbd4002340c74d6.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 211,
+    "category": "servis",
+    "name": "6.14 Xojatxona",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f5e1b422b47b025c23778d6f3119a1b6.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 212,
+    "category": "servis",
+    "name": "6.15 Axlat quti",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/24fefd4cab75ca2dc7244156eb19c62d.jpg",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 213,
+    "category": "servis",
+    "name": "6.16 Basseyn yoki sohil bo&#039;yi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/1011ab35a00d48dd6f518f8681f524ea.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 214,
+    "category": "servis",
+    "name": "6.17 Polisiya",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/48846f41b391baa951db2a4236e27137.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 295,
+    "category": "servis",
+    "name": "6.1 Birinchi tibbiy yordam ko'rsatish joyi",
+    "image_url": null,
+    "description": "Yaqin atrofda tibbiyot punkti borligini bildiradi."
+  },
+  {
+    "id": 296,
+    "category": "servis",
+    "name": "6.2 Kasalxona",
+    "image_url": null,
+    "description": "Yaqin atrofda kasalxona mavjudligini bildiradi."
+  },
+  {
+    "id": 297,
+    "category": "servis",
+    "name": "6.3 AYoQSh",
+    "image_url": null,
+    "description": "Avtomobillarga yoqilg'i quyish shoxobchasi borligini bildiradi."
+  },
+  {
+    "id": 298,
+    "category": "servis",
+    "name": "6.4 Texnik xizmat ko'rsatish joyi",
+    "image_url": null,
+    "description": "Avtomobillarga texnik xizmat ko'rsatish stansiyasi."
+  },
+  {
+    "id": 299,
+    "category": "servis",
+    "name": "6.10 Mehmonxona yoki motel",
+    "image_url": null,
+    "description": "Mehmonxona borligini bildiradi."
+  },
+  {
+    "id": 56,
+    "category": "taqiqlovchi",
+    "name": "3.1 Kirish ta&#039;qiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/bc0128ccfc6b5e65be5f7f7fa4c6652e.gif",
+    "description": "Barcha transport vositalarining harakatini taqiqlaydi. Qizil doira ichida oq gorizontal chiziq. Bu belgi odatda bir tomonlama yo'llar va qarama-qarshi yo'nalishlarga o'rnatiladi."
+  },
+  {
+    "id": 57,
+    "category": "taqiqlovchi",
+    "name": "3.2. Harakatlanish ta&#039;qiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/14d3662dd3036887c0498a2613ca1893.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 58,
+    "category": "taqiqlovchi",
+    "name": "3.3. Mexanik transport vositalarining harakatlanishi taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/a53843ab33763616bf96d216933ef0f5.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 59,
+    "category": "taqiqlovchi",
+    "name": "3.4. Yuk avtomobillarining harakatlanishi taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/b3bb92e4d6491abc968b3b882f13800d.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 60,
+    "category": "taqiqlovchi",
+    "name": "3.5. Mototsikllar harakatlanishi taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f4e966e243626a53b17af3da9539c633.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 61,
+    "category": "taqiqlovchi",
+    "name": "3.6 Traktorlar harakatlanishi taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/49bb1b7776d8651d2156bc47c0413eec.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 62,
+    "category": "taqiqlovchi",
+    "name": "3.7 Tirkama bilan harakatlanish taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/c5c8eb93719ea2cc1d2d76686dc70089.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 63,
+    "category": "taqiqlovchi",
+    "name": "3.8 Ot-arava harakatlanishi taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/efd87c0c7edccadae2ffd30b7abbb861.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 64,
+    "category": "taqiqlovchi",
+    "name": "3.9 Velosipedda harakatlanish ta&#039;qiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/372acb948e6387606672606f013958d9.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 65,
+    "category": "taqiqlovchi",
+    "name": "3.10 Piyodalarning harakatlanishi ta&#039;qiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/7294235c1347b3a8e51e02053441cf1d.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 66,
+    "category": "taqiqlovchi",
+    "name": "3.11 Vazn cheklangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/8d94749fee94e5e59bb9ac880222ad2a.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 67,
+    "category": "taqiqlovchi",
+    "name": "3.12 O‘qqa tushadigan og‘irlik cheklangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ec20ee9025fdcb5763729f70374d36a4.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 68,
+    "category": "taqiqlovchi",
+    "name": "3.13 Cheklangan balandlik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/79a0dad6a45c0f08c9a74da1f091289a.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 69,
+    "category": "taqiqlovchi",
+    "name": "3.14 Cheklangan kenglik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/211fcda3ada02abdc4b7d1addcdbc1a5.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 70,
+    "category": "taqiqlovchi",
+    "name": "3.15 Cheklangan uzunlik",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2ad5d845bdc33387406a5c5de73ae155.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 71,
+    "category": "taqiqlovchi",
+    "name": "3.16 Eng kam oraliq",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/1e75cfbabd92864006544047b3d74abb.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 72,
+    "category": "taqiqlovchi",
+    "name": "3.17.1 Bojxona",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d8f277c73ba9efd46f69ba1e6ae01648.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 73,
+    "category": "taqiqlovchi",
+    "name": "3.17.2 Xavf-xatar",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/145f7caaff1657354092ef6576f3abd0.png",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 74,
+    "category": "taqiqlovchi",
+    "name": "3.18.1 O’ngga burilish ta&#039;qiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e31c8892a50fcf4932e646c57b3a7785.gif",
+    "description": "O'ngga burilishni taqiqlaydi. Qizil doira ichida pastga va o'ngga burilgan o'q."
+  },
+  {
+    "id": 75,
+    "category": "taqiqlovchi",
+    "name": "3.18.2 Chapga burilish taqiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0fb97281067cc1ae7a3d76fb22c63fca.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 76,
+    "category": "taqiqlovchi",
+    "name": "3.19. Qayrilish ta&#039;qiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/94b5b1d4ee812b9370fce53c110b2a7f.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 77,
+    "category": "taqiqlovchi",
+    "name": "3.20 Quvib o’tish taqiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fe429857f2fb9e95498f16972158ca73.gif",
+    "description": "Harakatlanayotgan barcha transport vositalari uchun quvib o'tishni taqiqlaydi. Qizil doira ichida ikki mashina tasviri: qora va qizil."
+  },
+  {
+    "id": 78,
+    "category": "taqiqlovchi",
+    "name": "3.21 Quvib o’tish ta&#039;qiqlangan hududning oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/fe85ee2f4f86f92eb4bdb23651449f69.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 79,
+    "category": "taqiqlovchi",
+    "name": "3.22 Yuk avtomobillarida quvib o’tish taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f83506ea4b598e1bb01243fbedab2f7d.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 80,
+    "category": "taqiqlovchi",
+    "name": "3.23 Yuk avtommobillarida quvib o’tish taqiqlangan hududning oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/36eda1b3b795a005d220abb2d7a1ab95.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 81,
+    "category": "taqiqlovchi",
+    "name": "3.24 Yuqori tezlik cheklangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/0bf7b8ee40de51f674a5973145ebc5f7.gif",
+    "description": "Belgilangan tezlikdan ortiq harakatlanishni taqiqlaydi. Qizil doira ichida tezlik raqami (40) ko'rsatilgan."
+  },
+  {
+    "id": 82,
+    "category": "taqiqlovchi",
+    "name": "3.25 Yuqori tezlik cheklangan hududning oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d4d248dfd6e88f3e38d380b99489aa0d.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 83,
+    "category": "taqiqlovchi",
+    "name": "3.26 Tovuch moslamalaridan foydalanish ta&#039;qiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/d385e5891dd3be865bbf25e12231b259.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 84,
+    "category": "taqiqlovchi",
+    "name": "3.27 To’xtash taqiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/e734905ba1e43ec0bcf024c02adbd25f.gif",
+    "description": "Transport vositalarini to'xtatish va to'xtab turishni taqiqlaydi. Qizil chiziq (P harfi ustidan o'tilgan) belgisi."
+  },
+  {
+    "id": 85,
+    "category": "taqiqlovchi",
+    "name": "3.28 To’xtab turish ta&#039;qiqlangan",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/2ab1449751905e44ff51b6ef77286f40.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 86,
+    "category": "taqiqlovchi",
+    "name": "3.29 Oyning toq kunlarida to’xtab turish taqiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/5649c0b024a685830a8f0939f5cad016.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 87,
+    "category": "taqiqlovchi",
+    "name": "3.30 Oyning juft kunlarida to’xtab turish taqiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/f453580dada8e416bfd494fce89f3d2c.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 88,
+    "category": "taqiqlovchi",
+    "name": "3.31 Barcha cheklovlarning oxiri",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/17059de17511ae559596dc96fb9e7675.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 89,
+    "category": "taqiqlovchi",
+    "name": "3.32 Xavfli yuklarga ega transport vositalarining harakati ta&#039;qiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/aeffdb44174e2461a75c1cc9223e903c.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 90,
+    "category": "taqiqlovchi",
+    "name": "3.33 Portlovchi va yonuvchan yuklarga ega transport vositalarining harakatlanishi ta&#039;qiqlanadi",
+    "image_url": "https://uzavtoyolbelgi.uz/uploads/store/product/ef269f7aa275c0231e8277cae522664b.gif",
+    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi."
+  },
+  {
+    "id": 270,
+    "category": "taqiqlovchi",
+    "name": "3.1 Kirish taqiqlangan",
+    "image_url": null,
+    "description": "Barcha transport vositalarining shu yo'nalishda harakatlanishini taqiqlaydi (marshrutli transport vositalaridan tashqari)."
+  },
+  {
+    "id": 271,
+    "category": "taqiqlovchi",
+    "name": "3.2 Harakatlanish taqiqlangan",
+    "image_url": null,
+    "description": "Barcha transport vositalarining harakatlanishini taqiqlaydi."
+  },
+  {
+    "id": 272,
+    "category": "taqiqlovchi",
+    "name": "3.3 Mexanik transport vositalarining harakatlanishi taqiqlangan",
+    "image_url": null,
+    "description": "Motorli transport vositalarining kirishini taqiqlaydi."
+  },
+  {
+    "id": 273,
+    "category": "taqiqlovchi",
+    "name": "3.20 Quvib o'tish taqiqlangan",
+    "image_url": null,
+    "description": "Barcha transport vositalarini quvib o'tishni taqiqlaydi."
+  },
+  {
+    "id": 274,
+    "category": "taqiqlovchi",
+    "name": "3.27 To'xtash taqiqlangan",
+    "image_url": null,
+    "description": "Transport vositalarining to'xtashi va to'xtab turishini taqiqlaydi."
   }
 ]

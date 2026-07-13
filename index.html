@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Avtomaktab Mini App</title>
-    <meta name="description" content="Avtomaktab - YHQ testlarini ishlang, bilimingizni sinang!">
+    <title>Avtovatanparvar Mini Ilova</title>
+    <meta name="description" content="Avtovatanparvar - YHQ testlari, yo'l belgilari, video darslar va ko'p narsa!">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,77 +22,102 @@
         <header class="glass-panel profile-header">
             <div class="user-info">
                 <div class="avatar-container">
-                    <img id="user-photo" src="https://ui-avatars.com/api/?name=U&background=6c3ce1&color=fff" alt="Avatar">
+                    <img id="user-photo" src="https://ui-avatars.com/api/?name=A&background=1a56db&color=fff&size=80" alt="Avatar">
                     <div class="online-indicator"></div>
                 </div>
                 <div class="user-details">
                     <h1 id="user-name">Foydalanuvchi</h1>
-                    <span class="user-status">⚡ O'rganuvchi</span>
+                    <span class="user-status" id="user-status">⚡ O'rganuvchi</span>
                 </div>
             </div>
-            <div class="premium-badge" id="premium-badge">
-                <i class="fas fa-crown"></i> PRO
+            <div class="brand-logo">
+                <div class="brand-icon"><i class="fas fa-car"></i></div>
+                <span>AVP</span>
             </div>
         </header>
 
         <section class="stats-grid">
             <div class="stat-card glass-panel">
-                <i class="fas fa-database text-purple"></i>
+                <i class="fas fa-question-circle text-purple"></i>
                 <div class="stat-info">
                     <h3>Savollar</h3>
                     <p id="stat-total">yuklanyapti...</p>
                 </div>
             </div>
             <div class="stat-card glass-panel">
-                <i class="fas fa-check-circle text-green"></i>
+                <i class="fas fa-check-double text-green"></i>
                 <div class="stat-info">
-                    <h3>Testlarim</h3>
-                    <p id="stat-tests">0 ta</p>
+                    <h3>To'g'ri</h3>
+                    <p id="stat-correct">0</p>
+                </div>
+            </div>
+            <div class="stat-card glass-panel">
+                <i class="fas fa-times-circle text-red"></i>
+                <div class="stat-info">
+                    <h3>Xato</h3>
+                    <p id="stat-wrong">0</p>
+                </div>
+            </div>
+            <div class="stat-card glass-panel">
+                <i class="fas fa-fire text-orange"></i>
+                <div class="stat-info">
+                    <h3>Testlar</h3>
+                    <p id="stat-tests">0</p>
                 </div>
             </div>
         </section>
 
         <section class="menu-grid">
-            <div class="menu-item glass-panel" onclick="startSetup()">
-                <div class="menu-icon bg-gradient-purple">
-                    <i class="fas fa-car-side"></i>
-                </div>
+            <div class="menu-item glass-panel" onclick="navigate('view-setup')">
+                <div class="menu-icon bg-gradient-purple"><i class="fas fa-car-side"></i></div>
                 <div class="menu-text">
-                    <h3>Test Ishlash</h3>
-                    <p>Bilimingizni sinang</p>
+                    <h3>🚗 Test Ishlash</h3>
+                    <p>YHQ savollarini yechamiz</p>
                 </div>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
 
-            <div class="menu-item glass-panel" onclick="loadRules()">
-                <div class="menu-icon bg-gradient-blue">
-                    <i class="fas fa-book-open"></i>
-                </div>
+            <div class="menu-item glass-panel" onclick="navigate('view-rules')">
+                <div class="menu-icon bg-gradient-blue"><i class="fas fa-book-open"></i></div>
                 <div class="menu-text">
-                    <h3>YHQ Qoidalari</h3>
+                    <h3>📚 YHQ Qoidalari</h3>
                     <p>Barcha qoidalar to'plami</p>
                 </div>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
 
-            <div class="menu-item glass-panel" onclick="loadSigns()">
-                <div class="menu-icon bg-gradient-orange">
-                    <i class="fas fa-traffic-light"></i>
-                </div>
+            <div class="menu-item glass-panel" onclick="navigate('view-signs')">
+                <div class="menu-icon bg-gradient-orange"><i class="fas fa-traffic-light"></i></div>
                 <div class="menu-text">
-                    <h3>Yo'l Belgilari</h3>
-                    <p>Belgilar va izohlari</p>
+                    <h3>🚦 Yo'l Belgilari</h3>
+                    <p>299 ta belgi va izohlari</p>
                 </div>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
 
-            <div class="menu-item glass-panel highlight-item" onclick="showToast('Tez kunda ishga tushadi!', 'info')">
-                <div class="menu-icon bg-gradient-gold">
-                    <i class="fas fa-crown"></i>
-                </div>
+            <div class="menu-item glass-panel" onclick="navigate('view-videos')">
+                <div class="menu-icon bg-gradient-red"><i class="fas fa-play-circle"></i></div>
                 <div class="menu-text">
-                    <h3>VIP Premium</h3>
-                    <p>Imtihon simulyatori</p>
+                    <h3>🎥 Video Darslar</h3>
+                    <p>133 ta video mavzu</p>
+                </div>
+                <i class="fas fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="menu-item glass-panel" onclick="navigate('view-news')">
+                <div class="menu-icon bg-gradient-teal"><i class="fas fa-newspaper"></i></div>
+                <div class="menu-text">
+                    <h3>📰 Yangiliklar</h3>
+                    <p>So'nggi xabarlar</p>
+                </div>
+                <i class="fas fa-chevron-right arrow-icon"></i>
+            </div>
+
+            <div class="menu-item glass-panel" onclick="navigate('view-org')">
+                <div class="menu-icon bg-gradient-gold"><i class="fas fa-building"></i></div>
+                <div class="menu-text">
+                    <h3>🏢 Tashkilot</h3>
+                    <p>Toifalar va narxlar</p>
                 </div>
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
@@ -101,28 +126,23 @@
 
     <!-- ══════════════ SETUP VIEW ══════════════ -->
     <main id="view-setup" class="view">
-        <div class="setup-header">
-            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <h2>Test Sozlamalari</h2>
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>⚙️ Test Sozlamasi</h2>
         </div>
-
         <div class="setup-section glass-panel">
-            <h3><i class="fas fa-layer-group"></i> Bo'lim tanlang</h3>
+            <h3><i class="fas fa-layer-group text-purple"></i> Bo'lim tanlang</h3>
             <div id="category-list" class="category-list"></div>
         </div>
-
         <div class="setup-section glass-panel">
-            <h3><i class="fas fa-list-ol"></i> Savollar soni</h3>
+            <h3><i class="fas fa-list-ol text-blue"></i> Savollar soni</h3>
             <div class="count-grid">
-                <button class="count-btn active" onclick="selectCount(this, 10)">10 ta</button>
-                <button class="count-btn" onclick="selectCount(this, 20)">20 ta</button>
-                <button class="count-btn" onclick="selectCount(this, 50)">50 ta</button>
-                <button class="count-btn vip-btn" onclick="selectCount(this, 70)">👑 70 ta</button>
+                <button class="count-btn active" onclick="selectCount(this,10)">10 ta</button>
+                <button class="count-btn" onclick="selectCount(this,20)">20 ta</button>
+                <button class="count-btn" onclick="selectCount(this,50)">50 ta</button>
+                <button class="count-btn" onclick="selectCount(this,100)">100 ta</button>
             </div>
         </div>
-
         <button class="primary-btn start-btn" onclick="beginTest()">
             <i class="fas fa-play"></i> Testni Boshlash
         </button>
@@ -131,39 +151,27 @@
     <!-- ══════════════ TEST VIEW ══════════════ -->
     <main id="view-test" class="view">
         <div class="test-header">
-            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
-                <i class="fas fa-times"></i>
-            </button>
+            <button class="back-btn glass-panel" onclick="confirmQuit()"><i class="fas fa-times"></i></button>
             <div class="progress-container glass-panel">
                 <span id="question-counter">1/10</span>
-                <div class="progress-bar-bg">
-                    <div class="progress-bar-fill" style="width: 10%;"></div>
-                </div>
+                <div class="progress-bar-bg"><div class="progress-bar-fill" id="progress-bar" style="width:10%"></div></div>
             </div>
             <div class="live-score glass-panel">
                 <i class="fas fa-star text-gold"></i>
-                <span id="live-score">0 / 0</span>
+                <span id="live-score">0/0</span>
             </div>
         </div>
-
         <div class="question-container glass-panel">
-            <h2 id="question-text">Savol yuklanmoqda...</h2>
             <div class="question-image hidden" id="question-image">
-                <img src="" alt="Question Image">
+                <img src="" alt="Savol rasmi" id="question-img-el">
             </div>
+            <h2 id="question-text">Savol yuklanmoqda...</h2>
         </div>
-
         <div class="options-container" id="options-container"></div>
-
-        <!-- Explanation box -->
         <div class="explanation-box glass-panel hidden" id="explanation-box">
-            <div class="explanation-header">
-                <i class="fas fa-lightbulb text-gold"></i>
-                <strong>Izoh:</strong>
-            </div>
-            <p class="explanation-text"></p>
+            <div class="explanation-header"><i class="fas fa-lightbulb text-gold"></i><strong>Izoh:</strong></div>
+            <p class="explanation-text" id="explanation-text"></p>
         </div>
-
         <button id="next-btn" class="primary-btn hidden" onclick="nextQuestion()">
             Keyingi <i class="fas fa-arrow-right"></i>
         </button>
@@ -172,61 +180,112 @@
     <!-- ══════════════ RESULT VIEW ══════════════ -->
     <main id="view-result" class="view">
         <div class="result-container">
+            <div class="result-emoji-big" id="result-emoji">🏆</div>
             <div class="result-circle glass-panel">
-                <div class="result-circle-fill" style="--pct: 0"></div>
-                <div class="result-circle-inner">
-                    <span id="result-emoji">🏆</span>
-                    <span id="result-pct" class="result-pct-text">0%</span>
-                </div>
+                <div class="result-pct-text" id="result-pct">0%</div>
+                <div class="result-label">Natija</div>
             </div>
-
             <div class="result-score-card glass-panel">
-                <h2 id="result-score">0 / 0</h2>
-                <p id="result-msg">Natijangiz</p>
+                <div class="result-row"><span>✅ To'g'ri:</span><strong id="result-correct">0</strong></div>
+                <div class="result-row"><span>❌ Xato:</span><strong id="result-wrong">0</strong></div>
+                <div class="result-row"><span>📊 Jami:</span><strong id="result-total">0</strong></div>
             </div>
-
+            <p id="result-msg" class="result-msg-text">Natijangiz</p>
             <div class="result-actions">
-                <button class="primary-btn" onclick="retryTest()">
-                    <i class="fas fa-redo"></i> Qayta ishlash
-                </button>
-                <button class="secondary-btn glass-panel" onclick="goHome()">
-                    <i class="fas fa-home"></i> Bosh sahifa
-                </button>
+                <button class="primary-btn" onclick="retryTest()"><i class="fas fa-redo"></i> Qayta ishlash</button>
+                <button class="secondary-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-home"></i> Asosiy</button>
             </div>
         </div>
     </main>
 
     <!-- ══════════════ RULES VIEW ══════════════ -->
     <main id="view-rules" class="view">
-        <div class="setup-header">
-            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <h2>YHQ Qoidalari</h2>
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>📚 YHQ Qoidalari</h2>
         </div>
         <div id="rules-container" class="list-container">
-            <p style="text-align:center;">Yuklanmoqda...</p>
+            <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
         </div>
+    </main>
+
+    <!-- ══════════════ RULE DETAIL ══════════════ -->
+    <main id="view-rule-detail" class="view">
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-rules')"><i class="fas fa-arrow-left"></i></button>
+            <h2 id="rule-detail-title">Qoida</h2>
+        </div>
+        <div class="detail-content glass-panel" id="rule-detail-content"></div>
     </main>
 
     <!-- ══════════════ SIGNS VIEW ══════════════ -->
     <main id="view-signs" class="view">
-        <div class="setup-header">
-            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
-                <i class="fas fa-arrow-left"></i>
-            </button>
-            <h2>Yo'l Belgilari</h2>
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>🚦 Yo'l Belgilari</h2>
         </div>
-        <div class="setup-section glass-panel">
-            <div id="signs-category-list" class="category-list" style="margin-bottom:15px;"></div>
+        <div class="search-box glass-panel">
+            <i class="fas fa-search"></i>
+            <input type="text" id="signs-search" placeholder="Belgi nomini qidiring..." oninput="filterSigns()">
         </div>
-        <div id="signs-container" class="list-container">
-            <p style="text-align:center;">Yuklanmoqda...</p>
+        <div class="setup-section glass-panel" style="margin-bottom:12px;">
+            <div id="signs-category-list" class="category-list"></div>
+        </div>
+        <div id="signs-container" class="signs-grid">
+            <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
+        </div>
+    </main>
+
+    <!-- ══════════════ VIDEOS VIEW ══════════════ -->
+    <main id="view-videos" class="view">
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>🎥 Video Darslar</h2>
+        </div>
+        <div class="setup-section glass-panel" style="margin-bottom:12px;">
+            <div id="video-section-list" class="category-list"></div>
+        </div>
+        <div id="videos-container" class="list-container">
+            <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
+        </div>
+    </main>
+
+    <!-- ══════════════ NEWS VIEW ══════════════ -->
+    <main id="view-news" class="view">
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>📰 Yangiliklar</h2>
+        </div>
+        <div id="news-container" class="list-container">
+            <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
+        </div>
+    </main>
+
+    <!-- ══════════════ ORG VIEW ══════════════ -->
+    <main id="view-org" class="view">
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>🏢 Tashkilot Haqida</h2>
+        </div>
+        <div id="org-container" class="list-container">
+            <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
         </div>
     </main>
 
     <!-- Toast notification -->
     <div id="toast" class="toast"></div>
+
+    <!-- Confirm dialog -->
+    <div id="confirm-overlay" class="confirm-overlay hidden">
+        <div class="confirm-box glass-panel">
+            <h3>Testni tugatmoqchimisiz?</h3>
+            <p>Joriy progress yo'qoladi.</p>
+            <div class="confirm-actions">
+                <button class="secondary-btn glass-panel" onclick="closeConfirm()">Davom etish</button>
+                <button class="danger-btn" onclick="quitTest()">Ha, tugatish</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="app.js"></script>
