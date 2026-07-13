@@ -64,7 +64,7 @@
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
 
-            <div class="menu-item glass-panel" onclick="showToast('Tez kunda ishga tushadi!', 'info')">
+            <div class="menu-item glass-panel" onclick="loadRules()">
                 <div class="menu-icon bg-gradient-blue">
                     <i class="fas fa-book-open"></i>
                 </div>
@@ -75,7 +75,7 @@
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
 
-            <div class="menu-item glass-panel" onclick="showToast('Tez kunda ishga tushadi!', 'info')">
+            <div class="menu-item glass-panel" onclick="loadSigns()">
                 <div class="menu-icon bg-gradient-orange">
                     <i class="fas fa-traffic-light"></i>
                 </div>
@@ -193,6 +193,35 @@
                     <i class="fas fa-home"></i> Bosh sahifa
                 </button>
             </div>
+        </div>
+    </main>
+
+    <!-- ══════════════ RULES VIEW ══════════════ -->
+    <main id="view-rules" class="view">
+        <div class="setup-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h2>YHQ Qoidalari</h2>
+        </div>
+        <div id="rules-container" class="list-container">
+            <p style="text-align:center;">Yuklanmoqda...</p>
+        </div>
+    </main>
+
+    <!-- ══════════════ SIGNS VIEW ══════════════ -->
+    <main id="view-signs" class="view">
+        <div class="setup-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h2>Yo'l Belgilari</h2>
+        </div>
+        <div class="setup-section glass-panel">
+            <div id="signs-category-list" class="category-list" style="margin-bottom:15px;"></div>
+        </div>
+        <div id="signs-container" class="list-container">
+            <p style="text-align:center;">Yuklanmoqda...</p>
         </div>
     </main>
 

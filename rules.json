@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "title": "Umumiy qoidalar",
+    "text": "O'zbekiston Respublikasi yo'llarida transport vositalarining o'ng tomonlama harakatlanish tartibi belgilangan."
+  },
+  {
+    "id": 2,
+    "title": "Piyodalarning majburiyatlari",
+    "text": "Piyodalar trotuarlardan yoki piyodalar yo'lkalaridan, ular bo'lmaganda esa yo'l yoqasidan yurishlari kerak."
+  },
+  {
+    "id": 3,
+    "title": "Yo'lovchilarning majburiyatlari",
+    "text": "Transport vositasiga chiqish va undan tushish faqat u to'la to'xtagandan so'ng trotuar yoki yo'l yoqasi tomonidan amalga oshirilishi kerak."
+  },
+  {
+    "id": 4,
+    "title": "Haydovchilarning majburiyatlari",
+    "text": "Haydovchi transport vositasini boshqarishdan oldin uning sozligini tekshirishi va safar davomida uning soz holatda bo'lishini ta'minlashi shart."
+  },
+  {
+    "id": 5,
+    "title": "Svetofor",
+    "text": "Svetoforning yashil chirog'i harakatlanishga ruxsat beradi. Sariq chiroq harakatlanishni taqiqlaydi va signallar o'zgarishi haqida ogohlantiradi. Qizil chiroq harakatlanishni taqiqlaydi."
+  },
+  {
+    "id": 6,
+    "title": "Tezlikni tanlash",
+    "text": "Haydovchi transport vositasining tezligini belgilangan cheklovdan oshirmasdan, harakat jadalligini, transport vositasi va yukning xususiyati hamda holatini, yo'l va sharoitlarni hisobga olgan holda tanlashi kerak."
+  },
+  {
+    "id": 7,
+    "title": "1. Umumiy qoidalar",
+    "text": "O'zbekiston Respublikasi yo'llarida transport vositalarining o'ng tomonlama harakatlanish tartibi belgilangan. Yo'l harakati qatnashchilari boshqalarga xavf tug'dirmasliklari kerak. Ushbu qoidalarni buzgan shaxslar amaldagi qonunchilikka muvofiq javobgar bo'ladilar."
+  },
+  {
+    "id": 8,
+    "title": "2. Haydovchilarning umumiy majburiyatlari",
+    "text": "Haydovchi transport vositasini boshqarishdan oldin uning sozligini tekshirishi va safar davomida uning soz holatda bo'lishini ta'minlashi shart. Texnik pasport va haydovchilik guvohnomasi doim yonida bo'lishi kerak."
+  },
+  {
+    "id": 9,
+    "title": "3. Piyodalarning majburiyatlari",
+    "text": "Piyodalar trotuarlardan, piyodalar yo'lkalaridan, ular bo'lmaganda yo'l yoqasidan harakatlanishlari kerak. Qorong'i vaqtda nur qaytaruvchi elementlar bo'lishi tavsiya etiladi. Yo'lni piyodalar o'tish joyidan kesib o'tishlari shart."
+  },
+  {
+    "id": 10,
+    "title": "4. Yo'lovchilarning majburiyatlari",
+    "text": "Transportga chiqish va tushish to'la to'xtagandan keyin, faqat trotuar yoki yo'l yoqasi tomonidan amalga oshiriladi. Haydovchini boshqarishdan chalg'itish taqiqlanadi."
+  },
+  {
+    "id": 11,
+    "title": "5. Maxsus signallar",
+    "text": "Yaltiroq ko'k va qizil mayoqcha va maxsus tovushli signali yoqilgan transport vositalariga barcha yo'l berishi shart. Ular yaqinlashganda piyodalar yo'lni bo'shatishlari kerak."
+  },
+  {
+    "id": 12,
+    "title": "6. Svetofor va tartibga soluvchi signallari",
+    "text": "Yashil chiroq harakatlanishga ruxsat beradi. Sariq chiroq ogohlantiradi va o'tishni taqiqlaydi. Qizil chiroq qat'iy taqiqlaydi. Tartibga soluvchining signallari svetofor signallaridan ustun hisoblanadi."
+  },
+  {
+    "id": 13,
+    "title": "7. Avariya ishorasi",
+    "text": "Yo'l-transport hodisasi sodir bo'lganda, majburiy to'xtaganda, transport vositasi shatakka olinganda avariya ishorasi yoqilishi shart."
+  },
+  {
+    "id": 14,
+    "title": "8. Harakatlanishni boshlash, yo'nalishni o'zgartirish",
+    "text": "Harakatni boshlashdan oldin haydovchi burilish ishorasini yoqishi va boshqa harakat qatnashchilariga xalaqit bermasligiga ishonch hosil qilishi kerak."
+  },
+  {
+    "id": 15,
+    "title": "9. Transport vositalarining qatnov qismida joylashishi",
+    "text": "Harakatlanish bo'laklari soni chiziqlar va belgilar orqali aniqlanadi. Aholi punktlaridan tashqarida iloji boricha o'ng chekkada harakatlanish kerak."
+  },
+  {
+    "id": 16,
+    "title": "10. Harakatlanish tezligi",
+    "text": "Aholi punktlarida transport vositalarining harakatlanish tezligi 60 km/soat (ba'zi joylarda 70), aholi punktlaridan tashqarida esa 100 km/soatdan oshmasligi kerak."
+  },
+  {
+    "id": 17,
+    "title": "11. Quvib o'tish",
+    "text": "Quvib o'tishni boshlashdan oldin haydovchi qarama-qarshi yo'lak yetarli masofada bo'sh ekanligiga va manevr xavfsiz bo'lishiga ishonch hosil qilishi kerak. Chorrahalarda, piyodalar o'tish joylarida, ko'priklarda va tunellarda quvib o'tish taqiqlanadi."
+  },
+  {
+    "id": 18,
+    "title": "12. To'xtash va to'xtab turish",
+    "text": "To'xtash va to'xtab turish yo'lning o'ng tomonida, yo'l yoqasida ruxsat etiladi. Piyodalar o'tish joyida va undan oldin 5 metr masofada, bekatlarda va chorrahalarda to'xtash taqiqlanadi."
+  },
+  {
+    "id": 19,
+    "title": "13. Chorrahalardan o'tish",
+    "text": "Tartibga solinmagan teng ahamiyatli chorrahada o'ng tomondan kelayotgan transport vositasiga yo'l berish kerak. Asosiy yo'ldagi transport ustunlikka ega."
+  },
+  {
+    "id": 20,
+    "title": "14. Piyodalar o'tish joylari",
+    "text": "Tartibga solinmagan piyodalar o'tish joyiga yaqinlashayotgan haydovchi tezlikni pasaytirishi va yo'lni kesib o'tayotgan piyodalarga yo'l berishi shart."
+  },
+  {
+    "id": 21,
+    "title": "15. Temir yo'l kesishmalari",
+    "text": "Haydovchi temir yo'lni faqat kesishmalar orqali, poyezdga yo'l bergan holda kesib o'tishi shart. Shlagbaum yopiq yoki yopilayotgan bo'lsa, qizil chiroq yonganda o'tish taqiqlanadi."
+  },
+  {
+    "id": 22,
+    "title": "2. Haydovchilarning huquq va majburiyatlari",
+    "text": "Haydovchi transport vositasini boshqarishdan oldin uning texnik sozligini tekshirishi shart. Yonida haydovchilik guvohnomasi, transport vositasini qayd etish guvohnomasi, majburiy sug'urta polisi bo'lishi kerak. Mast holda yoki charchoq holatida boshqarish qat'iyan man etiladi."
+  },
+  {
+    "id": 23,
+    "title": "7. Avariya ishorasi va to'xtash belgisi",
+    "text": "YTH sodir bo'lganda, majburiy to'xtaganda avariya ishorasi yoqilishi va to'xtash belgisi qo'yilishi shart. Aholi punktlarida 15 metr, undan tashqarida 30 metr masofada o'rnatiladi."
+  },
+  {
+    "id": 24,
+    "title": "8. Harakatni boshlash va yo'nalishni o'zgartirish",
+    "text": "Harakatni boshlash, qayta qurish, burilish va to'xtashdan oldin haydovchi tegishli burilish ishorasini yoqishi shart. Signal manevrni bajarishdan oldin beriladi va tugagach o'chiriladi."
+  },
+  {
+    "id": 25,
+    "title": "10. Harakat tezligi",
+    "text": "Aholi punktlarida yuqori tezlik 60 km/soat, turar joy dahalarida 20 km/soat. Aholi punktlaridan tashqarida yengil avtomobillarga 100 km/soatgacha ruxsat etiladi."
+  },
+  {
+    "id": 26,
+    "title": "14. Piyodalar o'tish joyi va bekatlar",
+    "text": "Tartibga solinmagan piyodalar o'tish joyida piyodalarga yo'l berish shart. Bekatda to'xtagan marshrutli transport vositasiga ehtiyotkorlik bilan yaqinlashish kerak."
+  },
+  {
+    "id": 27,
+    "title": "16. Avtomagistrallarda harakatlanish",
+    "text": "Avtomagistrallarda piyodalar, velosipedlar, mopedlar, traktorlar va tezligi 40 km/soatdan kam bo'lgan transport vositalarining harakatlanishi taqiqlanadi. Orqaga harakatlanish man etiladi."
+  },
+  {
+    "id": 28,
+    "title": "17. Turar joy dahalarida harakatlanish",
+    "text": "Turar joy dahalarida piyodalar ustunlikka ega va ular qatnov qismida ham yurishlari mumkin. Tranzit harakat va 20 km/soatdan yuqori tezlik taqiqlanadi."
+  },
+  {
+    "id": 29,
+    "title": "18. Marshrutli transport vositalari",
+    "text": "Maxsus ajratilgan bo'lakda boshqa transport vositalarining harakatlanishi yoki to'xtashi taqiqlanadi. Aholi punktlarida bekatdan chiqayotgan avtobusga yo'l berish kerak."
+  },
+  {
+    "id": 30,
+    "title": "19. Tashqi yoritish asboblari",
+    "text": "Qorong'i vaqtda va yetarli ko'rinmaslik sharoitida uzoq yoki yaqinni yorituvchi faralar yoqilishi shart. Tumanli havoda tumanga qarshi faralar ishlatiladi."
+  },
+  {
+    "id": 31,
+    "title": "20. Shatakka olish",
+    "text": "Shatakka olish qattiq (5 metrgacha) yoki moslashuvchan (4-6 metr) ulagich yordamida bajariladi. Shatakka olinayotganda avariya ishorasi yoqilishi shart."
+  },
+  {
+    "id": 32,
+    "title": "21. O'quv mashqi",
+    "text": "Boshqarishni o'rgatish faqat maxsus jihozlangan transport vositalarida, yopiq maydonchalarda yoki tasdiqlangan yo'nalishlarda yo'riqchi tomonidan olib boriladi."
+  },
+  {
+    "id": 33,
+    "title": "22. Odamlarni tashish",
+    "text": "Odamlarni tashish uchun transport vositasida tegishli o'rindiqlar bo'lishi kerak. Yuk avtomobili kuzovida odamlarni tashish maxsus qoidalarga asosan ruxsat etiladi."
+  },
+  {
+    "id": 34,
+    "title": "23. Yuk tashish",
+    "text": "Yuk transport vositasining barqarorligini buzmasligi, haydovchining ko'rish maydonini to'smasligi kerak. Yukning massasi va o'qlarga tushadigan og'irlik me'yordan oshmasligi shart."
+  },
+  {
+    "id": 35,
+    "title": "24. Velosiped, moped va aravalar",
+    "text": "Velosiped va mopedlar faqat o'ng chetki qatnov qismida bir qatorda harakatlanishlari kerak. Yosh cheklovlariga amal qilinishi shart (velosiped 14, moped 16 yosh)."
+  },
+  {
+    "id": 36,
+    "title": "25. Ot-ulov transporti va mollarni haydab o'tish",
+    "text": "Ot-ulovli aravalar o'ng chekkadan yurishi kerak. Mollarni qorong'i vaqtda yoki ko'rinish yomon sharoitda asfalt yo'llardan haydab o'tish taqiqlanadi."
+  },
+  {
+    "id": 37,
+    "title": "26. Transport vositalarining texnik holati",
+    "text": "Tormoz tizimi, rul boshqaruvi, tirkama qurilmasi nosoz bo'lsa, qorong'ida faralar yonmasa transport vositasidan foydalanish qat'iyan taqiqlanadi."
+  }
+]
