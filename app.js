@@ -311,9 +311,8 @@ function renderSignsGrid() {
   if (!filtered.length) { container.innerHTML = '<p style="text-align:center;color:#64748b;padding:40px">Topilmadi</p>'; return; }
 
   container.innerHTML = filtered.map(s => {
-    const imgTag = s.image_url && s.image_url.startsWith('http')
-      ? `<img src="${s.image_url}" alt="${s.name}" loading="lazy">`
-      : `<div class="sign-img-placeholder">🚦</div>`;
+    const imgSrc = s.image_url || 'images/placeholder.png';
+    const imgTag = `<img src="${imgSrc}" alt="${s.name}" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.png';">`;
     return `
     <div class="sign-card glass-panel" onclick="showSignDetail(${s.id})">
       ${imgTag}
