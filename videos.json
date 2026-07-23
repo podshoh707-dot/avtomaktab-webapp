@@ -1,740 +1,261 @@
 [
   {
-    "id": 1,
-    "topic": "“Yo'l harakati xavfsizligi to'g'risida”gi O'zbekiston Respublikasining qonuni",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 2,
-    "topic": "Yo'l harakati sohasidagi O'zbekiston Respublikasi Prezidenti, Vazirlar Mahkamasi, vazirlik va idoralarning normativ-huquqiy hujjatlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 3,
-    "topic": "Ma'muriy javobgarlik",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 4,
-    "topic": "Fuqarolik javobgarligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 5,
-    "topic": "Jinoiy javobgarlik",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 6,
-    "topic": "Tabiatni huquqiy muhofaza qilish asoslar",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 7,
-    "topic": "Avtomototransport vositasi egasining fuqarolik javobgarligini majburiy sug'urta qilish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
     "id": 8,
+    "section": "Umumiy video darslar",
     "topic": "Avtotransport vositasini xavfsiz boshqarishda zamonaviy psixologik bilimlarning o‘rni",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//1221_uz2.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/1221_uz2.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/1221_uz2.mp4"
   },
   {
     "id": 9,
+    "section": "Umumiy video darslar",
     "topic": "Avtotransport vositasini xavfsiz boshqarishda psixik jarayonlarning o‘rni",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//1231_uz2.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/1231_uz2.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/1231_uz2.mp4"
   },
   {
     "id": 10,
+    "section": "Umumiy video darslar",
     "topic": "Hissiy-irodaviy jarayonlar avtotransport vositasini xavfsiz boshqarishning omili sifatida",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//12.mp4"
-  },
-  {
-    "id": 11,
-    "topic": "Etika haqida tushuncha. Haydovchining etika me`yorlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 12,
-    "topic": "Yo'l harakati xavfsizligini ta'minlashning huquqiy asoslari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 13,
-    "topic": "Haydovchilarning huquqiy madaniyati",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 14,
-    "topic": "Haydovchining shaxsiy xususiyatlari. (Nutq madaniyati va boshqalar)",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 15,
-    "topic": "Yo'l harakati xavfsizligini ta'minlashda haydovchining o'rni",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 16,
-    "topic": "Yo'l harakati qatnashchilarining madaniyati va intizomi – yo'l harakati xavfsizligining asosi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 17,
-    "topic": "Haydovchi madaniyati darajasining oshishi – yo'l harakati xavfsizligini ta'minlashning muhim omili",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 18,
-    "topic": "Haydovchining to'xtab turish joylari, piyodalar o'tish joylari va turar joy dahalarida harakatlanishi madaniyati (axloqiy xususiyatlari)",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 19,
-    "topic": "Turli yo'l sharoitlarida avtomototransport vositasini boshqarish madaniyati",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 20,
-    "topic": "Murakkab yo'l sharoitlarida harakatlanishda haydovchining o'z hatti-harakat (emotsiya)ini nazorat qilishi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 21,
-    "topic": "Haydovchining yo'l harakati boshqa qatnashchilari bilan o'zaro muloqot munosabatlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 22,
-    "topic": "Yo'l harakati qatnashchilarining ekologik madaniyati",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 23,
-    "topic": "Yo'l-transport hodisalari oqibatida jarohatlanishlarning umumiy tasnifi. YTHda jabrlanganlarga nisbatan birinchi yordam ko'rsatishning huquqiy asoslari",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/12.mp4"
   },
   {
     "id": 24,
+    "section": "Umumiy video darslar",
     "topic": "Avtomototransport vositalarining umumiy tuzilishi",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//avto-tuzilish.mp4"
-  },
-  {
-    "id": 25,
-    "topic": "Dvigatelning umumiy tuzilishi va ishlashi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 26,
-    "topic": "Elektr energiyasining manbalari va iste'molchilari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 27,
-    "topic": "Transmissiyaning vazifasi va umumiy tuzilishi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 28,
-    "topic": "Yurish qismi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 29,
-    "topic": "Tormoz tizimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 30,
-    "topic": "Rul boshqarmasi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 31,
-    "topic": "Aktiv va passiv xavfsizlik tizimlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 32,
-    "topic": "Mototransport vositalariga texnik xizmat ko'rsatishning turlari va davriyligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 33,
-    "topic": "Xavfsizlik texnikasi va atrof-muhitni muhofaza qilish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 34,
-    "topic": "Mototransport vositalarida amalda uchraydigan nosozliklar va ularni bartaraf qilish usullari",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/avto-tuzilish.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/avto-tuzilish.mp4"
   },
   {
     "id": 35,
+    "section": "Umumiy video darslar",
     "topic": "Yo'l sharoitlari va zaruriyatdan kelib chiqib, yo'lga chiqishni rejalashtirish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//18.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/18.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/18.mp4"
   },
   {
     "id": 36,
+    "section": "Avtomobil tuzilishi va nosozliklar",
     "topic": "Avtomototransport vositasi va avtopoyezdlarni boshqaruvida kuzatishni tashkillashtirish, qabul qilinayotgan axborotning xavflilik darajasini baholash",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//67.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/67.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/67.mp4"
   },
   {
     "id": 37,
+    "section": "Umumiy video darslar",
     "topic": "Avtomototransport vositasi va poyezdlarni boshqarish texnikasi",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//1110.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/1110.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/1110.mp4"
   },
   {
     "id": 38,
+    "section": "Avtomobil tuzilishi va nosozliklar",
     "topic": "Avtomototransport vositasi va avtopoyezdlarni boshqarishda haydovchining harakatlari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//202.mp4"
-  },
-  {
-    "id": 39,
-    "topic": "Avtomototransport vositasi va avtopoyezdlarning foydalanish ko'rsatkichlari",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/202.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/202.mp4"
   },
   {
     "id": 40,
+    "section": "Umumiy video darslar",
     "topic": "Murakkab vaziyatlarda haydovchining harakatlari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//126.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/126.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/126.mp4"
   },
   {
     "id": 41,
+    "section": "Umumiy video darslar",
     "topic": "To'xtab turish joylari va ularda harakatlanish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//4391_uz2.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/4391_uz2.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/4391_uz2.mp4"
   },
   {
     "id": 42,
+    "section": "Umumiy video darslar",
     "topic": "Yo'l-transport hodisalari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//6542.mp4"
-  },
-  {
-    "id": 43,
-    "topic": "Yuk avtomobili ishining asosiy ko'rsatkichlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 44,
-    "topic": "Yuk va yo'lovchilarni tashishni tashkil etish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 45,
-    "topic": "Harakatlanuvchi tarkibning ishiga dispetcherlik qilish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 46,
-    "topic": "Haydovchining mehnat qilish va dam olish rejimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 47,
-    "topic": "Haydovchi mehnatini muhofaza qilish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 48,
-    "topic": "YHQ bo`yicha (yakuniy nazorat)",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 49,
-    "topic": "AVXB va HXA bo`yicha ( yakuniy nazorat)",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/6542.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/6542.mp4"
   },
   {
     "id": 50,
+    "section": "Umumiy video darslar",
     "topic": "Odam anatomiyasi va fiziologiyasi",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//15.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/15.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/15.mp4"
   },
   {
     "id": 51,
+    "section": "Umumiy video darslar",
     "topic": "Terminal holatlar. Shok, o'tkir havo yetishmasligi, bo'g'ilish (asfiksiya), hushni yo'qotish sindromi",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//114.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/114.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/114.mp4"
   },
   {
     "id": 52,
+    "section": "Birinchi tibbiy yordam",
     "topic": "Yurak-o'pka reanimatsiyasini o'tkazish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//1112.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/1112.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/1112.mp4"
   },
   {
     "id": 53,
+    "section": "Birinchi tibbiy yordam",
     "topic": "Qon oqishi va uni to'xtatish uslublari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//213.mp4"
-  },
-  {
-    "id": 54,
-    "topic": "Jarohatlanishda birinchi tibbiy yordam ko'rsatish. Yarani tozalash va uni bog'lash (desmurgiya)",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 55,
-    "topic": "Transport immobilizatsiyasini qo'yish qoidalari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 56,
-    "topic": "Bintli bog'lamlarning turlari va ularni qo'yish qoidalari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 57,
-    "topic": "Shoshilinch holatlarda jabrlanuvchilarga va noadekvat holatidagi jabrlanuvchilarga birinchi tibbiy yordam ko'rsatish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 58,
-    "topic": "YTHda shikastlanganni davolash muassasasiga transportirovka qilishning o'ziga xosligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 59,
-    "topic": "Tibbiy qutichadan foydalanish qoidalari",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/213.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/213.mp4"
   },
   {
     "id": 60,
+    "section": "Yo'l harakati qoidalari",
     "topic": "Umumiy qoidalar. Qoidalarda qo'llaniladigan asosiy tushuncha va atamalar",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//127.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/127.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/127.mp4"
   },
   {
     "id": 61,
+    "section": "Yo'l harakati qoidalari",
     "topic": "Haydovchi, piyoda va yo'lovchilarning vazifalari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//2113.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/2113.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/2113.mp4"
   },
   {
     "id": 62,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Umumiy tushuncha, ogohlantiruvchi belgilar)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//q24.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/q24.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/q24.mp4"
   },
   {
     "id": 63,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Imtiyoz belgilari)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course/12/lessons/71/1.1.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/12/lessons/71/1.1.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/12/lessons/71/1.1.mp4"
   },
   {
     "id": 64,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Taqiqlovchi belgilar)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//e11.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/e11.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/e11.mp4"
   },
   {
     "id": 65,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Buyuruvchi belgilar)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course/12/lessons/74/1.4.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/12/lessons/74/1.4.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/12/lessons/74/1.4.mp4"
   },
   {
     "id": 66,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Axborot ishora belgilari)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//qw12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/qw12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/qw12.mp4"
   },
   {
     "id": 67,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Servis belgilari)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//z11.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/z11.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/z11.mp4"
   },
   {
     "id": 68,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l belgilari (Qo'shimcha axborot belgilari)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//x11.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/x11.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/x11.mp4"
   },
   {
     "id": 69,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l chiziqlari (Yotiq chiziqlar)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//c11.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/c11.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/c11.mp4"
   },
   {
     "id": 70,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Yo'l chiziqlari (Tik chiziqlar)",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//cc12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/cc12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/cc12.mp4"
   },
   {
     "id": 71,
+    "section": "Yo'l harakati qoidalari",
     "topic": "Yo'l harakatini tartibga solish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//za12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/za12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/za12.mp4"
   },
   {
     "id": 72,
+    "section": "Yo'l harakati qoidalari",
     "topic": "Harakatlanish tartibi, transport vositalarining to'xtashi va to'xtab turishi",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//sa12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/sa12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/sa12.mp4"
   },
   {
     "id": 73,
+    "section": "Yo'l harakati qoidalari",
     "topic": "Chorrahalarda harakatlanish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//sar12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/sar12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/sar12.mp4"
   },
   {
     "id": 74,
+    "section": "Yo'l harakati qoidalari",
     "topic": "Piyodalar o'tish joyi, yo'nalishli transport vositalarining bekatlari va temir yo'l kesishmalari orqali harakatlanish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//h12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/h12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/h12.mp4"
   },
   {
     "id": 75,
+    "section": "Umumiy video darslar",
     "topic": "Harakatlanishning alohida shartlari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//j12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/j12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/j12.mp4"
   },
   {
     "id": 76,
+    "section": "Umumiy video darslar",
     "topic": "Odam va yuklarni tashish",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//b12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/b12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/b12.mp4"
   },
   {
     "id": 77,
+    "section": "Umumiy video darslar",
     "topic": "Transport vositasining texnik holati va jihozlanishi",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//zxc12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/zxc12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/zxc12.mp4"
   },
   {
     "id": 78,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Raqam va taniqlik belgilar, ogohlantiruvchi qurilmalar, yozuvlar va belgilar",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//zq12.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/zq12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/zq12.mp4"
   },
   {
     "id": 79,
+    "section": "Umumiy video darslar",
     "topic": "Velosiped va aravalarning harakatlanishi, shuningdek, hayvonlarni haydab o'tishga doir qo'shimchalar",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//zz12.mp4"
-  },
-  {
-    "id": 80,
-    "topic": "Sovutish tizimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 81,
-    "topic": "Moylash tizimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 82,
-    "topic": "Ta'minlash tizimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 83,
-    "topic": "Avtomototransport vositalariga texnik xizmat ko'rsatishning turlari va davriyligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 84,
-    "topic": "Avtomototransport vositalarida amalda uchraydigan nosozliklar va ularni bartaraf qilish usullari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 85,
-    "topic": "Transport vositalari egalarining fuqarolik javobgarligini majburiy sug'urta qilish qoidalari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 86,
-    "topic": "Sug'urta hodisasi sodir bo'lganda shaxslarning harakati",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 87,
-    "topic": "Transport vositalarining xavfsizligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 88,
-    "topic": "Harakatlanuvchi tarkib ishining asosiy ko'rsatkichlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 89,
-    "topic": "Yo'lovchilarni tashuvchi avtotransport korxonalari, ularning tuzilmasi va vazifalari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 90,
-    "topic": "Yo'lovchilarni tashuvchi avtotransportning texnik-foydalanish ko'rsatkichlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 91,
-    "topic": "Avtobuslarni yo'nalishda ishlashiga dispetcherlik rahbarligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 92,
-    "topic": "Avtobuslarning turli xil yo'nalishlarda ishlashi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 93,
-    "topic": "Yo'lovchilarni tashuvchi avtotransportda tariflar va chipta (bilet) tizimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 94,
-    "topic": "Yo'nalishli taksilar, buyurtma va xizmat avtobuslari ishining o'ziga xos xususiyatlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 95,
-    "topic": "Yo'lovchilarni tashuvchi avtotransportda sug'urta tizimi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 96,
-    "topic": "Avtobus haydovchisining ish rejimi va dam olishi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 97,
-    "topic": "Haydovchining professional madaniyati",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 98,
-    "topic": "O'zbekiston Respublikasi Prezidentining 2017 yil 10 yanvardagi PQ -2724-sonli qarori",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 99,
-    "topic": "O'zbekiston Respublikasining “Avtomobil transporti to'g'risidagi” va “Yo'l harakati havfsizligi to'g'risidagi” qonunlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 100,
-    "topic": "O'zbekiston Respublikasi Prezidentining 11.07.2017 yildagi PQ-3127- sonli qarori",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 101,
-    "topic": "Nizolarni bartaraf etish yo'llari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 102,
-    "topic": "Yo'l harakati qoidalari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 103,
-    "topic": "Yo`l transport hodisasida eng ko`p uchraydigan shkastlanishlar",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 104,
-    "topic": "Avtopoyezdlarning tasnifi va umumiy tuzilishi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 105,
-    "topic": "Tirkama va yarim tirkamalar tasnifi va tuzilishi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 106,
-    "topic": "Avtopoyezdlardan texnik foydalanish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 107,
-    "topic": "Avtopoyezdlar texnik holatining diagnostikasi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 108,
-    "topic": "Tirkamalar va tortish-ulagich moslamalariga texnik xizmat ko'rsatish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 109,
-    "topic": "Avtopoyezdni harakatlanishga tayyorlash",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 110,
-    "topic": "Haydovchining etikasi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 111,
-    "topic": "Yo'l harakati qoidalarini buzganlik uchun ma'muriy javobgarlik",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 112,
-    "topic": "Yo'l harakati xavfsizligini ta'minlash",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/zz12.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/zz12.mp4"
   },
   {
     "id": 113,
+    "section": "Umumiy video darslar",
     "topic": "Yo'l transport hodisalari va ularning kelib chiqish sabablari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course//lessons//4341_uz2.mp4"
-  },
-  {
-    "id": 114,
-    "topic": "Rama va yurish qismi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 115,
-    "topic": "Muloqot etikasi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 116,
-    "topic": "Haydovchining madaniyati",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 117,
-    "topic": "Avtotransport vositalari haydovchilarining ish vaqti va dam olish vaqti to'g'risidagi Nizom",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 118,
-    "topic": "Yo'l harakati xavfsizligini ta'minlashda haydovchining ish rejimini nazorat qilish",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 119,
-    "topic": "Haydovchining axloqiy sifatlari",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 120,
-    "topic": "\"D\" toifadagi avtotransport vositalarining tuzilishi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 121,
-    "topic": "“D” toifadagi avtotransport vositalariga texnik xizmat ko‘rsatishning turlari va davriyligi",
-    "section": "Umumiy",
-    "video_url": null
-  },
-  {
-    "id": 122,
-    "topic": "“D” toifadagi avtotransport vositalaridagi mayda nosozliklar va ularni bartaraf qilish",
-    "section": "Umumiy",
-    "video_url": null
+    "video_url": "https://e-avtomaktab.uz/storage/course/lessons/4341_uz2.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/lessons/4341_uz2.mp4"
   },
   {
     "id": 123,
+    "section": "Yo'l belgilari va chiziqlari",
     "topic": "Vaqtinchalik yo'l belgilari",
-    "section": "Umumiy",
-    "video_url": "https://e-avtomaktab.uz/storage/course/12/lessons/147/YangitahrirdagiYoʻlharakatiqoidalariga“Vaqtinchalikyoʻlbelgilar”kiritildi.mp4"
+    "video_url": "https://e-avtomaktab.uz/storage/course/12/lessons/147/YangitahrirdagiYoʻlharakatiqoidalariga“Vaqtinchalikyoʻlbelgilar”kiritildi.mp4",
+    "youtube_url": "https://e-avtomaktab.uz/storage/course/12/lessons/147/YangitahrirdagiYoʻlharakatiqoidalariga“Vaqtinchalikyoʻlbelgilar”kiritildi.mp4"
   }
 ]
