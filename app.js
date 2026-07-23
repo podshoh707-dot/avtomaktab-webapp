@@ -482,3 +482,438 @@ function haptic(type) {
 
 // ── Init ──
 document.addEventListener('DOMContentLoaded', initApp);
+
+// ══════════════════════════════════════════
+//   ⚔️ DUEL JANG MODULI (Bot + PvP)
+// ══════════════════════════════════════════
+
+const API_BASE = 'http://localhost:3001'; // Bot bilan parallel ishlaydi
+
+let duelMode = null; // 'bot' | 'pvp'
+let duelState = {
+  questions: [], current: 0,
+  userScore: 0, botScore: 0,
+  answered: false,
+  timer: null,
+  timeLeft: 15, totalTime: 15,
+  // PvP
+  roomId: null, userId: null, userName: null,
+  oppName: 'Raqib', pollTimer: null,
+};
+
+// ── Navigation ──
+function duelBack() {
+  clearInterval(duelState.timer);
+  clearInterval(duelState.pollTimer);
+  const inGame = !document.getElementById('duel-game').classList.contains('hidden');
+  if (inGame) {
+    duelShowModeSelect();
+  } else {
+    navigate('view-dashboard');
+  }
+}
+
+function duelShowModeSelect() {
+  document.getElementById('duel-mode-select').classList.remove('hidden');
+  document.getElementById('pvp-countdown').classList.add('hidden');
+  document.getElementById('duel-game').classList.add('hidden');
+  document.getElementById('duel-result').classList.add('hidden');
+  document.getElementById('bot-lobby').classList.add('hidden');
+  document.getElementById('pvp-lobby').classList.add('hidden');
+  document.getElementById('pvp-waiting-card').classList.add('hidden');
+  document.getElementById('pvp-find-btn').classList.remove('hidden');
+  document.querySelectorAll('.duel-mode-card').forEach(c => c.classList.remove('selected'));
+  duelMode = null;
+}
+
+function selectDuelMode(mode) {
+  duelMode = mode;
+  document.querySelectorAll('.duel-mode-card').forEach(c => c.classList.remove('selected'));
+  document.getElementById(`mode-${mode}-card`).classList.add('selected');
+
+  if (mode === 'bot') {
+    document.getElementById('bot-lobby').classList.remove('hidden');
+    document.getElementById('pvp-lobby').classList.add('hidden');
+    // set user name
+    const userName = tg?.initDataUnsafe?.user?.first_name || 'Siz';
+    document.getElementById('duel-user-name').textContent = userName;
+    document.getElementById('duel-user-score').textContent = '0';
+    document.getElementById('duel-bot-score').textContent = '0';
+  } else {
+    document.getElementById('pvp-lobby').classList.remove('hidden');
+    document.getElementById('bot-lobby').classList.add('hidden');
+  }
+}
+
+function pvpTab(tab) {
+  document.getElementById('pvp-find-section').classList.toggle('hidden', tab !== 'find');
+  document.getElementById('pvp-code-section').classList.toggle('hidden', tab !== 'code');
+  document.getElementById('pvp-tab-find').classList.toggle('active', tab === 'find');
+  document.getElementById('pvp-tab-code').classList.toggle('active', tab === 'code');
+}
+
+// ══ BOT DUEL ══
+function startDuel() {
+  if (allQuestions.length < 10) {
+    showToast('❌ Savollar yuklanmagan. Iltimos kuting.'); return;
+  }
+  const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
+  duelState.questions = shuffled.slice(0, 10);
+  duelState.current = 0;
+  duelState.userScore = 0;
+  duelState.botScore = 0;
+  duelState.answered = false;
+  document.getElementById('hud-opp-icon').textContent = '🤖';
+  document.getElementById('duel-opp-label').textContent = '🤖 Avtobot';
+  _duelStartGame();
+}
+
+// ══ PvP DUEL ══
+function _pvpUserId() {
+  return String(tg?.initDataUnsafe?.user?.id || ('guest_' + Math.random().toString(36).slice(2)));
+}
+function _pvpUserName() {
+  return tg?.initDataUnsafe?.user?.first_name || 'O\'yinchi';
+}
+
+async function pvpFindMatch() {
+  const userId = _pvpUserId();
+  const userName = _pvpUserName();
+  duelState.userId = userId;
+  duelState.userName = userName;
+
+  document.getElementById('pvp-find-btn').classList.add('hidden');
+  document.getElementById('pvp-waiting-card').classList.remove('hidden');
+  document.getElementById('pvp-room-code-display').textContent = '...';
+
+  try {
+    const res = await fetch(`${API_BASE}/duel/create`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ user_id: userId, user_name: userName })
+    });
+    const data = await res.json();
+
+    if (data.status === 'active') {
+      // Immediately matched
+      duelState.roomId = data.room_id;
+      duelState.questions = data.questions;
+      _pvpStartFromRoom(data);
+    } else {
+      // Waiting for opponent
+      duelState.roomId = data.room_id;
+      duelState.questions = data.questions;
+      document.getElementById('pvp-room-code-display').textContent = data.room_id;
+      _pvpPollForOpponent();
+    }
+  } catch (e) {
+    showToast('❌ Server bilan aloqa yo\'q. Bot ishlayaptimi?');
+    pvpCancelWait();
+  }
+}
+
+function pvpShareCode() {
+  const code = duelState.roomId;
+  if (!code) return;
+  const text = `⚔️ Meni Avtotest Duelida yengib ko'r!\nXona kodi: ${code}\nMini Ilovadan "⚔️ Duel → Do'st bilan → Kod bilan" bo'limiga kiring!`;
+  if (tg?.shareUrl) {
+    tg.shareUrl(text);
+  } else if (navigator.share) {
+    navigator.share({ text });
+  } else {
+    navigator.clipboard.writeText(code).then(() => showToast('✅ Kod nusxalandi!'));
+  }
+}
+
+function pvpCancelWait() {
+  clearInterval(duelState.pollTimer);
+  duelState.roomId = null;
+  document.getElementById('pvp-waiting-card').classList.add('hidden');
+  document.getElementById('pvp-find-btn').classList.remove('hidden');
+}
+
+async function pvpJoinByCode() {
+  const code = document.getElementById('pvp-code-input').value.trim().toUpperCase();
+  if (code.length < 6) { showToast('❌ Kodni to\'liq kiriting!'); return; }
+
+  const userId = _pvpUserId();
+  const userName = _pvpUserName();
+  duelState.userId = userId;
+  duelState.userName = userName;
+
+  try {
+    const res = await fetch(`${API_BASE}/duel/join`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ room_id: code, user_id: userId, user_name: userName })
+    });
+    const data = await res.json();
+    if (data.error) { showToast(`❌ ${data.error}`); return; }
+
+    duelState.roomId = data.room_id || code;
+    duelState.questions = data.questions;
+    _pvpStartFromRoom(data);
+  } catch (e) {
+    showToast('❌ Server bilan aloqa yo\'q.');
+  }
+}
+
+function _pvpPollForOpponent() {
+  clearInterval(duelState.pollTimer);
+  duelState.pollTimer = setInterval(async () => {
+    if (!duelState.roomId) return;
+    try {
+      const res = await fetch(`${API_BASE}/duel/state/${duelState.roomId}/${duelState.userId}`);
+      const data = await res.json();
+      if (data.status === 'active') {
+        clearInterval(duelState.pollTimer);
+        const playerIds = Object.keys(data.players);
+        const oppId = playerIds.find(id => id !== String(duelState.userId));
+        duelState.oppName = oppId ? data.players[oppId].name : 'Raqib';
+        _pvpStartFromRoom(data);
+      }
+    } catch (e) {}
+  }, 2000);
+}
+
+function _pvpStartFromRoom(data) {
+  clearInterval(duelState.pollTimer);
+  document.getElementById('pvp-waiting-card').classList.add('hidden');
+
+  // Get opponent name
+  const playerIds = Object.keys(data.players || {});
+  const oppId = playerIds.find(id => id !== String(duelState.userId));
+  duelState.oppName = oppId ? data.players[oppId].name : 'Raqib';
+
+  if (!duelState.questions || !duelState.questions.length) {
+    showToast('❌ Savollar yuklanmadi'); return;
+  }
+  duelState.current = 0;
+  duelState.userScore = 0;
+  duelState.botScore = 0;
+  duelState.answered = false;
+  document.getElementById('hud-opp-icon').textContent = '🧑';
+  document.getElementById('duel-opp-label').textContent = `🧑 ${duelState.oppName}`;
+
+  // Show countdown
+  _pvpShowCountdown(() => _duelStartGame());
+}
+
+function _pvpShowCountdown(callback) {
+  document.getElementById('duel-mode-select').classList.add('hidden');
+  document.getElementById('pvp-countdown').classList.remove('hidden');
+  document.getElementById('pvp-your-name').textContent = duelState.userName || 'Siz';
+  document.getElementById('pvp-opp-name').textContent = duelState.oppName;
+
+  let n = 3;
+  const el = document.getElementById('pvp-countdown-num');
+  el.textContent = n;
+  const t = setInterval(() => {
+    n--;
+    if (n <= 0) {
+      clearInterval(t);
+      document.getElementById('pvp-countdown').classList.add('hidden');
+      callback();
+    } else {
+      el.textContent = n;
+      haptic('light');
+    }
+  }, 1000);
+}
+
+// ══ SHARED GAME ENGINE ══
+function _duelStartGame() {
+  document.getElementById('duel-mode-select').classList.add('hidden');
+  document.getElementById('duel-game').classList.remove('hidden');
+  document.getElementById('duel-result').classList.add('hidden');
+  updateDuelHUD();
+  duelShowQuestion();
+}
+
+function updateDuelHUD() {
+  document.getElementById('hud-you-score').textContent = duelState.userScore;
+  document.getElementById('hud-bot-score').textContent = duelState.botScore;
+  document.getElementById('duel-user-score') && (document.getElementById('duel-user-score').textContent = duelState.userScore);
+  document.getElementById('duel-bot-score') && (document.getElementById('duel-bot-score').textContent = duelState.botScore);
+  const qnum = duelState.current + 1;
+  document.getElementById('duel-qnum').textContent = `Savol ${qnum} / ${duelState.questions.length}`;
+}
+
+function duelShowQuestion() {
+  if (duelState.current >= duelState.questions.length) { duelFinish(); return; }
+
+  const q = duelState.questions[duelState.current];
+  duelState.answered = false;
+  document.getElementById('duel-question-text').textContent = q.text;
+
+  const imgBox = document.getElementById('duel-question-image');
+  const imgEl = document.getElementById('duel-question-img-el');
+  if (q.image_url) {
+    imgEl.src = q.image_url; imgBox.classList.remove('hidden');
+    imgEl.onerror = () => imgBox.classList.add('hidden');
+  } else { imgBox.classList.add('hidden'); }
+
+  const opts = [
+    { label:'A', text:q.option_a, key:'A' },
+    { label:'B', text:q.option_b, key:'B' },
+    { label:'C', text:q.option_c, key:'C' },
+    { label:'D', text:q.option_d, key:'D' },
+  ].filter(o => o.text);
+
+  const container = document.getElementById('duel-options');
+  container.innerHTML = '';
+  opts.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.id = `duel-opt-${opt.key}`;
+    btn.innerHTML = `<span class="opt-label">${opt.label}</span>${opt.text}`;
+    btn.onclick = () => duelAnswer(opt.key, q.correct_option);
+    container.appendChild(btn);
+  });
+
+  duelStartTimer(q.correct_option);
+
+  // Bot AI (only in bot mode)
+  if (duelMode === 'bot') {
+    const botDelay = 3000 + Math.random() * 9000;
+    const botCorrect = Math.random() < 0.55;
+    setTimeout(() => {
+      if (!duelState.answered) {
+        if (botCorrect) { duelState.botScore++; updateDuelHUD(); showToast('🤖 Avtobot to\'g\'ri topdi!'); }
+      }
+    }, botDelay);
+  }
+
+  // PvP: poll opponent score every 3s
+  if (duelMode === 'pvp' && duelState.roomId) {
+    clearInterval(duelState.pollTimer);
+    duelState.pollTimer = setInterval(async () => {
+      try {
+        const res = await fetch(`${API_BASE}/duel/state/${duelState.roomId}/${duelState.userId}`);
+        const data = await res.json();
+        const playerIds = Object.keys(data.players || {});
+        const oppId = playerIds.find(id => id !== String(duelState.userId));
+        if (oppId) {
+          const oppScore = data.players[oppId].score;
+          if (oppScore !== duelState.botScore) {
+            duelState.botScore = oppScore;
+            updateDuelHUD();
+          }
+        }
+        if (data.status === 'finished' && duelState.current >= duelState.questions.length) {
+          clearInterval(duelState.pollTimer);
+          duelFinish();
+        }
+      } catch(e) {}
+    }, 3000);
+  }
+}
+
+function duelStartTimer(correctOption) {
+  clearInterval(duelState.timer);
+  duelState.timeLeft = duelState.totalTime;
+  const timerEl = document.getElementById('duel-timer');
+  const barEl = document.getElementById('duel-timer-bar');
+  barEl.style.width = '100%';
+  barEl.style.background = 'linear-gradient(90deg,#22c55e,#16a34a)';
+  timerEl.classList.remove('danger');
+
+  duelState.timer = setInterval(() => {
+    duelState.timeLeft--;
+    timerEl.textContent = duelState.timeLeft;
+    barEl.style.width = (duelState.timeLeft / duelState.totalTime * 100) + '%';
+    if (duelState.timeLeft <= 5) {
+      timerEl.classList.add('danger');
+      barEl.style.background = 'linear-gradient(90deg,#dc2626,#ef4444)';
+      haptic('light');
+    }
+    if (duelState.timeLeft <= 0) {
+      clearInterval(duelState.timer);
+      if (!duelState.answered) duelRevealAnswer(null, correctOption);
+    }
+  }, 1000);
+}
+
+function duelAnswer(selected, correct) {
+  if (duelState.answered) return;
+  clearInterval(duelState.timer);
+  duelState.answered = true;
+
+  // PvP: submit to server
+  if (duelMode === 'pvp' && duelState.roomId) {
+    fetch(`${API_BASE}/duel/answer`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        room_id: duelState.roomId,
+        user_id: duelState.userId,
+        q_idx: duelState.current,
+        answer: selected
+      })
+    }).catch(() => {});
+  }
+
+  duelRevealAnswer(selected, correct);
+}
+
+function duelRevealAnswer(selected, correct) {
+  ['A','B','C','D'].forEach(k => {
+    const btn = document.getElementById(`duel-opt-${k}`);
+    if (!btn) return;
+    btn.classList.add('disabled');
+    if (k === correct) btn.classList.add('correct');
+    else if (k === selected && selected !== correct) btn.classList.add('wrong');
+  });
+
+  if (selected === correct) {
+    duelState.userScore++; haptic('success'); showToast('✅ To\'g\'ri!');
+  } else if (selected) {
+    haptic('error'); showToast('❌ Xato!');
+  } else {
+    showToast('⏱ Vaqt tugadi!');
+  }
+
+  updateDuelHUD();
+  setTimeout(() => { duelState.current++; updateDuelHUD(); duelShowQuestion(); }, 1500);
+}
+
+function duelFinish() {
+  clearInterval(duelState.timer);
+  clearInterval(duelState.pollTimer);
+  document.getElementById('duel-game').classList.add('hidden');
+  document.getElementById('duel-result').classList.remove('hidden');
+
+  const you = duelState.userScore;
+  const bot = duelState.botScore;
+  const total = duelState.questions.length;
+  const banner = document.getElementById('duel-result-banner');
+  const emoji = document.getElementById('duel-result-emoji');
+  const title = document.getElementById('duel-result-title');
+  const sub = document.getElementById('duel-result-sub');
+
+  banner.classList.remove('win','lose','draw');
+  if (you > bot) {
+    banner.classList.add('win'); emoji.textContent = '🏆'; title.textContent = 'G\'ALABA!';
+    sub.textContent = `${duelMode === 'pvp' ? duelState.oppName : 'Avtobot'} ustidan ${you}-${bot} hisobida g'olib bo'ldingiz!`;
+    haptic('success');
+    if (tg?.HapticFeedback) tg.HapticFeedback.notificationOccurred('success');
+  } else if (you < bot) {
+    banner.classList.add('lose'); emoji.textContent = '😤'; title.textContent = 'MAG\'LUBIYAT';
+    sub.textContent = `Raqib ${bot}-${you} hisobida yutdi. Qayta urining!`;
+    haptic('error');
+  } else {
+    banner.classList.add('draw'); emoji.textContent = '🤝'; title.textContent = 'DURRANG!';
+    sub.textContent = `${you}-${bot} — teng natija. Rematch?`;
+  }
+  document.getElementById('duel-final-you').textContent = `${you} / ${total}`;
+  document.getElementById('duel-final-bot').textContent = `${bot} / ${total}`;
+}
+
+function duelPlayAgain() {
+  if (duelMode === 'bot') startDuel();
+  else duelShowModeSelect();
+}
+
+
+}
+

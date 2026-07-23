@@ -104,6 +104,15 @@
                 <i class="fas fa-chevron-right arrow-icon"></i>
             </div>
 
+            <div class="menu-item glass-panel duel-menu-item" onclick="navigate('view-duel')">
+                <div class="menu-icon bg-gradient-duel"><i class="fas fa-bolt"></i></div>
+                <div class="menu-text">
+                    <h3>⚔️ Duel Jang</h3>
+                    <p>Botga qarshi 1v1 tezlik jangi</p>
+                </div>
+                <i class="fas fa-chevron-right arrow-icon"></i>
+            </div>
+
             <div class="menu-item glass-panel" onclick="navigate('view-news')">
                 <div class="menu-icon bg-gradient-teal"><i class="fas fa-newspaper"></i></div>
                 <div class="menu-text">
@@ -249,6 +258,159 @@
             <div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i></div>
         </div>
     </main>
+
+    <!-- ══════════════ DUEL VIEW ══════════════ -->
+    <main id="view-duel" class="view">
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="duelBack()"><i class="fas fa-arrow-left"></i></button>
+            <h2>⚔️ Duel Jang</h2>
+        </div>
+
+        <!-- Mode Selector -->
+        <div id="duel-mode-select">
+            <div class="duel-mode-grid">
+                <div class="duel-mode-card glass-panel" id="mode-bot-card" onclick="selectDuelMode('bot')">
+                    <div class="duel-mode-icon" style="background:linear-gradient(135deg,#7f1d1d,#dc2626)">🤖</div>
+                    <div class="duel-mode-label">Bot bilan</div>
+                    <div class="duel-mode-desc">Sun'iy intellektga qarshi</div>
+                </div>
+                <div class="duel-mode-card glass-panel" id="mode-pvp-card" onclick="selectDuelMode('pvp')">
+                    <div class="duel-mode-icon" style="background:linear-gradient(135deg,#1a56db,#7c3aed)">👥</div>
+                    <div class="duel-mode-label">Do'st bilan</div>
+                    <div class="duel-mode-desc">Haqiqiy raqibga qarshi</div>
+                </div>
+            </div>
+
+            <!-- Bot lobby -->
+            <div id="bot-lobby" class="hidden">
+                <div class="duel-vs-banner glass-panel">
+                    <div class="duel-player">
+                        <div class="duel-avatar" id="duel-user-avatar">🧑</div>
+                        <div class="duel-pname" id="duel-user-name">Siz</div>
+                        <div class="duel-score-badge" id="duel-user-score">0</div>
+                    </div>
+                    <div class="duel-vs-text">⚔️<br><span>VS</span></div>
+                    <div class="duel-player">
+                        <div class="duel-avatar bot-avatar">🤖</div>
+                        <div class="duel-pname">Avtobot</div>
+                        <div class="duel-score-badge" id="duel-bot-score">0</div>
+                    </div>
+                </div>
+                <div class="duel-info glass-panel">
+                    <div class="duel-info-row"><i class="fas fa-question-circle text-purple"></i><span>10 ta savol</span></div>
+                    <div class="duel-info-row"><i class="fas fa-clock text-blue"></i><span>Har savol uchun 15 soniya</span></div>
+                    <div class="duel-info-row"><i class="fas fa-bolt text-gold"></i><span>Tez javob — ko'proq ustunlik!</span></div>
+                </div>
+                <button class="primary-btn duel-start-btn" onclick="startDuel()">
+                    <i class="fas fa-bolt"></i> Bot bilan Jangni Boshlash!
+                </button>
+            </div>
+
+            <!-- PvP lobby -->
+            <div id="pvp-lobby" class="hidden">
+                <div class="pvp-tabs glass-panel">
+                    <button class="pvp-tab active" id="pvp-tab-find" onclick="pvpTab('find')">🔍 Raqib Topish</button>
+                    <button class="pvp-tab" id="pvp-tab-code" onclick="pvpTab('code')">🔑 Kod Bilan</button>
+                </div>
+
+                <!-- Matchmaking -->
+                <div id="pvp-find-section">
+                    <div class="pvp-waiting-card glass-panel hidden" id="pvp-waiting-card">
+                        <div class="pvp-spinner"><i class="fas fa-circle-notch fa-spin"></i></div>
+                        <div class="pvp-room-code-label">Xona kodi</div>
+                        <div class="pvp-room-code" id="pvp-room-code-display">——</div>
+                        <p class="pvp-waiting-msg">Raqib kutilmoqda...<br><small>Do'stingizga yuqoridagi kodni bering</small></p>
+                        <button class="pvp-share-btn" id="pvp-share-btn" onclick="pvpShareCode()">
+                            <i class="fas fa-share-alt"></i> Kodni Ulashish
+                        </button>
+                        <button class="secondary-btn glass-panel" style="width:100%;margin-top:8px;" onclick="pvpCancelWait()">
+                            <i class="fas fa-times"></i> Bekor qilish
+                        </button>
+                    </div>
+                    <button class="primary-btn duel-start-btn" id="pvp-find-btn" onclick="pvpFindMatch()">
+                        <i class="fas fa-users"></i> Onlayn Raqib Topish
+                    </button>
+                </div>
+
+                <!-- Join by code -->
+                <div id="pvp-code-section" class="hidden">
+                    <div class="pvp-join-card glass-panel">
+                        <h3><i class="fas fa-key text-gold"></i> Xona kodini kiriting</h3>
+                        <input type="text" id="pvp-code-input" class="pvp-code-input"
+                               placeholder="XXXXXXXX" maxlength="8"
+                               oninput="this.value=this.value.toUpperCase()">
+                        <button class="primary-btn duel-start-btn" onclick="pvpJoinByCode()">
+                            <i class="fas fa-sign-in-alt"></i> Xonaga Kirish
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PvP Countdown (raqib topilganda) -->
+        <div id="pvp-countdown" class="hidden">
+            <div class="pvp-found-banner glass-panel">
+                <div class="pvp-found-vs">
+                    <div class="pvp-found-player">
+                        <div class="duel-avatar">🧑</div>
+                        <div class="duel-pname" id="pvp-your-name">Siz</div>
+                    </div>
+                    <div class="pvp-found-vs-text">⚔️</div>
+                    <div class="pvp-found-player">
+                        <div class="duel-avatar" style="background:linear-gradient(135deg,#1a56db,#7c3aed)">🧑</div>
+                        <div class="duel-pname" id="pvp-opp-name">Raqib</div>
+                    </div>
+                </div>
+                <div class="pvp-countdown-num" id="pvp-countdown-num">3</div>
+                <p>Jang boshlanmoqda...</p>
+            </div>
+        </div>
+
+        <!-- Duel Game (shared for both modes) -->
+        <div id="duel-game" class="hidden">
+            <div class="duel-hud glass-panel">
+                <div class="duel-hud-scores">
+                    <span class="hud-you">👤 <b id="hud-you-score">0</b></span>
+                    <span class="hud-timer" id="duel-timer">15</span>
+                    <span class="hud-bot"><span id="hud-opp-icon">🤖</span> <b id="hud-bot-score">0</b></span>
+                </div>
+                <div class="duel-progress-bar-bg"><div class="duel-progress-bar-fill" id="duel-timer-bar"></div></div>
+                <div class="duel-qnum" id="duel-qnum">Savol 1 / 10</div>
+            </div>
+            <div class="question-container glass-panel" id="duel-question-box">
+                <div class="question-image hidden" id="duel-question-image">
+                    <img src="" alt="" id="duel-question-img-el">
+                </div>
+                <h2 id="duel-question-text">Savol yuklanmoqda...</h2>
+            </div>
+            <div class="options-container" id="duel-options"></div>
+        </div>
+
+        <!-- Duel Result (shared) -->
+        <div id="duel-result" class="hidden">
+            <div class="duel-result-banner glass-panel" id="duel-result-banner">
+                <div class="duel-result-emoji" id="duel-result-emoji">🏆</div>
+                <h2 id="duel-result-title">G'ALABA!</h2>
+                <p id="duel-result-sub">Tabriklaymiz!</p>
+            </div>
+            <div class="duel-result-scores glass-panel">
+                <div class="duel-score-row you-row">
+                    <span>👤 Siz</span>
+                    <strong id="duel-final-you">0 / 10</strong>
+                </div>
+                <div class="duel-score-row bot-row">
+                    <span id="duel-opp-label">🤖 Avtobot</span>
+                    <strong id="duel-final-bot">0 / 10</strong>
+                </div>
+            </div>
+            <div class="result-actions">
+                <button class="primary-btn" onclick="duelPlayAgain()"><i class="fas fa-redo"></i> Qayta Jang</button>
+                <button class="secondary-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-home"></i> Chiqish</button>
+            </div>
+        </div>
+    </main>
+
+
 
     <!-- ══════════════ NEWS VIEW ══════════════ -->
     <main id="view-news" class="view">
