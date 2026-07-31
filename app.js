@@ -147,21 +147,33 @@ function renderQuestion() {
 
   // Image
   const imgDiv = document.getElementById('question-image');
-  if (q.image_url && q.image_url.startsWith('http')) {
+  const imgEl = document.getElementById('question-img-el');
+  if (q.image_url) {
+    imgEl.src = q.image_url;
     imgDiv.classList.remove('hidden');
-    document.getElementById('question-img-el').src = q.image_url;
+    imgEl.onerror = () => imgDiv.classList.add('hidden');
   } else {
     imgDiv.classList.add('hidden');
   }
 
   // Options
-  const letters = ['A','B','C','D'];
-  const opts = [q.option_a, q.option_b, q.option_c, q.option_d].filter(Boolean);
+  const optA = q.option_a || (q.options?.find(o => o.letter === 'A')?.text) || (q.options && q.options[0]?.text) || '';
+  const optB = q.option_b || (q.options?.find(o => o.letter === 'B')?.text) || (q.options && q.options[1]?.text) || '';
+  const optC = q.option_c || (q.options?.find(o => o.letter === 'C')?.text) || (q.options && q.options[2]?.text) || '';
+  const optD = q.option_d || (q.options?.find(o => o.letter === 'D')?.text) || (q.options && q.options[3]?.text) || '';
+
+  const opts = [
+    { label: 'A', text: optA },
+    { label: 'B', text: optB },
+    { label: 'C', text: optC },
+    { label: 'D', text: optD }
+  ].filter(o => o.text);
+
   const container = document.getElementById('options-container');
-  container.innerHTML = opts.map((opt, i) => `
-    <button class="option-btn" id="opt-${letters[i]}" onclick="answerQuestion('${letters[i]}')">
-      <span class="opt-label">${letters[i]}</span>
-      <span>${opt}</span>
+  container.innerHTML = opts.map(opt => `
+    <button class="option-btn" id="opt-${opt.label}" onclick="answerQuestion('${opt.label}')">
+      <span class="opt-label">${opt.label}</span>
+      <span>${opt.text}</span>
     </button>
   `).join('');
 
@@ -175,7 +187,8 @@ function answerQuestion(selected) {
   testState.answered = true;
 
   const q = testState.questions[testState.current];
-  const isCorrect = selected === q.correct_option;
+  const correctOpt = q.correct_option || q.correct || 'A';
+  const isCorrect = selected === correctOpt;
 
   if (isCorrect) testState.correct++;
   else testState.wrong++;
@@ -184,14 +197,14 @@ function answerQuestion(selected) {
   document.querySelectorAll('.option-btn').forEach(btn => btn.classList.add('disabled'));
 
   const selBtn = document.getElementById(`opt-${selected}`);
-  const corrBtn = document.getElementById(`opt-${q.correct_option}`);
+  const corrBtn = document.getElementById(`opt-${correctOpt}`);
 
   if (isCorrect) {
-    selBtn.classList.add('correct');
+    if (selBtn) selBtn.classList.add('correct');
     haptic('success');
   } else {
-    selBtn.classList.add('wrong');
-    corrBtn.classList.add('correct');
+    if (selBtn) selBtn.classList.add('wrong');
+    if (corrBtn) corrBtn.classList.add('correct');
     haptic('error');
   }
 
@@ -743,6 +756,7 @@ function duelShowQuestion() {
   if (duelState.current >= duelState.questions.length) { duelFinish(); return; }
 
   const q = duelState.questions[duelState.current];
+  const correctOpt = q.correct_option || q.correct || 'A';
   duelState.answered = false;
   document.getElementById('duel-question-text').textContent = q.text;
 
@@ -753,11 +767,16 @@ function duelShowQuestion() {
     imgEl.onerror = () => imgBox.classList.add('hidden');
   } else { imgBox.classList.add('hidden'); }
 
+  const optA = q.option_a || (q.options?.find(o => o.letter === 'A')?.text) || (q.options && q.options[0]?.text) || '';
+  const optB = q.option_b || (q.options?.find(o => o.letter === 'B')?.text) || (q.options && q.options[1]?.text) || '';
+  const optC = q.option_c || (q.options?.find(o => o.letter === 'C')?.text) || (q.options && q.options[2]?.text) || '';
+  const optD = q.option_d || (q.options?.find(o => o.letter === 'D')?.text) || (q.options && q.options[3]?.text) || '';
+
   const opts = [
-    { label:'A', text:q.option_a, key:'A' },
-    { label:'B', text:q.option_b, key:'B' },
-    { label:'C', text:q.option_c, key:'C' },
-    { label:'D', text:q.option_d, key:'D' },
+    { label:'A', text:optA, key:'A' },
+    { label:'B', text:optB, key:'B' },
+    { label:'C', text:optC, key:'C' },
+    { label:'D', text:optD, key:'D' },
   ].filter(o => o.text);
 
   const container = document.getElementById('duel-options');
@@ -767,11 +786,11 @@ function duelShowQuestion() {
     btn.className = 'option-btn';
     btn.id = `duel-opt-${opt.key}`;
     btn.innerHTML = `<span class="opt-label">${opt.label}</span>${opt.text}`;
-    btn.onclick = () => duelAnswer(opt.key, q.correct_option);
+    btn.onclick = () => duelAnswer(opt.key, correctOpt);
     container.appendChild(btn);
   });
 
-  duelStartTimer(q.correct_option);
+  duelStartTimer(correctOpt);
 
   // Bot AI (only in bot mode)
   if (duelMode === 'bot') {

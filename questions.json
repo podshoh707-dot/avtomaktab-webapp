@@ -3,6 +3,11 @@
     "id": 1,
     "text": "Aholi yashash punktlarida ruxsat etilgan eng yuqori tezlik qancha?",
     "image_url": null,
+    "option_a": "40 km/soat",
+    "option_b": "60 km/soat",
+    "option_c": "80 km/soat",
+    "option_d": "100 km/soat",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -30,6 +35,11 @@
     "id": 2,
     "text": "Aholi yashash punktlaridan tashqarida (avtomobil yo'llarida) yengil avtomobil uchun ruxsat etilgan eng yuqori tezlik?",
     "image_url": null,
+    "option_a": "80 km/soat",
+    "option_b": "100 km/soat",
+    "option_c": "110 km/soat",
+    "option_d": "120 km/soat",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -57,6 +67,11 @@
     "id": 3,
     "text": "Avtomobil yo'lida (avtostrada) ruxsat etilgan eng yuqori tezlik?",
     "image_url": null,
+    "option_a": "100 km/soat",
+    "option_b": "110 km/soat",
+    "option_c": "130 km/soat",
+    "option_d": "150 km/soat",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -84,6 +99,11 @@
     "id": 4,
     "text": "Aholi yashash punktida haydovchi qanday holatda 20 km/soatdan tez harakatlanishi mumkin emas?",
     "image_url": null,
+    "option_a": "Maktab oldida \"Bolalar\" belgisi bo'lsa",
+    "option_b": "Obodonlashtirish va yashovchilarni tashish zonalarida",
+    "option_c": "Yonib turgan svetofor yonida",
+    "option_d": "Temir yo'l kesishmasi oldida",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -111,6 +131,11 @@
     "id": 5,
     "text": "Haydovchi qancha masofada to'xtash kerakligini bilish uchun nimani hisobga olishi kerak?",
     "image_url": null,
+    "option_a": "Faqat tezlikni",
+    "option_b": "Tezlik, yo'l qoplamasi holati va transport vositasining texnik holatini",
+    "option_c": "Faqat ob-havoni",
+    "option_d": "Faqat dvigatel quvvatini",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -138,6 +163,11 @@
     "id": 6,
     "text": "Piyodalar o'tish joyiga yaqinlashayotgan haydovchi nima qilishi shart?",
     "image_url": null,
+    "option_a": "Signal berib o'tib ketishi kerak",
+    "option_b": "Tezlikni kamaytirishi va piyodalarga yo'l berishi kerak",
+    "option_c": "Tezlikni oshirib, o'tib ketishi kerak",
+    "option_d": "To'xtab, piyodalar o'tib bo'lishini kutishi shart emas",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -165,6 +195,11 @@
     "id": 7,
     "text": "Piyoda yo'l kesib o'tish uchun qayerdan o'tishi kerak?",
     "image_url": null,
+    "option_a": "Istalgan qulay joydan",
+    "option_b": "Faqat belgilangan o'tish joylaridan yoki yo'l kesishmalaridan",
+    "option_c": "Faqat yerosti o'tish joylaridan",
+    "option_d": "Svetofor bo'lgan joylardan",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -192,6 +227,11 @@
     "id": 8,
     "text": "Piyoda ko'chadan o'tishdan oldin qaysi tomonga qarashi kerak?",
     "image_url": null,
+    "option_a": "Avval o'ngga, keyin chapga",
+    "option_b": "Avval chapga, keyin o'ngga; o'rtaga yetganda yana o'ngga",
+    "option_c": "Faqat chapga",
+    "option_d": "Qarama-qarshi tomondan kelayotgan mashinalarga",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -219,6 +259,11 @@
     "id": 9,
     "text": "Xavfsizlik kamari kimlar uchun majburiy?",
     "image_url": null,
+    "option_a": "Faqat haydovchi uchun",
+    "option_b": "Faqat oldingi o'rindiqda o'tirganlar uchun",
+    "option_c": "Haydovchi va barcha yo'lovchilar uchun",
+    "option_d": "Ixtiyoriy ravishda",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -246,6 +291,11 @@
     "id": 10,
     "text": "6 yoshgacha bo'lgan bolani avtomobilga o'tqazishda nima qo'llanilishi kerak?",
     "image_url": null,
+    "option_a": "Oddiy xavfsizlik kamari yetarli",
+    "option_b": "Maxsus bola o'rindig'i (kreslo) ishlatilishi kerak",
+    "option_c": "Kattalarda o'tirishi kerak",
+    "option_d": "Orqa o'rindiqda xavfsizlik kamari kerak emas",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -273,6 +323,11 @@
     "id": 11,
     "text": "Tartibga soluvchi ishoralari svetofor ishoralariga zid bo'lsa, haydovchi nima qilishi kerak?",
     "image_url": null,
+    "option_a": "Svetofor ishoralariga bo'ysunadi",
+    "option_b": "Tartibga soluvchi ishoralariga bo'ysunadi",
+    "option_c": "Yo'l belgilariga bo'ysunadi",
+    "option_d": "O'z xohishi bilan harakat qiladi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -300,6 +355,11 @@
     "id": 12,
     "text": "Yashil svetofor yonganda haydovchi nima qilishi shart?",
     "image_url": null,
+    "option_a": "Darhol to'xtovsiz o'tib ketishi shart",
+    "option_b": "Chorrahaga kirishdan oldin xavfsizlikni tekshirib, harakatlanishni davom ettiradi",
+    "option_c": "Boshqa transportlarni o'tkazib yuborishi kerak",
+    "option_d": "Signal berib o'tib ketadi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -327,6 +387,11 @@
     "id": 13,
     "text": "Qizil va sariq svetoforlar bir vaqtda yonsa, bu nimani anglatadi?",
     "image_url": null,
+    "option_a": "Harakatga ruxsat etiladi",
+    "option_b": "Yashil svetofor yaqin ekanligini bildiradi va harakatga tayyorlanish kerak",
+    "option_c": "Tez o'tib ketish kerak",
+    "option_d": "To'xtash kerak emas",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -354,6 +419,11 @@
     "id": 14,
     "text": "Miltillovchi sariq svetofor nimani anglatadi?",
     "image_url": null,
+    "option_a": "Harakatni to'xtatish kerak",
+    "option_b": "Tartibga solinmagan chorrahadagi ogohlantiruv, ehtiyotkorlik bilan harakatlanish kerak",
+    "option_c": "Harakatga to'liq ruxsat etilgan",
+    "option_d": "Faqat piyodalar o'tishi mumkin",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -381,6 +451,11 @@
     "id": 15,
     "text": "Teng huquqli yo'llarda biror ishorasisiz chorrahaga yaqinlashilganda kim ustunlikka ega?",
     "image_url": null,
+    "option_a": "Chapdan kelayotgan transport",
+    "option_b": "O'ngdan kelayotgan transport (o'ng qo'l qoidasi)",
+    "option_c": "Kattaroq transport vositasi",
+    "option_d": "Tezroq kelayotgan transport",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -408,6 +483,11 @@
     "id": 16,
     "text": "Bosh yo'ldan ikkilamchi yo'lga o'tish kerak. Ustunlik kimda?",
     "image_url": null,
+    "option_a": "Ikkilamchi yo'ldagi transportda, chunki u oldin kirgan",
+    "option_b": "Bosh yo'ldagi transportda",
+    "option_c": "O'ngdan kelayotgan transportda",
+    "option_d": "Piyodalarda",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -435,6 +515,11 @@
     "id": 17,
     "text": "Tartibsiz chorrahada to'g'ri ketayotgan transport bilan aylanib o'tayotgan transport o'rtasida kim ustunlikka ega?",
     "image_url": null,
+    "option_a": "Aylanib o'tayotgan transport",
+    "option_b": "To'g'ri ketayotgan transport",
+    "option_c": "O'ngdan kelayotgan transport",
+    "option_d": "Ikkalasida ham ustunlik teng",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -462,6 +547,11 @@
     "id": 18,
     "text": "Haydovchi chap tomonga burilyapti. Qarama-qarshi yo'nalishdan to'g'ri kelayotgan yoki o'ng tomonga burilayotgan transportga nisbatan kim ustunlikka ega?",
     "image_url": null,
+    "option_a": "Chap tomonga burilayotgan transport",
+    "option_b": "To'g'ri kelayotgan yoki o'ng tomonga burilayotgan transport",
+    "option_c": "Ustunlik teng",
+    "option_d": "Tezroq harakatlanayotgan transport",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -489,6 +579,11 @@
     "id": 19,
     "text": "Quvib o'tish qachon taqiqlangan?",
     "image_url": null,
+    "option_a": "Faqat tungi vaqtda",
+    "option_b": "Oldindagi transport quvib o'tish belgisin ko'rsatayotgan bo'lsa",
+    "option_c": "Ko'priqlarda, o'tkazgichlarda, tunnellarda va temir yo'l o'tish joylarida 100m dan kam masofada",
+    "option_d": "Faqat shaharda",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -516,6 +611,11 @@
     "id": 20,
     "text": "Quvib o'tishni boshlashdan oldin haydovchi qanday ko'rsatma berishi shart?",
     "image_url": null,
+    "option_a": "Tovushli signal berish shart",
+    "option_b": "Chap tomonga yo'nalish ko'rsatkichini yoqishi kerak",
+    "option_c": "Faqat faralarni miltillatishi kerak",
+    "option_d": "Hech qanday ko'rsatma kerak emas",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -543,6 +643,11 @@
     "id": 21,
     "text": "\"Ustunlik yo'li\" belgisi nimani anglatadi?",
     "image_url": null,
+    "option_a": "Bu yo'lda harakatlanishni kamaytirish kerak",
+    "option_b": "Bu yo'lda harakatlanayotgan transport ustunlikka ega",
+    "option_c": "Bu yo'lda to'xtash mumkin",
+    "option_d": "Bu yo'l bir tomonlama",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -570,6 +675,11 @@
     "id": 22,
     "text": "\"Bosh yo'lni ber\" belgisi ko'rinsa haydovchi nima qiladi?",
     "image_url": null,
+    "option_a": "To'xtaydi va signal beradi",
+    "option_b": "Kesishma yo'lidagi transportga yo'l beradi",
+    "option_c": "Tezlikni oshiradi",
+    "option_d": "Hech narsa qilmaydi, davom etadi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -597,6 +707,11 @@
     "id": 23,
     "text": "\"To'xtash taqiqlanadi\" belgisi nima degan ma'noni anglatadi?",
     "image_url": null,
+    "option_a": "Faqat to'xtash taqiqlanadi, lekin turish mumkin",
+    "option_b": "Yo'lovchi chiqarish maqsadida ham bo'lsa to'xtash taqiqlanadi",
+    "option_c": "Faqat yuk mashinalari uchun taqiqlangan",
+    "option_d": "Faqat tunda taqiqlangan",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -624,6 +739,11 @@
     "id": 24,
     "text": "\"Kirish taqiqlanadi\" belgisi (qizil doira ichida oq gorizontal chiziq) nimani anglatadi?",
     "image_url": null,
+    "option_a": "Faqat yuk mashinalariga kirish taqiq",
+    "option_b": "Barcha transport vositalariga shu tomondan kirish taqiq",
+    "option_c": "Yo'l ta'mirlanyapti",
+    "option_d": "Bir tomonlama yo'l tugadi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -651,6 +771,11 @@
     "id": 25,
     "text": "Yashil rangdagi yo'l belgisi nima haqida ma'lumot beradi?",
     "image_url": null,
+    "option_a": "Taqiqlov haqida",
+    "option_b": "Buyruq (majburiy harakatlar) haqida",
+    "option_c": "Avtostrada va yo'l yo'nalishlari haqida axborot",
+    "option_d": "Xavfli joylar haqida",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -678,6 +803,11 @@
     "id": 26,
     "text": "\"Bola tashish\" belgisi nima uchun qo'yiladi?",
     "image_url": null,
+    "option_a": "Bolalar o'tish joyini bildirish uchun",
+    "option_b": "Ichida bola tashilayotgan transportni belgilash uchun orqaga o'rnatiladi",
+    "option_c": "Maktab yonida ehtiyotkorlik talab qilinishini bildirish uchun",
+    "option_d": "Bolalar maydonchasi borligini bildirish uchun",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -705,6 +835,11 @@
     "id": 27,
     "text": "Temir yo'l kesishmasiga yaqinlashilganda haydovchi nima qilishi shart?",
     "image_url": null,
+    "option_a": "Tezlikni oshirib o'tib ketadi",
+    "option_b": "Tezlikni kamaytiradi, ikki tomonni ko'zdan kechiradi va poezdni kutadi",
+    "option_c": "Signal berib o'tib ketadi",
+    "option_d": "Faqat shlagbaum tushgan bo'lsa to'xtaydi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -732,6 +867,11 @@
     "id": 28,
     "text": "Temir yo'l kesishmasida to'xtash chizig'i qayerda bo'ladi?",
     "image_url": null,
+    "option_a": "Relslardan 10 m narida",
+    "option_b": "\"To'xtang\" belgisida yoki bo'lmasa relsdagi birinchi relsdan 5 m narida",
+    "option_c": "Shlagbaum oldida",
+    "option_d": "Relsdagi oxirgi relsdan 3 m narida",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -759,6 +899,11 @@
     "id": 29,
     "text": "Temir yo'l kesishmasida mashina to'xtovsiz (dvigatel o'chib) qolsa, haydovchi nima qilishi kerak?",
     "image_url": null,
+    "option_a": "Avtomobilni yo'lda qoldirib, ketib qoladi",
+    "option_b": "Dvigatelni yoqishga harakat qiladi, bo'lmasa yo'lovchilarni chiqarib, mashinani itaradi; ikkala tomonga signal beradi",
+    "option_c": "Telefondan yordam so'raydi",
+    "option_d": "Mashinani kesishmada qoldiradi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -786,6 +931,11 @@
     "id": 30,
     "text": "Qancha vaqtdan ortiq to'xtatilgan transport \"turish\" hisoblanadi?",
     "image_url": null,
+    "option_a": "5 daqiqa",
+    "option_b": "10 daqiqa",
+    "option_c": "Yo'lovchi tushishi va yuk tushirilishi tugaganidan keyin ham qolsa yoki 5 daqiqadan ortiq",
+    "option_d": "30 daqiqa",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -813,6 +963,11 @@
     "id": 31,
     "text": "Ko'prik ustida turish va to'xtash mumkinmi?",
     "image_url": null,
+    "option_a": "Ha, xavfsizlik kamari taqilgan bo'lsa",
+    "option_b": "Ha, 5 daqiqagacha",
+    "option_c": "Yo'q, ko'prik, o'tkazgich va estakadalarda to'xtash va turish taqiqlangan",
+    "option_d": "Faqat tungi vaqtda taqiqlangan",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -840,6 +995,11 @@
     "id": 32,
     "text": "Binoning kirishiga necha metr yaqinlikda to'xtash taqiqlangan?",
     "image_url": null,
+    "option_a": "3 m",
+    "option_b": "5 m",
+    "option_c": "10 m",
+    "option_d": "15 m",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -867,6 +1027,11 @@
     "id": 33,
     "text": "Qachon to'liq yorug'lik (dalny svet) o'chirilishi va yaqin yorug'lik (blizhny svet) yoqilishi kerak?",
     "image_url": null,
+    "option_a": "Qarama-qarshi transport 400 m yaqinlashganda",
+    "option_b": "Qarama-qarshi transport 150 m dan yaqinlashganda yoki oldingi transport bo'lganda",
+    "option_c": "Faqat yo'l burilmalarida",
+    "option_d": "Faqat tungi vaqtda",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -894,6 +1059,11 @@
     "id": 34,
     "text": "Tuman paytida qaysi chiroqlar yoqilishi lozim?",
     "image_url": null,
+    "option_a": "To'liq yorug'lik (dalny svet)",
+    "option_b": "Tuman farasi (tuman fonari) yoki yaqin yorug'lik",
+    "option_c": "Parkovka chiroqlari",
+    "option_d": "Chiroq yoqish shart emas",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -921,6 +1091,11 @@
     "id": 35,
     "text": "Aholi yashash punktida kunduzi harakatlanish paytida faralar yoqilishi shart?",
     "image_url": null,
+    "option_a": "Yo'q, faqat tunda",
+    "option_b": "Ha, kunduzi ham yaqin yorug'lik yoki kunduzgi harakatlanish chiroqlari yoqilishi kerak",
+    "option_c": "Faqat yomg'irli kunda",
+    "option_d": "Ixtiyoriy",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -948,6 +1123,11 @@
     "id": 36,
     "text": "Birlashish yo'lidan asosiy yo'lga qo'shilayotgan transport kima yo'l berishi kerak?",
     "image_url": null,
+    "option_a": "Hech kimga, chunki o'zi asosiy yo'lga kirmoqda",
+    "option_b": "Asosiy yo'ldagi barcha transport vositalariga",
+    "option_c": "Faqat chap tomondan kelayotgan transportga",
+    "option_d": "Faqat yuk mashinalariga",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -975,6 +1155,11 @@
     "id": 37,
     "text": "Aholi yashash punktida yo'l chiziqlarini kesib o'tib, teskari yo'nalishga (razvorot) o'tishga qachon ruxsat etilmaydi?",
     "image_url": null,
+    "option_a": "Hech qachon taqiqlanmagan",
+    "option_b": "Yo'l engi 2 quvib o'tishga yetarli bo'lmasa, uch tomonlama yo'l kesishmalarida va yo'l burilmalarida",
+    "option_c": "Faqat tunda",
+    "option_d": "Faqat svetoforli joylarda",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1002,6 +1187,11 @@
     "id": 38,
     "text": "Avtobus yo'lovchi tushirayotgan bekatdan chiqmoqchi bo'lsa haydovchi nima qiladi?",
     "image_url": null,
+    "option_a": "Overtake qilib o'tib ketadi",
+    "option_b": "Avtobus harakatlanib ketgunga qadar kutadi yoki xavfsiz o'tishni ta'minlaydi",
+    "option_c": "Signal berib o'tib ketadi",
+    "option_d": "Ikkinchi qatorda kutadi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1029,6 +1219,11 @@
     "id": 39,
     "text": "Mast holda transport boshqarish qanday jazo olishga sabab bo'ladi?",
     "image_url": null,
+    "option_a": "Faqat jarima to'lanadi",
+    "option_b": "Haydovchilik guvohnomasi muddatga olinadi va jarima solinadi",
+    "option_c": "Ogohlantirishga olinadi",
+    "option_d": "Hech qanday jazo belgilanmagan",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1056,6 +1251,11 @@
     "id": 40,
     "text": "Transport vositasini boshqarishdan oldin qancha soat ichida spirtli ichimlik ichilishi mumkin emas?",
     "image_url": null,
+    "option_a": "2 soat oldin",
+    "option_b": "YHQ bo'yicha transport boshqarishdan oldin va boshqarayotgan paytda umuman ichib bo'lmaydi",
+    "option_c": "6 soat oldin",
+    "option_d": "12 soat oldin",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1083,6 +1283,11 @@
     "id": 41,
     "text": "Haydovchi transportni boshqarayotganda qanday hujjatlar yonida bo'lishi shart?",
     "image_url": null,
+    "option_a": "Faqat haydovchilik guvohnomasi",
+    "option_b": "Haydovchilik guvohnomasi, transport vositasini ro'yxatdan o'tkazish hujjati va sug'urta polisi (OSAGO)",
+    "option_c": "Faqat pasport",
+    "option_d": "Faqat texosmotr hujjati",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1110,6 +1315,11 @@
     "id": 42,
     "text": "Yo'l-transport hodisasi sodir bo'lganda haydovchi avval nima qilishi shart?",
     "image_url": null,
+    "option_a": "Darhol joyni tark etadi",
+    "option_b": "Transportni to'xtatadi, favqulodda yorug'likni yoqadi, uchburchak o'rnatadi va jabrlanuvchilarga yordam beradi",
+    "option_c": "Faqat politsiyaga qo'ng'iroq qiladi",
+    "option_d": "Boshqa transportlarni o'tkazib yuboradi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1137,6 +1347,11 @@
     "id": 43,
     "text": "Favqulodda to'xtash belgisi (uchburchak) qayerga qo'yiladi?",
     "image_url": null,
+    "option_a": "Transport oldiga 5 m masofaga",
+    "option_b": "Aholi punktlarida kamida 15 m, tashqarisida kamida 30 m masofaga ortga",
+    "option_c": "Yo'lning har ikki tomoniga 10 m dan",
+    "option_d": "Faqat transport orqasiga 5 m ga",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1164,6 +1379,11 @@
     "id": 44,
     "text": "Biror kishi mast haydovchini boshqarayotganda uni to'xtatishni so'rasa, nima qilish kerak?",
     "image_url": null,
+    "option_a": "Politsiyaga xabar berish kerak",
+    "option_b": "O'zi haydovchi bilan gaplashadi",
+    "option_c": "Transport yo'lini to'sadi",
+    "option_d": "Hech narsa qilmaydi",
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -1191,6 +1411,11 @@
     "id": 45,
     "text": "Haydovchi yo'l o'zgartirishdan oldin qanday ketma-ketlikda harakat qilishi kerak?",
     "image_url": null,
+    "option_a": "Signal → oyna → ko'r nuqtani tekshirish → yo'nalish o'zgartirish",
+    "option_b": "Yo'nalish o'zgartirish → signal → oyna",
+    "option_c": "Faqat signal berib, darhol yo'naltiradi",
+    "option_d": "Oyna → yo'nalish o'zgartirish → signal",
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -1218,6 +1443,11 @@
     "id": 46,
     "text": "Yomg'irli yoki qorli yo'lda haydovchi nima qilishi kerak?",
     "image_url": null,
+    "option_a": "Tezlikni oshiradi, chunki aylanma tezlik kerak",
+    "option_b": "Tezlikni kamaytiradi va oldindagi transport bilan masofani oshiradi",
+    "option_c": "To'liq yorug'lik yoqadi",
+    "option_d": "Harakatni to'xtatadi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1245,6 +1475,11 @@
     "id": 47,
     "text": "Bir yo'lakdan ikki yo'lakga o'tilganda qaysi qoida qo'llaniladi?",
     "image_url": null,
+    "option_a": "Kattaroq transport avval kiradi",
+    "option_b": "\"Zipper\" qoidasi: navbatma-navbat bitta-bitta kiradi",
+    "option_c": "Tezroq harakatlanayotgan avval kiradi",
+    "option_d": "Chapdan kelayotgan avval kiradi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1272,6 +1507,11 @@
     "id": 48,
     "text": "Aylanma harakatli chorrahaga kirishda kim ustunlikka ega?",
     "image_url": null,
+    "option_a": "Kirayotgan transport",
+    "option_b": "Aylanmada harakatlanayotgan transport (\"Bosh yo'lni ber\" belgisi bo'lsa)",
+    "option_c": "O'ngdan kelayotgan transport",
+    "option_d": "Kattaroq transport",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1299,6 +1539,11 @@
     "id": 49,
     "text": "12 yoshgacha bo'lgan bola avtomobil oldidagi o'rindiqda o'tira oladimi?",
     "image_url": null,
+    "option_a": "Yo'q, umuman oldingi o'rindiqda o'tira olmaydi",
+    "option_b": "Ha, lekin maxsus bola o'rindig'ida o'tirishi shart",
+    "option_c": "Faqat xavfsizlik kamari taqilgan bo'lsa, oddiy o'rindiqda o'tirishi mumkin",
+    "option_d": "Ha, xavfsizlik kamari bo'lsa har qanday o'rindiqda o'tirishi mumkin",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1326,6 +1571,11 @@
     "id": 50,
     "text": "Ambulans, o't o'chiruvchi yoki politsiya sireni chalayotgan bo'lsa haydovchi nima qilishi kerak?",
     "image_url": null,
+    "option_a": "Tezroq harakatlanishi kerak",
+    "option_b": "Yo'l chetiga o'tib to'xtashi va yo'l berishi kerak",
+    "option_c": "Avvalgi tezligini saqlashi kerak",
+    "option_d": "Faqat o't o'chiruvchiga yo'l beradi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1353,6 +1603,11 @@
     "id": 51,
     "text": "Quyidagi nosozliklardan qaysi biri bilan transport vositasini boshqarish qat'iyan taqiqlangan?",
     "image_url": null,
+    "option_a": "Konditsioner ishlamasa",
+    "option_b": "Tormoz samarasizligi, rulun nosozligi yoki gaz pedalining tiqilib qolishi",
+    "option_c": "Radio ishlamasa",
+    "option_d": "Oyna tozalagichi buzilsa (faqat yozda)",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1380,6 +1635,11 @@
     "id": 52,
     "text": "Transport vositasining texnik koʻrikdan oʻtkazilishi qanchalik muddat oraligʻida amalga oshiriladi (yangi avtomobil, 3 yilgacha)?",
     "image_url": null,
+    "option_a": "Har yili",
+    "option_b": "3 yil oʻtgach, keyin har 2 yilda",
+    "option_c": "Har 6 oyda",
+    "option_d": "5 yildan keyin",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1407,6 +1667,11 @@
     "id": 53,
     "text": "Uzluksiz chiziq (solid line) nimani anglatadi?",
     "image_url": null,
+    "option_a": "Kesib o'tish mumkin, lekin ehtiyotkorlik bilan",
+    "option_b": "Kesib o'tish va bosib o'tish taqiqlangan",
+    "option_c": "Faqat quvib o'tish paytida kesib o'tish mumkin",
+    "option_d": "Piyodalar o'tishi mumkin",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1434,6 +1699,11 @@
     "id": 54,
     "text": "Chap yo'lakdan harakatlanish qachon ruxsat etiladi?",
     "image_url": null,
+    "option_a": "Har doim",
+    "option_b": "Chap burilish, quvib o'tish yoki to'lib ketgan boshqa yo'laklar paytida",
+    "option_c": "Faqat tunda",
+    "option_d": "Faqat 60 km/soat tezlikda",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1461,6 +1731,11 @@
     "id": 55,
     "text": "Yashash punktida ko'chaning ikki tomonida ham birinchi qavatda istiqomat qiluvchilar borligida signalni qachon berish mumkin?",
     "image_url": null,
+    "option_a": "Kechasi soat 22:00 dan 07:00 gacha taqiqlangan",
+    "option_b": "Faqat YTH xavfini oldini olish uchun",
+    "option_c": "Har doim ruxsat etilgan",
+    "option_d": "Faqat avariya paytida",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1488,6 +1763,11 @@
     "id": 56,
     "text": "Tunda shahar ichida haydayotganda qaysi chiroq yoqiladi?",
     "image_url": null,
+    "option_a": "To'liq yorug'lik (dalny svet)",
+    "option_b": "Yaqin yorug'lik (blizhny svet)",
+    "option_c": "Faqat parkovka chiroqlari",
+    "option_d": "Chiroq shart emas, ko'cha yoritilgan",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1515,6 +1795,11 @@
     "id": 57,
     "text": "Yo'l harakatini tartibga solishda ustunlik tartibi qanday?",
     "image_url": null,
+    "option_a": "Yo'l belgilari → svetofor → tartibga soluvchi → YHQ qoidalari",
+    "option_b": "Tartibga soluvchi → svetofor → yo'l belgilari → YHQ qoidalari",
+    "option_c": "Svetofor → tartibga soluvchi → yo'l belgilari → YHQ qoidalari",
+    "option_d": "YHQ qoidalari → tartibga soluvchi → svetofor → yo'l belgilari",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1542,6 +1827,11 @@
     "id": 58,
     "text": "Haydovchi nimani saqlab ketishi shart — to'xtash masofasini yoki xavfsiz masofani?",
     "image_url": null,
+    "option_a": "To'xtash masofasini",
+    "option_b": "Xavfsiz masofani (oldingi transport bilan)",
+    "option_c": "Ikkalasi ham bir xil narsa",
+    "option_d": "Hech qaysisini saqlamaydi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1569,6 +1859,11 @@
     "id": 59,
     "text": "Haydovchi uxlab qolish xavfi sezsa nima qilishi kerak?",
     "image_url": null,
+    "option_a": "Tezlikni oshiradi, buni yengish uchun",
+    "option_b": "Oynani ochib, havoroq qiladi",
+    "option_c": "Darhol yo'l chekkasida xavfsiz joyga to'xtatib dam oladi",
+    "option_d": "Musiqani baland qo'yadi",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -1596,6 +1891,11 @@
     "id": 60,
     "text": "Transport vositasini yo'l qarama-qarshi tomoniga o'tkazib qo'yib turish (ichkari qilib) mumkinmi?",
     "image_url": null,
+    "option_a": "Ha, agar yo'l kengligi yetarli bo'lsa",
+    "option_b": "Yo'q, bu taqiqlanadi",
+    "option_c": "Ha, faqat tunda",
+    "option_d": "Ha, faqat 5 daqiqa",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1623,6 +1923,11 @@
     "id": 61,
     "text": "Haydovchi charchoq his qilsa transport boshqarishi mumkinmi?",
     "image_url": null,
+    "option_a": "Ha, agar yo'l 30 km dan oshmas bo'lsa",
+    "option_b": "Ha, lekin tezlikni kamaytirib",
+    "option_c": "Yo'q, charchoq xavfli — dam olgandan keyingina haydash kerak",
+    "option_d": "Ha, muzika eshitsa bo'ladi",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -1650,6 +1955,11 @@
     "id": 62,
     "text": "Haydovchi telefonda gaplasha oladimi (qo'lda ushlab)?",
     "image_url": null,
+    "option_a": "Ha, qisqa muddatli bo'lsa",
+    "option_b": "Ha, faqat aholi punktidan tashqarida",
+    "option_c": "Yo'q, faqat \"handsfree\" qurilmasida gaplashish ruxsat etilgan",
+    "option_d": "Ha, lekin chap qo'lda ushlasin",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -1677,6 +1987,11 @@
     "id": 63,
     "text": "Benzin quyish stansiyasida dvigatel o'chirilishi shart?",
     "image_url": null,
+    "option_a": "Yo'q, yoqilg'i quyishda dvigatel ishlashi kerak",
+    "option_b": "Ha, yong'in xavfsizligi uchun dvigatel o'chirilishi shart",
+    "option_c": "Faqat katta hajmdagi mashinalarda",
+    "option_d": "Bu haydovchining ixtiyorida",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1704,6 +2019,11 @@
     "id": 64,
     "text": "Gidravlik kuchaytirgich (gidrousilovitel rulya) buzilgan bo'lsa, haydovchi nima qilishi kerak?",
     "image_url": null,
+    "option_a": "Asta-sekin haydab, ta'mirxonaga boradi",
+    "option_b": "Darhol xavfsiz joyda to'xtab, rulun nosozligi tufayli haydashni to'xtatadi",
+    "option_c": "Orqaga qaytib ketadi",
+    "option_d": "Signal berib harakatni davom ettiradi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1731,6 +2051,11 @@
     "id": 65,
     "text": "Necha yoshdan bola haydovchi parvoz o'tirg'ichisiz oldingi o'rindiqda o'tira oladi?",
     "image_url": null,
+    "option_a": "7 yoshdan",
+    "option_b": "10 yoshdan",
+    "option_c": "12 yoshdan yoki bo'yi 150 sm dan oshganda",
+    "option_d": "15 yoshdan",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -1758,6 +2083,11 @@
     "id": 66,
     "text": "Aholi yashash punktida transport vositasini qaysi tomoniga qo'yib ketish mumkin?",
     "image_url": null,
+    "option_a": "Yo'lning istalgan tomoniga",
+    "option_b": "Yo'l harakati yo'nalishi bo'yicha — o'ng tomonga",
+    "option_c": "Faqat chap tomonga",
+    "option_d": "Istalgan yoqqa, agar 5 m masofada hech kim bo'lmasa",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1785,6 +2115,11 @@
     "id": 67,
     "text": "Ko'rishni chegaralovchi joyda (burilma, tepalik orqasida) quvib o'tish mumkinmi?",
     "image_url": null,
+    "option_a": "Ha, agar masofa ko'rinadigan bo'lsa",
+    "option_b": "Yo'q, bunday joylarda quvib o'tish taqiqlangan",
+    "option_c": "Ha, faqat qisqa masofa bo'lsa",
+    "option_d": "Ha, lekin signal berilib",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1812,6 +2147,11 @@
     "id": 68,
     "text": "To'xtash taqiqlangan belgisi qaysi masofagacha amal qiladi?",
     "image_url": null,
+    "option_a": "Belgidan keyingi birinchi chorrahagacha",
+    "option_b": "Faqat belgining o'zida",
+    "option_c": "50 m gacha",
+    "option_d": "Keyingi belgi topilgunga qadar butun yo'l bo'yi",
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -1839,6 +2179,11 @@
     "id": 69,
     "text": "Haydovchilik guvohnomasi qanday muddatga beriladi?",
     "image_url": null,
+    "option_a": "5 yil",
+    "option_b": "10 yil",
+    "option_c": "Umrbod",
+    "option_d": "3 yil",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1865,7 +2210,12 @@
   {
     "id": 70,
     "text": "Rasmda A, B, G, D transport vositalari ko'rsatilgan. Bekatda to'xtovsiz harakatlana oladigan (ustunlikka ega) transport qaysi?",
-    "image_url": "images/696.jpg",
+    "image_url": null,
+    "option_a": "A - qizil yengil avtomobil",
+    "option_b": "B - yuk mashinasi (fura)",
+    "option_c": "G - ko'k va qizil yengil avtomobillar",
+    "option_d": "Hech birisi - bekat yaqinida barcha transport sekinlashi shart",
+    "correct_option": "D",
     "options": [
       {
         "letter": "A",
@@ -1892,7 +2242,12 @@
   {
     "id": 71,
     "text": "Rasmda yo'l ustida chiroqli panel ko'rsatilgan. Qizil X belgisi yongan yo'lakda nima qilish mumkin?",
-    "image_url": "images/698.jpg",
+    "image_url": null,
+    "option_a": "Erkin harakatlanish mumkin",
+    "option_b": "Faqat sekin harakatlanish mumkin",
+    "option_c": "Harakatlanish taqiqlangan — bu yo'lak yopiq",
+    "option_d": "Faqat yuk mashinalari kirmasligi kerak",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -1919,7 +2274,12 @@
   {
     "id": 72,
     "text": "Rasmda ikkita uchburchak shaklidagi belgi ko'rsatilgan (12%). Bu belgilar nimani bildiradi?",
-    "image_url": "images/703.jpg",
+    "image_url": null,
+    "option_a": "Keskin burilish bor",
+    "option_b": "Chapda - 12% qiyalik ko'tarilish, o'ngda - 12% qiyalik tushish",
+    "option_c": "Ikkalasi ham tushish belgisi",
+    "option_d": "Ikkalasi ham ko'tarilish belgisi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -1946,7 +2306,12 @@
   {
     "id": 73,
     "text": "Rasmda yashil mashina ko'p yo'lakli yo'lda chap yo'lakdan o'ng yo'lakka o'tmoqchi. Haydovchi nimani tekshirishi shart?",
-    "image_url": "images/704.jpg",
+    "image_url": null,
+    "option_a": "Faqat orqa ko'zguni",
+    "option_b": "Faqat chap tomonni",
+    "option_c": "Yon ko'zgu, orqa ko'zgu va ko'r nuqtani, so'ng yo'nalish ko'rsatkichini yoqib yo'l o'zgartirish",
+    "option_d": "Hech narsani tekshirmaydi, darhol o'tadi",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -1973,7 +2338,12 @@
   {
     "id": 74,
     "text": "Rasmda teng huquqli chorrahada yashil mashina chapga, qizil mashina to'g'ri ketmoqchi. Kim birinchi o'tadi?",
-    "image_url": "images/705.jpg",
+    "image_url": null,
+    "option_a": "Yashil mashina — chunki u chap tomonda",
+    "option_b": "Qizil mashina — to'g'ri ketayotgan transport ustunlikka ega, chap burildaganda yo'l berish shart",
+    "option_c": "Ikkalasi ham bir vaqtda o'tadi",
+    "option_d": "Ko'k mashina — chunki u oldinroq kelgan",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2000,7 +2370,12 @@
   {
     "id": 75,
     "text": "Rasmda ko'rsatilgan svetofor turi qayerda o'rnatiladi?",
-    "image_url": "images/706.jpg",
+    "image_url": null,
+    "option_a": "Piyodalar o'tish joyida",
+    "option_b": "Yo'l ustida (ko'prik yoki osmono'par ustidan osilib) ko'p yo'lakli yo'l uchun",
+    "option_c": "Temir yo'l kesishmasida",
+    "option_d": "Avtobus bekatida",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2027,7 +2402,12 @@
   {
     "id": 76,
     "text": "Rasmda chorrahada 3 ta mashina: yashil (asosiy yo'ldan), ko'k va sariq (ikkilamchi yo'ldan). Harakatlanish tartibi qanday?",
-    "image_url": "images/707.jpg",
+    "image_url": null,
+    "option_a": "Sariq → Ko'k → Yashil",
+    "option_b": "Yashil → so'ng ko'k va sariq o'rtasida o'ng qo'l qoidasi",
+    "option_c": "Ko'k → Yashil → Sariq",
+    "option_d": "Barchasi bir vaqtda harakatlanadi",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2054,7 +2434,12 @@
   {
     "id": 77,
     "text": "Rasmda 5 ta yo'l belgisi ko'rsatilgan. 4-raqamli (qizil chiziq o'tgan ko'k doira) belgi nimani anglatadi?",
-    "image_url": "images/708.jpg",
+    "image_url": null,
+    "option_a": "Turish taqiqlanadi",
+    "option_b": "Kirish taqiqlanadi",
+    "option_c": "To'xtash taqiqlanadi",
+    "option_d": "Ustunlik yo'li tugadi",
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2081,7 +2466,12 @@
   {
     "id": 78,
     "text": "Rasmda qora jeep ko'p yo'lakli yo'lda ko'k yuk mashinasini quvib o'tmoqchi. Qaysi holatda quvib o'tish taqiqlangan?",
-    "image_url": "images/712.jpg",
+    "image_url": null,
+    "option_a": "Ko'rish yaxshi bo'lganda",
+    "option_b": "Uzluksiz chiziq bo'lganda yoki oldindagi transport ham quvib o'tayotgan bo'lsa",
+    "option_c": "Tezlik limiti 100 km/soat bo'lganda",
+    "option_d": "Hech qachon taqiqlanmagan",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2108,7 +2498,12 @@
   {
     "id": 79,
     "text": "Rasmda ko'prikda 5t og'irlik cheklash belgisi bor, yuk mashinasining og'irligi 15t. Haydovchi nima qilishi kerak?",
-    "image_url": "images/715.jpg",
+    "image_url": null,
+    "option_a": "Sekin harakatlanib o'tib ketadi",
+    "option_b": "Yarmi yukni tushirib o'tadi",
+    "option_c": "Ko'prikdan o'tmasligi kerak — og'irligi ruxsatdan 3 baravar ortiq",
+    "option_d": "Signal berib o'tib ketadi",
+    "correct_option": "C",
     "options": [
       {
         "letter": "A",
@@ -2135,7 +2530,12 @@
   {
     "id": 80,
     "text": "Rasmda 5-raqamli belgi (ko'k doirada oq avtomobil) nimani anglatadi?",
-    "image_url": "images/722.jpg",
+    "image_url": null,
+    "option_a": "Avtomobillar uchun maxsus yo'l (faqat avtomobillar o'ta oladi)",
+    "option_b": "Avtobus to'xtash joyi",
+    "option_c": "Yengil avtomobil turish joyi",
+    "option_d": "Avtomobillar taqiqlangan",
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2162,7 +2562,12 @@
   {
     "id": 81,
     "text": "Rasmda teng huquqli chorrahada 4 ta mashina bor. Yashil (Avtomaktab) mashina birinchi o'tishi mumkinmi?",
-    "image_url": "images/1002.jpg",
+    "image_url": null,
+    "option_a": "Ha, chunki u to'g'ri ketmoqda",
+    "option_b": "Yo'q — uning o'ng tomonidan ko'k mashina kelmoqda, avval unga yo'l berish kerak",
+    "option_c": "Ha, chunki u kattaroq",
+    "option_d": "Ha, sariq chiziqdan chapda",
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2189,7 +2594,12 @@
   {
     "id": 82,
     "text": "Yengil avtomobilga  istalgan yo‘nalishda  harakatlanishga ruxsat  etiladi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/sxjujyfkkj34446_2024_03_26.jpg",
+    "image_url": "db/images/82.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2208,7 +2618,12 @@
   {
     "id": 83,
     "text": "Ushbu yo‘l belgisi: oldinda to‘suvchi qurilma borligini bildiradi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/jqjjvrbvme73858_2024_03_26.jpg",
+    "image_url": "db/images/83.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2227,7 +2642,12 @@
   {
     "id": 84,
     "text": "Motosikl haydovchisi to‘xtash qoidasini buzdi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/dgujznczmg63995_2024_04_08.jpg",
+    "image_url": "db/images/84.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2246,7 +2666,12 @@
   {
     "id": 85,
     "text": "A rasmdagi belgi haydovchini boshqa xavf-xatarlar to‘g‘risida ogohlantiradi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/wnteetsxad83965_2024_03_26.png",
+    "image_url": "db/images/85.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2265,7 +2690,12 @@
   {
     "id": 86,
     "text": "Ko‘rsatilgan vaziyatda o‘ngga burilar ekan, haydovchi piyodalarga yo‘l berishi kerak.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/gvkczantyc39294_2024_04_08.jpg",
+    "image_url": "db/images/86.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2284,7 +2714,12 @@
   {
     "id": 87,
     "text": "Siz harakatlanishni to‘g‘riga davom ettirmoqchisiz. Siz har ikkala transport vositalariga yo‘l berasiz.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/zkzbwzwxec97844_2024_04_08.jpg",
+    "image_url": "db/images/87.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2303,7 +2738,12 @@
   {
     "id": 88,
     "text": "Yuk avtomobili haydovchisi  to‘xtab turish qoidasini buzdi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/cxfvjcbqdn26662_2024_03_26.jpg",
+    "image_url": "db/images/88.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2322,7 +2762,12 @@
   {
     "id": 89,
     "text": "Chorrahani birinchi bo‘lib qizil avtomobil kesib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/pcmcmwsbbp67498_2024_04_08.jpg",
+    "image_url": "db/images/89.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2341,7 +2786,12 @@
   {
     "id": 90,
     "text": "Yo‘l harakati qoidalariga ko‘ra yo‘l belgilari 8 guruhga bo‘linadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/vvhdbahfcb73549_2024_03_26.jpg",
+    "image_url": "db/images/90.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2360,7 +2810,12 @@
   {
     "id": 91,
     "text": "Siz chorrahada to‘g‘riga harakatlanmoqchisiz. Siz faqat tramvayga yo‘l berishingiz kerak.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/vayyzutsfz46758_2024_04_08.jpg",
+    "image_url": "db/images/91.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2379,7 +2834,12 @@
   {
     "id": 92,
     "text": "Yashil avtomobil chorrahani birinchi kesib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/uucedasxxx83745_2024_04_08.jpg",
+    "image_url": "db/images/92.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2398,7 +2858,12 @@
   {
     "id": 93,
     "text": "Avtobus chorrahani birinchi kesib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/yundnfyqhr88773_2024_04_08.jpg",
+    "image_url": "db/images/93.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2417,7 +2882,12 @@
   {
     "id": 94,
     "text": "C rasmdagi belgi yo‘lning tor qismida haydovchiga ustunlik beradi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/wtygpqvhsq65539_2024_03_26.png",
+    "image_url": "db/images/94.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2436,7 +2906,12 @@
   {
     "id": 95,
     "text": "Bu joyda to‘xtashga ruxsat etiladi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/nunfqvzmnr22227_2024_04_08.jpg",
+    "image_url": "db/images/95.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2455,7 +2930,12 @@
   {
     "id": 96,
     "text": "Ushbu yo‘l 2 ta qatnov qismiga ega.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/uqmbjekpth95898_2024_03_26.jpg",
+    "image_url": "db/images/96.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2474,7 +2954,12 @@
   {
     "id": 97,
     "text": "Chorrahaga kirayotib, siz  har ikkala transport vositalariga yo‘l berishingiz kerak.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/kmhbqaewaa65594_2024_04_08.jpg",
+    "image_url": "db/images/97.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2493,7 +2978,12 @@
   {
     "id": 98,
     "text": "Bu joyda qayrilishga ruxsat etiladi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/ymmhunwshm78586_2024_04_08.jpg",
+    "image_url": "db/images/98.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2512,7 +3002,12 @@
   {
     "id": 99,
     "text": "“Aholi punkti” atamasi kirish va chiqish yo‘llari 5.22 — 5.25 belgilari bilan belgilangan hududni bildiradi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/sgxddzjfyp78799_2024_03_26.jpg",
+    "image_url": "db/images/99.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2531,7 +3026,12 @@
   {
     "id": 100,
     "text": "Ushbu belgi, siz o‘ngga yoki chapga burilishingiz  kerakligini ko‘rsatadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/smrvbcyumk22227_2024_03_26.png",
+    "image_url": "db/images/100.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2550,7 +3050,12 @@
   {
     "id": 101,
     "text": "Haydovchi chapga burilishda ko‘rsatilgan barcha yo‘nalish bo‘yicha qoidani buzmoqda.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/jwhgauscca25477_2024_03_26.jpg",
+    "image_url": "db/images/101.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2569,7 +3074,12 @@
   {
     "id": 102,
     "text": "Har ikkala haydovchi piyodalarga yo‘l berishi kerak.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/sakkgjdjzb85266_2024_04_08.jpg",
+    "image_url": "db/images/102.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2588,7 +3098,12 @@
   {
     "id": 103,
     "text": "Chorrahadan ko‘k avtomobil ikkinchi bo‘lib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/xqabyyvtpf67242_2024_04_08.jpg",
+    "image_url": "db/images/103.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2607,7 +3122,12 @@
   {
     "id": 104,
     "text": "Chorrahadan yashil avtomobil oxirgi bo‘lib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/crfbccdwce55969_2024_04_08.jpg",
+    "image_url": "db/images/104.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2626,7 +3146,12 @@
   {
     "id": 105,
     "text": "Tramvay va avtobus haydovchilari chorrahadan birinchi bo‘lib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/uhnmfdtkhx78568_2024_04_08.jpg",
+    "image_url": "db/images/105.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2645,7 +3170,12 @@
   {
     "id": 106,
     "text": "C rasmdagi belgi velosiped yo‘lkasini ko‘rsatadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/mdvctqtjmj84538_2024_03_26.png",
+    "image_url": "db/images/106.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2664,7 +3194,12 @@
   {
     "id": 107,
     "text": "Avtomobillarning bir qator bo‘lib harakatlanishi uchun yetarlicha keng bo‘lgan, yo‘l chiziqlari bilan belgilangan yoki belgilanmagan yo‘l qatnov qismining har qanday bo‘ylama bo‘lagi yo‘l yoqasi deb ataladi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/fafezpjqvg38653_2024_03_26.jpg",
+    "image_url": "db/images/107.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2683,7 +3218,12 @@
   {
     "id": 108,
     "text": "Siz to‘g‘riga harakatlanishni davom ettirmoqchisiz, Siz chorrahadan birinchi bo‘lib o‘tasiz.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/bpbaggcfqd45396_2024_04_08.jpg",
+    "image_url": "db/images/108.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2702,7 +3242,12 @@
   {
     "id": 109,
     "text": "Ko‘rsatilgan vaziyatda haydovchi piyodaga yo‘l berishi kerak emas.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/bmxnyghzwv63588_2024_04_08.jpg",
+    "image_url": "db/images/109.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2721,7 +3266,12 @@
   {
     "id": 110,
     "text": "Sizga  ruxsat  etilgan to‘la vazni 3,5 tonnadan ortiq  yuk avtomobilida barcha yo‘nalishlarda harakatlanishga ruxsat etiladi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/gztcdgxkgr68978_2024_03_26.jpg",
+    "image_url": "db/images/110.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2740,7 +3290,12 @@
   {
     "id": 111,
     "text": "Piyodalar to‘xtab turgan avtobus va trolleybusning orqa tomonidan yo‘lni kesib o‘tishlari kerak.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/mbxwcthxwk28843_2024_03_26.jpg",
+    "image_url": "db/images/111.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2759,7 +3314,12 @@
   {
     "id": 112,
     "text": "Barcha belgilar yuk avtomobillarida quvib o‘tish taqiqlangan  hududning oxirini bildiradi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/dywwtdecsd37444_2024_03_26.png",
+    "image_url": "db/images/112.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2778,7 +3338,12 @@
   {
     "id": 113,
     "text": "Ushbu ko‘rsatilgan yo‘l ikkita qatnov qismiga ega.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/csmqwmqsda53849_2024_03_26.jpg",
+    "image_url": "db/images/113.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2797,7 +3362,12 @@
   {
     "id": 114,
     "text": "Chorrahadan oxirgi bo‘lib yashil avtomobil kesib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/rcwmesetrv92468_2024_04_08.jpg",
+    "image_url": "db/images/114.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2816,7 +3386,12 @@
   {
     "id": 115,
     "text": "Ushbu belgi barcha turdagi transport vositalarining to‘xtamasdan o‘tishlarini taqiqlaydi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/eeysphwbye34675_2024_03_26.png",
+    "image_url": "db/images/115.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2835,7 +3410,12 @@
   {
     "id": 116,
     "text": "A rasmda ajratuvchi mintaqa ko‘rsatilgan.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/ydwyxzxemb76524_2024_03_26.jpg",
+    "image_url": "db/images/116.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2854,7 +3434,12 @@
   {
     "id": 117,
     "text": "Chorrahadan qizil birinchi bo‘lib o‘tadi.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/ffjrseuxvc62549_2024_04_08.jpg",
+    "image_url": "db/images/117.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2873,7 +3458,12 @@
   {
     "id": 118,
     "text": "Faqat qatnov qismi nam bo‘lsa sizga 50 km/s dan yuqori tezlikda harakatlanish taqiqlangan.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/wxxkammvgj22483_2024_03_26.png",
+    "image_url": "db/images/118.png",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "A",
     "options": [
       {
         "letter": "A",
@@ -2892,7 +3482,12 @@
   {
     "id": 119,
     "text": "Ikkala rasmdagi yo‘l ajratuvchi bo‘lakka ega.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/jrdkqnqyhv27245_2024_03_26.jpg",
+    "image_url": "db/images/119.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
@@ -2911,7 +3506,12 @@
   {
     "id": 120,
     "text": "Harakatlanish o‘ngga birinchi va ikkinchi yo‘nalishga ruxsat etilgan.",
-    "image_url": "https://back.eavtotalim.uz/files/blits_questions/jndbudrsdd89356_2024_04_08.jpg",
+    "image_url": "db/images/120.jpg",
+    "option_a": "Ha",
+    "option_b": "Yo'q",
+    "option_c": null,
+    "option_d": null,
+    "correct_option": "B",
     "options": [
       {
         "letter": "A",
