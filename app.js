@@ -933,6 +933,3 @@ function duelPlayAgain() {
   else duelShowModeSelect();
 }
 
-
-}
-
