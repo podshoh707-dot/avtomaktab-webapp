@@ -32,9 +32,33 @@ function saveStats() {
 }
 function updateStatDisplay() {
   const el = id => document.getElementById(id);
-  el('stat-correct').textContent = userStats.correct;
-  el('stat-wrong').textContent = userStats.wrong;
-  el('stat-tests').textContent = userStats.tests + ' ta';
+  const totalQuestions = allQuestions.length || 1264; // Fallback
+  const answeredCount = userStats.tests * 10; // Simple estimation or real value
+  const pct = totalQuestions > 0 ? Math.min(100, Math.round((answeredCount / totalQuestions) * 100)) : 0;
+  
+  if(el('stat-total')) el('stat-total').textContent = totalQuestions;
+  if(el('progress-pct-text')) el('progress-pct-text').textContent = pct + '%';
+  if(el('dashboard-progress-bar')) el('dashboard-progress-bar').style.width = pct + '%';
+  if(el('progress-days-text')) {
+    // Basic day counter based on tests taken
+    const days = Math.floor(userStats.tests / 2); 
+    el('progress-days-text').textContent = days + ' kun';
+  }
+}
+
+// Promo Timer Setup
+function startPromoTimer() {
+  const el = document.getElementById('promo-timer');
+  if (!el) return;
+  let time = 3 * 3600 + 12 * 60 + 21; // 3:12:21
+  setInterval(() => {
+    time--;
+    if(time < 0) time = 0;
+    const h = String(Math.floor(time / 3600)).padStart(2, '0');
+    const m = String(Math.floor((time % 3600) / 60)).padStart(2, '0');
+    const s = String(time % 60).padStart(2, '0');
+    el.textContent = `${h}:${m}:${s}`;
+  }, 1000);
 }
 
 // ── Data loading ──
@@ -63,11 +87,12 @@ async function initApp() {
       loadJSON('org_info.json').catch(() => null)
     ]);
 
-    document.getElementById('stat-total').textContent = allQuestions.length + ' ta';
-    showToast(`✅ ${allQuestions.length} ta savol yuklandi!`);
+    updateStatDisplay();
+    startPromoTimer();
+    showToast(`\u2705 ${allQuestions.length} ta savol yuklandi!`);
   } catch(e) {
-    document.getElementById('stat-total').textContent = '0 ta';
-    showToast('❌ Ma\'lumotlar yuklanmadi');
+    if(document.getElementById('stat-total')) document.getElementById('stat-total').textContent = '0';
+    showToast('\u274C Ma\'lumotlar yuklanmadi');
   }
 }
 

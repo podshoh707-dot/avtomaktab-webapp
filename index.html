@@ -36,99 +36,84 @@
             </div>
         </header>
 
-        <section class="stats-grid">
-            <div class="stat-card glass-panel">
-                <i class="fas fa-question-circle text-purple"></i>
-                <div class="stat-info">
-                    <h3>Savollar</h3>
-                    <p id="stat-total">yuklanyapti...</p>
+        <section class="progress-section glass-panel">
+            <div class="progress-header">
+                <div class="progress-text">
+                    <span style="font-size:12px; color:var(--text-secondary);"><i class="fas fa-calendar-alt"></i> Sanani o'zgartirish</span>
+                    <div class="progress-pct" id="progress-pct-text">0%</div>
+                </div>
+                <div class="progress-stats">
+                    <div class="progress-days"><i class="fas fa-bolt text-gold"></i> <span id="progress-days-text">0 kun</span></div>
+                    <div class="progress-total">- <span id="stat-total">1264</span></div>
                 </div>
             </div>
-            <div class="stat-card glass-panel">
-                <i class="fas fa-check-double text-green"></i>
-                <div class="stat-info">
-                    <h3>To'g'ri</h3>
-                    <p id="stat-correct">0</p>
-                </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill-green" id="dashboard-progress-bar" style="width: 0%;"></div>
             </div>
-            <div class="stat-card glass-panel">
-                <i class="fas fa-times-circle text-red"></i>
-                <div class="stat-info">
-                    <h3>Xato</h3>
-                    <p id="stat-wrong">0</p>
-                </div>
+            <button class="voice-btn">
+                <i class="fas fa-volume-up"></i>
+                <span>Ovozli sharh</span>
+            </button>
+        </section>
+
+        <section class="summary-row">
+            <div class="summary-card glass-panel" onclick="navigate('view-setup')">
+                <i class="fas fa-list-ul text-blue"></i>
+                <span>Barcha testlar</span>
             </div>
-            <div class="stat-card glass-panel">
-                <i class="fas fa-fire text-orange"></i>
-                <div class="stat-info">
-                    <h3>Testlar</h3>
-                    <p id="stat-tests">0</p>
-                </div>
+            <div class="summary-card glass-panel" onclick="showToast('Hali xatolar yo\'q')">
+                <i class="fas fa-heart-broken text-red"></i>
+                <span>Xatolarni tuzatish</span>
             </div>
         </section>
 
-        <section class="menu-grid">
-            <div class="menu-item glass-panel" onclick="navigate('view-setup')">
-                <div class="menu-icon bg-gradient-purple"><i class="fas fa-car-side"></i></div>
-                <div class="menu-text">
-                    <h3>🚗 Test Ishlash</h3>
-                    <p>YHQ savollarini yechamiz</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
-            </div>
+        <section class="promo-banner" id="promo-banner">
+            <div class="promo-text">Avtovatanparvar Premium tarifiga chegirmalar. Faqat bugun!</div>
+            <div class="promo-timer" id="promo-timer">03:12:21</div>
+        </section>
 
-            <div class="menu-item glass-panel" onclick="navigate('view-rules')">
-                <div class="menu-icon bg-gradient-blue"><i class="fas fa-book-open"></i></div>
-                <div class="menu-text">
-                    <h3>📚 YHQ Qoidalari</h3>
-                    <p>Barcha qoidalar to'plami</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
+        <section class="action-grid">
+            <div class="action-card bg-blue" onclick="navigate('view-videos')">
+                <h3>Video Darslik</h3>
+                <p>Noldan imtihondan o'tguncha bo'lgan to'liq darslar...</p>
+                <div class="action-icon"><i class="fas fa-graduation-cap"></i></div>
             </div>
-
-            <div class="menu-item glass-panel" onclick="navigate('view-signs')">
-                <div class="menu-icon bg-gradient-orange"><i class="fas fa-traffic-light"></i></div>
-                <div class="menu-text">
-                    <h3>🚦 Yo'l Belgilari</h3>
-                    <p>299 ta belgi va izohlari</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
+            <div class="action-card bg-green" onclick="navigate('view-setup')">
+                <h3>Test yechish</h3>
+                <p>Sizga mos savollar</p>
+                <div class="action-icon"><i class="fas fa-play"></i></div>
             </div>
-
-            <div class="menu-item glass-panel" onclick="navigate('view-videos')">
-                <div class="menu-icon bg-gradient-red"><i class="fas fa-play-circle"></i></div>
-                <div class="menu-text">
-                    <h3>🎥 Video Darslar</h3>
-                    <p>133 ta video mavzu</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
+            <div class="action-card bg-gray" onclick="navigate('view-duel')">
+                <h3>Duel Jang</h3>
+                <p>Bot yoki do'st bilan birga bir</p>
+                <div class="action-icon"><i class="fas fa-khanda"></i></div>
             </div>
+        </section>
 
-            <div class="menu-item glass-panel duel-menu-item" onclick="navigate('view-duel')">
-                <div class="menu-icon bg-gradient-duel"><i class="fas fa-bolt"></i></div>
-                <div class="menu-text">
-                    <h3>⚔️ Duel Jang</h3>
-                    <p>Botga qarshi 1v1 tezlik jangi</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
+        <section class="categories-grid">
+            <div class="category-card glass-panel" onclick="navigate('view-rules')">
+                <i class="fas fa-book-open category-icon text-purple"></i>
+                <span>YHQ Qoidalari</span>
             </div>
-
-            <div class="menu-item glass-panel" onclick="navigate('view-news')">
-                <div class="menu-icon bg-gradient-teal"><i class="fas fa-newspaper"></i></div>
-                <div class="menu-text">
-                    <h3>📰 Yangiliklar</h3>
-                    <p>So'nggi xabarlar</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
+            <div class="category-card glass-panel" onclick="navigate('view-setup')">
+                <i class="fas fa-ticket-alt category-icon text-gold"></i>
+                <span>Biletlar</span>
             </div>
-
-            <div class="menu-item glass-panel" onclick="navigate('view-org')">
-                <div class="menu-icon bg-gradient-gold"><i class="fas fa-building"></i></div>
-                <div class="menu-text">
-                    <h3>🏢 Tashkilot</h3>
-                    <p>Toifalar va narxlar</p>
-                </div>
-                <i class="fas fa-chevron-right arrow-icon"></i>
+            <div class="category-card glass-panel" onclick="navigate('view-signs')">
+                <i class="fas fa-traffic-light category-icon text-orange"></i>
+                <span>Yo'l belgilari</span>
+            </div>
+            <div class="category-card glass-panel" onclick="navigate('view-setup')">
+                <i class="fas fa-list-ol category-icon text-green"></i>
+                <span>50/100 talik</span>
+            </div>
+            <div class="category-card glass-panel" onclick="navigate('view-news')">
+                <i class="fas fa-newspaper category-icon text-teal"></i>
+                <span>Yangiliklar</span>
+            </div>
+            <div class="category-card glass-panel" onclick="navigate('view-org')">
+                <i class="fas fa-building category-icon text-blue"></i>
+                <span>Tashkilot haqida</span>
             </div>
         </section>
     </main>
