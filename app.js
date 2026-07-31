@@ -7,8 +7,8 @@
 const tg = window.Telegram?.WebApp;
 if (tg) {
   tg.expand();
-  tg.setHeaderColor('#0a0e1a');
-  tg.setBackgroundColor('#0a0e1a');
+  tg.setHeaderColor('#131f24');
+  tg.setBackgroundColor('#131f24');
   tg.ready();
 }
 
@@ -64,17 +64,28 @@ function saveStats() {
   localStorage.setItem('avp_stats', JSON.stringify(userStats));
 }
 function updateStatDisplay() {
-  const el = id => document.getElementById(id);
-  const totalQuestions = allQuestions.length || 1264; // Fallback
-  const answeredCount = userStats.tests * 10; // Simple estimation or real value
-  const pct = totalQuestions > 0 ? Math.min(100, Math.round((answeredCount / totalQuestions) * 100)) : 0;
-  
-  if(el('stat-total')) el('stat-total').textContent = totalQuestions;
-  if(el('progress-pct-text')) el('progress-pct-text').textContent = pct + '%';
-  if(el('dashboard-progress-bar')) el('dashboard-progress-bar').style.width = pct + '%';
-  if(el('progress-days-text')) {
-    el('progress-days-text').textContent = userStats.streak + ' kun';
-  }
+  const $ = id => document.getElementById(id);
+  const total = allQuestions.length || 1264;
+  const pct = total > 0 ? Math.min(100, Math.round((userStats.correct / total) * 100)) : 0;
+  const dashOffset = 176 - (176 * pct / 100);
+
+  // Progress ring
+  if($('home-progress-ring')) $('home-progress-ring').style.strokeDashoffset = dashOffset;
+  if($('home-pct')) $('home-pct').textContent = pct + '%';
+
+  // Stats chips on home
+  if($('stat-correct-home')) $('stat-correct-home').textContent = userStats.correct;
+  if($('stat-wrong-home')) $('stat-wrong-home').textContent = userStats.wrong;
+  if($('stat-total-home')) $('stat-total-home').textContent = total;
+
+  // Streak badge
+  if($('streak-count')) $('streak-count').textContent = userStats.streak;
+  if($('profile-streak')) $('profile-streak').textContent = userStats.streak;
+
+  // Profile stats
+  if($('stat-tests')) $('stat-tests').textContent = userStats.tests;
+  if($('stat-correct')) $('stat-correct').textContent = userStats.correct;
+  if($('stat-wrong')) $('stat-wrong').textContent = userStats.wrong;
 }
 
 // Promo Timer Setup
@@ -102,8 +113,26 @@ async function initApp() {
   // Telegram user
   if (tg?.initDataUnsafe?.user) {
     const u = tg.initDataUnsafe.user;
-    document.getElementById('user-name').textContent = u.first_name + (u.last_name ? ' ' + u.last_name : '');
-    if (u.photo_url) document.getElementById('user-photo').src = u.photo_url;
+    const fullName = u.first_name + (u.last_name ? ' ' + u.last_name : '');
+    // Set all name elements
+    ['user-name', 'home-username'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = fullName;
+    });
+    // Set all avatar elements
+    if (u.photo_url) {
+      ['user-photo', 'header-avatar'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.src = u.photo_url;
+      });
+    } else {
+      // Generate avatar from name
+      const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(fullName)}&background=1e3a2f&color=58cc02&size=80`;
+      ['user-photo', 'header-avatar'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.src = avatarUrl;
+      });
+    }
   }
 
   loadStats();
@@ -120,28 +149,76 @@ async function initApp() {
 
     updateStatDisplay();
     startPromoTimer();
+    renderCategories(); // Pre-render categories for tests tab
     showToast(`\u2705 ${allQuestions.length} ta savol yuklandi!`);
     syncLeaderboard(); // initial sync
   } catch(e) {
-    if(document.getElementById('stat-total')) document.getElementById('stat-total').textContent = '0';
     showToast('\u274C Ma\'lumotlar yuklanmadi');
+    console.error(e);
   }
 }
 
-// ── Navigation ──
-function navigate(viewId) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.getElementById(viewId).classList.add('active');
-  window.scrollTo(0,0);
+// ── Tab Navigation ──
+let activeTab = 'tab-home';
+function switchTab(tabId) {
+  // Hide all tabs
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  // Show target tab
+  const tab = document.getElementById(tabId);
+  if (tab) tab.classList.add('active');
+  activeTab = tabId;
 
-  // Lazy load views
+  // Update nav buttons
+  const map = {
+    'tab-home': 'nav-home',
+    'tab-tests': 'nav-tests',
+    'tab-signs': 'nav-signs',
+    'tab-duel': 'nav-duel',
+    'tab-profile': 'nav-profile'
+  };
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  if (map[tabId]) {
+    const navBtn = document.getElementById(map[tabId]);
+    if (navBtn) navBtn.classList.add('active');
+  }
+
+  // Lazy load
+  if (tabId === 'tab-signs') renderSigns();
+  if (tabId === 'tab-tests') renderCategories();
+}
+
+// ── Overlay Navigation ──
+let overlayHistory = [];
+function navigate(viewId) {
+  if (viewId === 'back') {
+    // Go back to previous overlay or close all
+    const prev = overlayHistory.pop();
+    document.querySelectorAll('.overlay-view').forEach(v => v.classList.add('hidden'));
+    if (prev) {
+      document.getElementById(prev)?.classList.remove('hidden');
+    }
+    return;
+  }
+
+  // Hide all overlays first
+  document.querySelectorAll('.overlay-view').forEach(v => v.classList.add('hidden'));
+
+  const view = document.getElementById(viewId);
+  if (!view) return;
+  view.classList.remove('hidden');
+
+  // Push to history for back button support
+  overlayHistory.push(viewId);
+
+  // Lazy load
   if (viewId === 'view-rules') renderRules();
-  if (viewId === 'view-signs') renderSigns();
   if (viewId === 'view-videos') renderVideos();
   if (viewId === 'view-news') renderNews();
   if (viewId === 'view-org') renderOrg();
   if (viewId === 'view-setup') renderCategories();
   if (viewId === 'view-leaderboard') loadLeaderboard();
+
+  window.scrollTo(0, 0);
 }
 
 // ═══════════════════════════════════════
@@ -149,15 +226,20 @@ function navigate(viewId) {
 // ═══════════════════════════════════════
 function renderCategories() {
   const cats = ['Barchasi', ...new Set(allQuestions.map(q => q.category).filter(Boolean))];
-  const container = document.getElementById('category-list');
-  container.innerHTML = cats.map(c =>
+  const html = cats.map(c =>
     `<button class="cat-btn ${c === testState.selectedCategory ? 'active' : ''}"
       onclick="selectCategory(this,'${c}')">${c}</button>`
   ).join('');
+  
+  // Render in both containers (tab and overlay)
+  const c1 = document.getElementById('category-list');
+  const c2 = document.getElementById('category-list-setup');
+  if (c1) c1.innerHTML = html;
+  if (c2) c2.innerHTML = html;
 }
 
 function selectCategory(btn, cat) {
-  document.querySelectorAll('#category-list .cat-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   testState.selectedCategory = cat;
 }
@@ -382,7 +464,10 @@ function closeConfirm() {
 }
 function quitTest() {
   closeConfirm();
-  navigate('view-dashboard');
+  // Close all overlays and go back to home tab
+  document.querySelectorAll('.overlay-view').forEach(v => v.classList.add('hidden'));
+  overlayHistory = [];
+  switchTab('tab-home');
 }
 
 // ═══════════════════════════════════════
@@ -390,35 +475,31 @@ function quitTest() {
 // ═══════════════════════════════════════
 async function loadLeaderboard() {
   const container = document.getElementById('leaderboard-list');
-  container.innerHTML = '<div style="text-align:center; padding: 2rem;"><i class="fas fa-spinner fa-spin"></i> Yuklanmoqda...</div>';
+  container.innerHTML = '<div class="spinner-center"><i class="fas fa-spinner fa-spin"></i></div>';
   
   try {
     const res = await fetch('/api/leaderboard/top');
     const data = await res.json();
     
     if (data.leaderboard && data.leaderboard.length > 0) {
-      container.innerHTML = data.leaderboard.map(u => `
-        <div class="glass-panel" style="display:flex; justify-content:space-between; align-items:center; padding: 1rem; margin-bottom: 0.5rem; border-radius: 12px; background: rgba(255,255,255,0.05);">
-          <div style="display:flex; align-items:center; gap: 1rem;">
-            <div style="font-size: 1.5rem; font-weight: bold; color: ${u.rank === 1 ? 'gold' : u.rank === 2 ? 'silver' : u.rank === 3 ? '#cd7f32' : 'white'}; width: 30px; text-align:center;">
-              ${u.rank}
+      container.innerHTML = data.leaderboard.map(u => {
+        const rankClass = u.rank === 1 ? 'gold' : u.rank === 2 ? 'silver' : u.rank === 3 ? 'bronze' : '';
+        return `
+          <div class="lb-item">
+            <div class="lb-rank ${rankClass}">${u.rank === 1 ? '🥇' : u.rank === 2 ? '🥈' : u.rank === 3 ? '🥉' : u.rank}</div>
+            <div class="lb-name">
+              <div class="lb-name-text">${u.name}</div>
+              <div class="lb-streak">🔥 ${u.streak} kun olov</div>
             </div>
-            <div>
-              <div style="font-weight: bold; font-size: 1.1rem;">${u.name}</div>
-              <div style="font-size: 0.8rem; color: #aaa;"><i class="fas fa-fire text-orange"></i> ${u.streak} kun olov</div>
-            </div>
-          </div>
-          <div style="font-size: 1.2rem; font-weight: bold; color: #58cc02;">
-            ${u.score} ball
-          </div>
-        </div>
-      `).join('');
+            <div class="lb-score">${u.score}</div>
+          </div>`;
+      }).join('');
     } else {
-      container.innerHTML = '<div style="text-align:center; padding: 2rem;">Hozircha reyting bo\'sh. Birinchi bo\'ling!</div>';
+      container.innerHTML = '<div style="text-align:center; padding: 2rem; color: var(--text2);">Hozircha reyting bo\'sh. Birinchi bo\'ling!</div>';
     }
   } catch (e) {
     console.error('Error loading leaderboard:', e);
-    container.innerHTML = '<div style="text-align:center; padding: 2rem; color: red;">Xatolik yuz berdi.</div>';
+    container.innerHTML = '<div style="text-align:center; padding: 2rem; color: var(--red);">Xatolik yuz berdi.</div>';
   }
 }
 
@@ -427,12 +508,12 @@ async function loadLeaderboard() {
 // ═══════════════════════════════════════
 function renderRules() {
   const container = document.getElementById('rules-container');
-  if (!allRules.length) { container.innerHTML = '<p style="text-align:center;color:#64748b;padding:40px">Qoidalar yo\'q</p>'; return; }
+  if (!container) return;
+  if (!allRules.length) { container.innerHTML = '<p style="text-align:center;color:var(--text2);padding:40px">Qoidalar yo\'q</p>'; return; }
   container.innerHTML = allRules.map((r, i) => `
-    <div class="rule-item glass-panel" onclick="showRule(${r.id})">
-      <div class="rule-num">${i+1}</div>
-      <div class="rule-title">${r.title}</div>
-      <i class="fas fa-chevron-right" style="color:#64748b;font-size:13px"></i>
+    <div class="rule-item" onclick="showRule(${r.id})">
+      <h3>${i+1}. ${r.title}</h3>
+      <p>${(r.text || '').substring(0, 80)}${r.text && r.text.length > 80 ? '...' : ''}</p>
     </div>
   `).join('');
 }
@@ -472,38 +553,21 @@ function renderSignsGrid() {
   const query = document.getElementById('signs-search')?.value?.toLowerCase() || '';
   let filtered = allSigns;
   if (signsFilter !== 'Barchasi') filtered = filtered.filter(s => s.category === signsFilter);
-  if (query) filtered = filtered.filter(s => (s.name||'').toLowerCase().includes(query));
+  if (query) filtered = filtered.filter(s => (s.name || '').toLowerCase().includes(query));
 
   const container = document.getElementById('signs-container');
-  if (!filtered.length) { container.innerHTML = '<p style="text-align:center;color:#64748b;padding:40px">Topilmadi</p>'; return; }
+  if (!container) return;
+  if (!filtered.length) { container.innerHTML = '<p style="text-align:center;color:var(--text2);padding:40px">Topilmadi</p>'; return; }
 
-  container.innerHTML = filtered.map(s => {
-    const imgSrc = s.image_url || 'images/placeholder.png';
-    const imgTag = `<img src="${imgSrc}" alt="${s.name}" loading="lazy" onerror="this.onerror=null; this.src='images/placeholder.png';">`;
-    return `
-    <div class="sign-card glass-panel" onclick="showSignDetail(${s.id})">
-      ${imgTag}
-      <div class="sign-name">${s.name}</div>
-      <div class="sign-cat">${s.category}</div>
-    </div>`;
-  }).join('');
+  container.innerHTML = filtered.map(s => `
+    <div class="sign-card" onclick="showSignDetail(${s.id})">
+      <img src="${s.image_url || 'images/placeholder.png'}" alt="${s.name}" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder.png';">
+      <span>${s.name}</span>
+    </div>
+  `).join('');
 }
 
-function showSignDetail(id) {
-  const s = allSigns.find(x => x.id === id);
-  if (!s) return;
-  showToast(`🔍 ${s.name}`);
-  // Could navigate to detail view, for now show as toast
-  if (tg?.showPopup) {
-    tg.showPopup({
-      title: s.name,
-      message: s.description || 'Tavsif kiritilmagan.',
-      buttons: [{ type: 'ok' }]
-    });
-  } else {
-    alert(`${s.name}\n\n${s.description || ''}`);
-  }
-}
+
 
 // ═══════════════════════════════════════
 // ── VIDEOS MODULE ──
@@ -511,9 +575,11 @@ function showSignDetail(id) {
 function renderVideos() {
   const sections = ['Barchasi', ...new Set(allVideos.map(v => v.section).filter(Boolean))];
   const secList = document.getElementById('video-section-list');
-  secList.innerHTML = sections.map((s,i) =>
-    `<button class="cat-btn ${i===0?'active':''}" onclick="filterVideos(this,'${s}')">${s||'Umumiy'}</button>`
-  ).join('');
+  if (secList) {
+    secList.innerHTML = sections.map((s, i) =>
+      `<button class="cat-btn ${i === 0 ? 'active' : ''}" onclick="filterVideos(this,'${s}')">${s || 'Umumiy'}</button>`
+    ).join('');
+  }
   renderVideosList('Barchasi');
 }
 
@@ -525,39 +591,38 @@ function filterVideos(btn, section) {
 
 function renderVideosList(section) {
   const container = document.getElementById('videos-container');
-  let videos = section === 'Barchasi' ? allVideos : allVideos.filter(v => v.section === section);
+  if (!container) return;
+  const videos = section === 'Barchasi' ? allVideos : allVideos.filter(v => v.section === section);
 
-  if (!videos.length) { container.innerHTML = '<p style="text-align:center;color:#64748b;padding:40px">Video yo\'q</p>'; return; }
+  if (!videos.length) { container.innerHTML = '<p style="text-align:center;color:var(--text2);padding:40px">Video yo\'q</p>'; return; }
 
-  const bySec = {};
-  videos.forEach(v => {
-    const s = v.section || 'Umumiy';
-    if (!bySec[s]) bySec[s] = [];
-    bySec[s].push(v);
-  });
-
-  let html = '';
-  for (const [sec, vids] of Object.entries(bySec)) {
-    if (section === 'Barchasi') html += `<div class="section-header">📂 ${sec}</div>`;
-    html += vids.map((v, i) => `
-      <div class="video-item glass-panel" onclick="openVideo('${v.youtube_url || v.video_url || ''}', '${v.topic.replace(/'/g,"\\'")}')">
-        <div class="video-icon"><i class="fas fa-play"></i></div>
-        <div class="video-info">
-          <div class="video-topic">${v.topic}</div>
-          <div class="video-section">${v.section || 'Umumiy'} • Dars ${i+1}</div>
-        </div>
-        <i class="fas fa-chevron-right" style="color:#64748b;font-size:13px"></i>
+  container.innerHTML = videos.map((v, i) => `
+    <div class="video-item" onclick="openVideo('${(v.youtube_url || v.video_url || '')}', '${(v.topic || '').replace(/'/g, "\\'")}')">
+      <div class="video-thumb">
+        ${v.youtube_url
+          ? `<img src="https://img.youtube.com/vi/${extractYoutubeId(v.youtube_url)}/mqdefault.jpg" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML='<span style=font-size:32px>▶️</span>'">`
+          : '<span style="font-size:32px">▶️</span>'}
       </div>
-    `).join('');
-  }
-  container.innerHTML = html;
+      <div class="video-meta">
+        <div class="video-title">${v.topic}</div>
+        <div class="video-sub">${v.section || 'Umumiy'} • ${i + 1}-dars</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function extractYoutubeId(url) {
+  const m = (url || '').match(/(?:v=|youtu\.be\/)([\w-]{11})/);
+  return m ? m[1] : '';
 }
 
 function openVideo(url, topic) {
-  if (!url) { showToast('⏳ Video hali bot orqali yuklanmagan'); return; }
+  if (!url) { showToast('⏳ Video hali yuklanmagan'); return; }
   if (tg?.openLink) tg.openLink(url);
   else window.open(url, '_blank');
 }
+
+
 
 // ═══════════════════════════════════════
 // ── NEWS MODULE ──
@@ -676,7 +741,7 @@ function duelBack() {
   if (inGame) {
     duelShowModeSelect();
   } else {
-    navigate('view-dashboard');
+    switchTab('tab-home');
   }
 }
 
