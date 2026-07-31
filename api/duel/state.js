@@ -29,6 +29,9 @@ export default async function handler(req, res) {
     opp_name: oppData ? oppData.name : null,
     player_count: playerIds.length,
     questions: room.questions || [],
-    answers: myData.answers || {}
+    answers: myData.answers || {},
+    last_reaction: room.last_reaction || null,
+    next_room_id: room.next_room_id || null,
+    rematch_requested: room.rematch_requested || {}
   });
 }

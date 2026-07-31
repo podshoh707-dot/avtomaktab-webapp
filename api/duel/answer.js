@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { room_id, user_id, question_idx, answer, is_correct } = req.body;
+  const { room_id, user_id, question_idx, answer, is_correct, time_taken_ms } = req.body;
   if (!room_id || !user_id || question_idx === undefined) {
     return res.status(400).json({ error: 'room_id, user_id, question_idx required' });
   }
@@ -24,7 +24,14 @@ export default async function handler(req, res) {
   // Javobni saqlash
   room.players[uid].answers[question_idx] = { answer, is_correct: Boolean(is_correct) };
   if (is_correct) {
-    room.players[uid].score = (room.players[uid].score || 0) + 1;
+    let points = 10; // Default points
+    if (time_taken_ms !== undefined) {
+      // Masalan, 10 soniya = 10000ms. 
+      // Eng tezi 100 ball, eng sekini 10 ball.
+      const timeMs = Math.min(10000, Math.max(0, time_taken_ms));
+      points = Math.max(10, Math.floor(100 - (timeMs / 10000) * 90));
+    }
+    room.players[uid].score = (room.players[uid].score || 0) + points;
   }
 
   // Hamma savollarga javob berganmi?
