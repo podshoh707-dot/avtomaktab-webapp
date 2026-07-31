@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google" value="notranslate">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="E-AVTOMAKTAB">
+    <title>Vatanparvar</title>
+    <link rel="manifest" href="/admin/manifest.json">
+    <link rel="apple-touch-icon" href="/logo_icon192.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- <link rel="stylesheet" href="/poppins/Poppins-Regular"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /> -->
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url(admin/ poppins/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: 'PoppinsItalic';
+            src: url(admin/ poppins/Poppins-Italic.ttf);
+        }
+
+    </style>
+
+    <link rel="stylesheet"
+          href="https://e-avtomaktab.uz/admin/css/app.css?id=07cd4d0cd305ed30715a">
+    <style>
+        p, h1, h2, h3, h4, h5, h6, a {
+            font-family: "Poppins" !important;
+        }
+
+        p {
+            font-size: medium;
+        }
+        .grecaptcha-badge { 
+    visibility: hidden !important; 
+    opacity: 0 !important;
+}
+        #pwa-install-notice {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 9999;
+            display: none;
+            width: 360px;
+            max-width: calc(100vw - 24px);
+            border-radius: 18px;
+            padding: 16px 18px;
+            background: linear-gradient(135deg, #0f4c81 0%, #1672b8 100%);
+            color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            box-shadow: 0 18px 45px rgba(10, 47, 79, 0.28);
+            overflow: hidden;
+        }
+
+        #pwa-install-notice::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.22), transparent 34%);
+            pointer-events: none;
+        }
+
+        .pwa-install-content {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .pwa-install-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            min-width: 46px;
+            height: 46px;
+            border-radius: 14px;
+            background: white;
+            font-size: 22px;
+        }
+
+        .pwa-install-body {
+            flex: 1;
+        }
+
+        .pwa-install-title {
+            margin: 0 0 4px 0;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .pwa-install-text {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .pwa-install-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        #pwa-install-button {
+            border: 0;
+            border-radius: 12px;
+            padding: 10px 16px;
+            background: #ffffff;
+            color: #0f4c81;
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #pwa-install-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.18);
+        }
+
+        #pwa-install-dismiss {
+            border: 0;
+            padding: 8px 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.14);
+            color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        #pwa-install-dismiss:hover {
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        @media (max-width: 768px) {
+            #pwa-install-notice {
+                right: 12px;
+                left: 12px;
+                bottom: 12px;
+                width: auto;
+            }
+        }
+    </style>
+   <script src="https://www.google.com/recaptcha/api.js?render=6LfQyMwsAAAAAFXnVjJIZLDQ-HhiUeCpBwnab8PR"  async defer></script>
+    
+</head>
+<body>
+<!-- <noscript>
+      <strong>Для корректной работы Вам необходимо включить поддержу JavaScript в настройках браузера.</strong>
+    </noscript> -->
+<div id="app">
+</div>
+<div id="pwa-install-notice" role="status" aria-live="polite">
+    <div class="pwa-install-content">
+        <div class="pwa-install-icon" style="background-image: url('/admin/logo_icon192.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="pwa-install-body">
+            <p class="pwa-install-title">Ilovani o'rnatib oling</p>
+            <p class="pwa-install-text">E-avtomaktabni tezroq ochish va qulay foydalanish uchun uni qurilmangizga o'rnatishingiz mumkin.</p>
+            <div class="pwa-install-actions">
+                <button id="pwa-install-button" type="button">O'rnatish</button>
+                <button id="pwa-install-dismiss" type="button">Keyinroq</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+    src="https://e-avtomaktab.uz/admin/js/app.js?id=2d9439075674994948a7"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script>
+  // Set the workerSrc property to point to the worker script
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.worker.min.js';
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/admin/sw.js').catch(function (error) {
+        console.log('Service Worker error:', error);
+      });
+    });
+  }
+
+  (function () {
+    var installNotice = document.getElementById('pwa-install-notice');
+    var installButton = document.getElementById('pwa-install-button');
+    var dismissButton = document.getElementById('pwa-install-dismiss');
+    var deferredPrompt = null;
+
+    if (!installNotice || !installButton || !dismissButton) {
+      return;
+    }
+
+    window.addEventListener('beforeinstallprompt', function (event) {
+      event.preventDefault();
+      deferredPrompt = event;
+      installNotice.style.display = 'block';
+    });
+
+    installButton.addEventListener('click', async function () {
+      if (!deferredPrompt) {
+        return;
+      }
+
+      deferredPrompt.prompt();
+      var choiceResult = await deferredPrompt.userChoice;
+
+      if (choiceResult && choiceResult.outcome === 'accepted') {
+        installNotice.style.display = 'none';
+      }
+
+      deferredPrompt = null;
+    });
+
+    dismissButton.addEventListener('click', function () {
+      installNotice.style.display = 'none';
+    });
+
+    window.addEventListener('appinstalled', function () {
+      deferredPrompt = null;
+      installNotice.style.display = 'none';
+    });
+
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      installNotice.style.display = 'none';
+    }
+  })();
+</script>
+</body>
+</html>
+
