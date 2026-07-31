@@ -500,7 +500,7 @@ document.addEventListener('DOMContentLoaded', initApp);
 //   ⚔️ DUEL JANG MODULI (Bot + PvP)
 // ══════════════════════════════════════════
 
-const API_BASE = 'http://localhost:3001'; // Bot bilan parallel ishlaydi
+const API_BASE = ''; // Vercel: nisbiy yo'l (/api/duel/...)
 
 let duelMode = null; // 'bot' | 'pvp'
 let duelState = {
@@ -600,7 +600,7 @@ async function pvpFindMatch() {
   document.getElementById('pvp-room-code-display').textContent = '...';
 
   try {
-    const res = await fetch(`${API_BASE}/duel/create`, {
+    const res = await fetch(`/api/duel/create`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_id: userId, user_name: userName })
@@ -611,6 +611,7 @@ async function pvpFindMatch() {
       // Immediately matched
       duelState.roomId = data.room_id;
       duelState.questions = data.questions;
+      duelState.oppName = data.opponent_name || 'Raqib';
       _pvpStartFromRoom(data);
     } else {
       // Waiting for opponent
@@ -620,7 +621,7 @@ async function pvpFindMatch() {
       _pvpPollForOpponent();
     }
   } catch (e) {
-    showToast('❌ Server bilan aloqa yo\'q. Bot ishlayaptimi?');
+    showToast('\u274C Server bilan aloqa yo\'q. Keyinroq urinib ko\'ring.');
     pvpCancelWait();
   }
 }
@@ -655,19 +656,20 @@ async function pvpJoinByCode() {
   duelState.userName = userName;
 
   try {
-    const res = await fetch(`${API_BASE}/duel/join`, {
+    const res = await fetch(`/api/duel/join`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ room_id: code, user_id: userId, user_name: userName })
     });
     const data = await res.json();
-    if (data.error) { showToast(`❌ ${data.error}`); return; }
+    if (data.error) { showToast(`\u274C ${data.uz || data.error}`); return; }
 
     duelState.roomId = data.room_id || code;
     duelState.questions = data.questions;
+    duelState.oppName = data.opponent_name || 'Raqib';
     _pvpStartFromRoom(data);
   } catch (e) {
-    showToast('❌ Server bilan aloqa yo\'q.');
+    showToast('\u274C Server bilan aloqa yo\'q.');
   }
 }
 
@@ -676,13 +678,12 @@ function _pvpPollForOpponent() {
   duelState.pollTimer = setInterval(async () => {
     if (!duelState.roomId) return;
     try {
-      const res = await fetch(`${API_BASE}/duel/state/${duelState.roomId}/${duelState.userId}`);
+      const res = await fetch(`/api/duel/state?room_id=${duelState.roomId}&user_id=${duelState.userId}`);
       const data = await res.json();
       if (data.status === 'active') {
         clearInterval(duelState.pollTimer);
-        const playerIds = Object.keys(data.players);
-        const oppId = playerIds.find(id => id !== String(duelState.userId));
-        duelState.oppName = oppId ? data.players[oppId].name : 'Raqib';
+        duelState.oppName = data.opp_name || 'Raqib';
+        duelState.questions = data.questions && data.questions.length ? data.questions : duelState.questions;
         _pvpStartFromRoom(data);
       }
     } catch (e) {}
@@ -693,10 +694,8 @@ function _pvpStartFromRoom(data) {
   clearInterval(duelState.pollTimer);
   document.getElementById('pvp-waiting-card').classList.add('hidden');
 
-  // Get opponent name
-  const playerIds = Object.keys(data.players || {});
-  const oppId = playerIds.find(id => id !== String(duelState.userId));
-  duelState.oppName = oppId ? data.players[oppId].name : 'Raqib';
+  // Get opponent name (new API returns opp_name directly)
+  duelState.oppName = data.opp_name || data.opponent_name || duelState.oppName || 'Raqib';
 
   if (!duelState.questions || !duelState.questions.length) {
     showToast('❌ Savollar yuklanmadi'); return;
@@ -808,16 +807,12 @@ function duelShowQuestion() {
     clearInterval(duelState.pollTimer);
     duelState.pollTimer = setInterval(async () => {
       try {
-        const res = await fetch(`${API_BASE}/duel/state/${duelState.roomId}/${duelState.userId}`);
+        const res = await fetch(`/api/duel/state?room_id=${duelState.roomId}&user_id=${duelState.userId}`);
         const data = await res.json();
-        const playerIds = Object.keys(data.players || {});
-        const oppId = playerIds.find(id => id !== String(duelState.userId));
-        if (oppId) {
-          const oppScore = data.players[oppId].score;
-          if (oppScore !== duelState.botScore) {
-            duelState.botScore = oppScore;
-            updateDuelHUD();
-          }
+        const oppScore = data.opp_score || 0;
+        if (oppScore !== duelState.botScore) {
+          duelState.botScore = oppScore;
+          updateDuelHUD();
         }
         if (data.status === 'finished' && duelState.current >= duelState.questions.length) {
           clearInterval(duelState.pollTimer);
@@ -860,14 +855,16 @@ function duelAnswer(selected, correct) {
 
   // PvP: submit to server
   if (duelMode === 'pvp' && duelState.roomId) {
-    fetch(`${API_BASE}/duel/answer`, {
+    const isCorrect = (selected === correct);
+    fetch(`/api/duel/answer`, {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
         room_id: duelState.roomId,
         user_id: duelState.userId,
-        q_idx: duelState.current,
-        answer: selected
+        question_idx: duelState.current,
+        answer: selected,
+        is_correct: isCorrect
       })
     }).catch(() => {});
   }
