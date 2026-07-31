@@ -18,15 +18,48 @@ let testState = {
   questions: [], current: 0, correct: 0, wrong: 0,
   selectedCategory: 'Barchasi', count: 10, answered: false
 };
-let userStats = { tests: 0, correct: 0, wrong: 0 };
+let userStats = { 
+  tests: 0, 
+  correct: 0, 
+  wrong: 0, 
+  streak: 0, 
+  lastActiveDate: null, 
+  errors: [] // Store IDs of wrong questions
+};
 let signsFilter = 'Barchasi';
 
 // ── Local storage stats ──
 function loadStats() {
   const s = localStorage.getItem('avp_stats');
-  if (s) userStats = JSON.parse(s);
+  if (s) {
+    const parsed = JSON.parse(s);
+    userStats = { ...userStats, ...parsed };
+  }
+  
+  // Streak calculation
+  const today = new Date().toISOString().split('T')[0];
+  if (userStats.lastActiveDate !== today) {
+    if (userStats.lastActiveDate) {
+      const lastDate = new Date(userStats.lastActiveDate);
+      const currentDate = new Date(today);
+      const diffTime = Math.abs(currentDate - lastDate);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+      
+      if (diffDays === 1) {
+        userStats.streak += 1; // Increment streak
+      } else if (diffDays > 1) {
+        userStats.streak = 1; // Reset streak if missed a day
+      }
+    } else {
+      userStats.streak = 1; // First time
+    }
+    userStats.lastActiveDate = today;
+    saveStats(); // Save updated streak immediately
+  }
+  
   updateStatDisplay();
 }
+
 function saveStats() {
   localStorage.setItem('avp_stats', JSON.stringify(userStats));
 }
@@ -40,9 +73,7 @@ function updateStatDisplay() {
   if(el('progress-pct-text')) el('progress-pct-text').textContent = pct + '%';
   if(el('dashboard-progress-bar')) el('dashboard-progress-bar').style.width = pct + '%';
   if(el('progress-days-text')) {
-    // Basic day counter based on tests taken
-    const days = Math.floor(userStats.tests / 2); 
-    el('progress-days-text').textContent = days + ' kun';
+    el('progress-days-text').textContent = userStats.streak + ' kun';
   }
 }
 
@@ -90,6 +121,7 @@ async function initApp() {
     updateStatDisplay();
     startPromoTimer();
     showToast(`\u2705 ${allQuestions.length} ta savol yuklandi!`);
+    syncLeaderboard(); // initial sync
   } catch(e) {
     if(document.getElementById('stat-total')) document.getElementById('stat-total').textContent = '0';
     showToast('\u274C Ma\'lumotlar yuklanmadi');
@@ -109,6 +141,7 @@ function navigate(viewId) {
   if (viewId === 'view-news') renderNews();
   if (viewId === 'view-org') renderOrg();
   if (viewId === 'view-setup') renderCategories();
+  if (viewId === 'view-leaderboard') loadLeaderboard();
 }
 
 // ═══════════════════════════════════════
@@ -142,6 +175,36 @@ function shuffle(arr) {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+function startSpecialTest(mode) {
+  let pool = [];
+  testState.count = 20; // default for most
+  
+  if (mode === 'numeric') {
+    pool = allQuestions.filter(q => /\d/.test(q.text));
+    if (!pool.length) { showToast('\u274C Raqamli savollar topilmadi!'); return; }
+  } else if (mode === 'tricky') {
+    // Arbitrary heuristic: questions with long text or randomly pick a subset
+    pool = allQuestions.filter(q => q.text.length > 80);
+    if (!pool.length) pool = allQuestions; // fallback
+  } else if (mode === 'marathon50') {
+    pool = allQuestions;
+    testState.count = 50;
+  } else if (mode === 'my_errors') {
+    const errorsSet = new Set(userStats.errors);
+    pool = allQuestions.filter(q => errorsSet.has(q.id));
+    if (!pool.length) { showToast('\u2705 Sizda xatolar yo\'q! Barakalla!'); return; }
+    testState.count = Math.min(20, pool.length);
+  }
+  
+  testState.questions = shuffle(pool).slice(0, testState.count);
+  testState.current = 0;
+  testState.correct = 0;
+  testState.wrong = 0;
+
+  navigate('view-test');
+  renderQuestion();
 }
 
 function beginTest() {
@@ -215,8 +278,17 @@ function answerQuestion(selected) {
   const correctOpt = q.correct_option || q.correct || 'A';
   const isCorrect = selected === correctOpt;
 
-  if (isCorrect) testState.correct++;
-  else testState.wrong++;
+  if (isCorrect) {
+    testState.correct++;
+    // If it was in errors, we can optionally remove it, but let's keep it simple for now
+  } else {
+    testState.wrong++;
+    if (!userStats.errors) userStats.errors = [];
+    if (!userStats.errors.includes(q.id)) {
+      userStats.errors.push(q.id);
+      if (userStats.errors.length > 100) userStats.errors.shift(); // Keep max 100 errors
+    }
+  }
 
   // Visual feedback
   document.querySelectorAll('.option-btn').forEach(btn => btn.classList.add('disabled'));
@@ -259,6 +331,7 @@ function showResult() {
   userStats.wrong += testState.wrong;
   saveStats();
   updateStatDisplay();
+  syncLeaderboard(); // Sync score to server
 
   const total = testState.questions.length;
   const pct = Math.round(testState.correct / total * 100);
@@ -280,6 +353,25 @@ function showResult() {
   navigate('view-result');
 }
 
+async function syncLeaderboard() {
+  if (!tg?.initDataUnsafe?.user) return;
+  const user = tg.initDataUnsafe.user;
+  try {
+    await fetch('/api/leaderboard/update', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userId: user.id,
+        name: user.first_name + (user.last_name ? ' ' + user.last_name : ''),
+        score: userStats.correct,
+        streak: userStats.streak
+      })
+    });
+  } catch(e) {
+    console.error('Failed to sync leaderboard', e);
+  }
+}
+
 function retryTest() { beginTest(); }
 
 function confirmQuit() {
@@ -291,6 +383,43 @@ function closeConfirm() {
 function quitTest() {
   closeConfirm();
   navigate('view-dashboard');
+}
+
+// ═══════════════════════════════════════
+// ── LEADERBOARD MODULE ──
+// ═══════════════════════════════════════
+async function loadLeaderboard() {
+  const container = document.getElementById('leaderboard-list');
+  container.innerHTML = '<div style="text-align:center; padding: 2rem;"><i class="fas fa-spinner fa-spin"></i> Yuklanmoqda...</div>';
+  
+  try {
+    const res = await fetch('/api/leaderboard/top');
+    const data = await res.json();
+    
+    if (data.leaderboard && data.leaderboard.length > 0) {
+      container.innerHTML = data.leaderboard.map(u => `
+        <div class="glass-panel" style="display:flex; justify-content:space-between; align-items:center; padding: 1rem; margin-bottom: 0.5rem; border-radius: 12px; background: rgba(255,255,255,0.05);">
+          <div style="display:flex; align-items:center; gap: 1rem;">
+            <div style="font-size: 1.5rem; font-weight: bold; color: ${u.rank === 1 ? 'gold' : u.rank === 2 ? 'silver' : u.rank === 3 ? '#cd7f32' : 'white'}; width: 30px; text-align:center;">
+              ${u.rank}
+            </div>
+            <div>
+              <div style="font-weight: bold; font-size: 1.1rem;">${u.name}</div>
+              <div style="font-size: 0.8rem; color: #aaa;"><i class="fas fa-fire text-orange"></i> ${u.streak} kun olov</div>
+            </div>
+          </div>
+          <div style="font-size: 1.2rem; font-weight: bold; color: #58cc02;">
+            ${u.score} ball
+          </div>
+        </div>
+      `).join('');
+    } else {
+      container.innerHTML = '<div style="text-align:center; padding: 2rem;">Hozircha reyting bo\'sh. Birinchi bo\'ling!</div>';
+    }
+  } catch (e) {
+    console.error('Error loading leaderboard:', e);
+    container.innerHTML = '<div style="text-align:center; padding: 2rem; color: red;">Xatolik yuz berdi.</div>';
+  }
 }
 
 // ═══════════════════════════════════════

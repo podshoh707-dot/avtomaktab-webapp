@@ -12,6 +12,25 @@
 </head>
 <body>
 <div class="app-container">
+    <!-- ══════════════ LEADERBOARD VIEW ══════════════ -->
+    <main id="view-leaderboard" class="view">
+        <div class="view-header">
+            <button class="back-btn glass-panel" onclick="navigate('view-dashboard')"><i class="fas fa-arrow-left"></i></button>
+            <h2>🏆 Top-100 Reyting</h2>
+        </div>
+        <div class="leaderboard-container glass-panel" style="margin: 1rem; padding: 1rem; min-height: 50vh;">
+            <div style="text-align:center; margin-bottom: 1rem;">
+                <p>Eng ko'p to'g'ri javob topgan bilimdonlar ro'yxati</p>
+                <button class="primary-btn" onclick="loadLeaderboard()" style="margin-top: 10px;">
+                    <i class="fas fa-sync-alt"></i> Yangilash
+                </button>
+            </div>
+            <div id="leaderboard-list">
+                <div style="text-align:center; padding: 2rem;">Yuklanmoqda...</div>
+            </div>
+        </div>
+    </main>
+
     <!-- BG blobs -->
     <div class="bg-shape shape1"></div>
     <div class="bg-shape shape2"></div>
@@ -31,7 +50,7 @@
                 </div>
             </div>
             <div class="brand-logo">
-                <div class="brand-icon"><i class="fas fa-car"></i></div>
+                <div class="brand-icon" onclick="navigate('view-leaderboard')"><i class="fas fa-trophy" style="color: gold;"></i></div>
                 <span>AVP</span>
             </div>
         </header>
@@ -61,7 +80,7 @@
                 <i class="fas fa-list-ul text-blue"></i>
                 <span>Barcha testlar</span>
             </div>
-            <div class="summary-card glass-panel" onclick="showToast('Hali xatolar yo\'q')">
+            <div class="summary-card glass-panel" onclick="startSpecialTest('my_errors')">
                 <i class="fas fa-heart-broken text-red"></i>
                 <span>Xatolarni tuzatish</span>
             </div>
@@ -95,25 +114,25 @@
                 <i class="fas fa-book-open category-icon text-purple"></i>
                 <span>YHQ Qoidalari</span>
             </div>
-            <div class="category-card glass-panel" onclick="navigate('view-setup')">
-                <i class="fas fa-ticket-alt category-icon text-gold"></i>
-                <span>Biletlar</span>
+            <div class="category-card glass-panel" onclick="startSpecialTest('numeric')">
+                <i class="fas fa-calculator category-icon text-gold"></i>
+                <span>Raqamli savollar</span>
             </div>
             <div class="category-card glass-panel" onclick="navigate('view-signs')">
                 <i class="fas fa-traffic-light category-icon text-orange"></i>
                 <span>Yo'l belgilari</span>
             </div>
-            <div class="category-card glass-panel" onclick="navigate('view-setup')">
+            <div class="category-card glass-panel" onclick="startSpecialTest('marathon50')">
                 <i class="fas fa-list-ol category-icon text-green"></i>
                 <span>50/100 talik</span>
             </div>
-            <div class="category-card glass-panel" onclick="navigate('view-news')">
-                <i class="fas fa-newspaper category-icon text-teal"></i>
-                <span>Yangiliklar</span>
+            <div class="category-card glass-panel" onclick="startSpecialTest('tricky')">
+                <i class="fas fa-question-circle category-icon text-teal"></i>
+                <span>Chalg'ituvchi savollar</span>
             </div>
-            <div class="category-card glass-panel" onclick="navigate('view-org')">
-                <i class="fas fa-building category-icon text-blue"></i>
-                <span>Tashkilot haqida</span>
+            <div class="category-card glass-panel" onclick="navigate('view-setup')">
+                <i class="fas fa-ticket-alt category-icon text-blue"></i>
+                <span>Biletlar</span>
             </div>
         </section>
     </main>
