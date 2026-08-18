@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+bot.lock
+temp_*.mp4
+fsm_data.json
+.env
+db/channel_imgs*
+db/database_old.sqlite
+db/database.sqlite-shm
+db/database.sqlite-wal
