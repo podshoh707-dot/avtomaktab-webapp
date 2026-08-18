@@ -63,9 +63,94 @@ function loadStats() {
 function saveStats() {
   localStorage.setItem('avp_stats', JSON.stringify(userStats));
 }
+// ── Sound and Haptics ──
+let soundEnabled = localStorage.getItem('avp_sound') !== 'false';
+
+function toggleSound() {
+  soundEnabled = !soundEnabled;
+  localStorage.setItem('avp_sound', soundEnabled);
+  const icon = document.getElementById('sound-icon');
+  const status = document.getElementById('sound-status');
+  if (icon) icon.className = soundEnabled ? 'fas fa-volume-up pm-icon' : 'fas fa-volume-mute pm-icon';
+  if (status) {
+    status.textContent = soundEnabled ? 'Yoqilgan' : "O'chirilgan";
+    status.style.color = soundEnabled ? '#58cc02' : '#ef4444';
+  }
+  haptic('light');
+  if (soundEnabled) playSound('click');
+}
+
+function haptic(type) {
+  try {
+    if (!tg?.HapticFeedback) return;
+    if (type === 'success' || type === 'error' || type === 'warning') {
+      tg.HapticFeedback.notificationOccurred(type);
+    } else if (type === 'light' || type === 'medium' || type === 'heavy') {
+      tg.HapticFeedback.impactOccurred(type);
+    }
+  } catch(e) {}
+}
+
+function playSound(type) {
+  if (!soundEnabled) return;
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if (type === 'correct') {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(587.33, ctx.currentTime); // D5
+      osc.frequency.setValueAtTime(880, ctx.currentTime + 0.08); // A5
+      gain.gain.setValueAtTime(0.15, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.3);
+    } else if (type === 'wrong') {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(220, ctx.currentTime); // A3
+      osc.frequency.setValueAtTime(164.81, ctx.currentTime + 0.1); // E3
+      gain.gain.setValueAtTime(0.2, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.35);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.35);
+    } else if (type === 'click') {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(400, ctx.currentTime);
+      gain.gain.setValueAtTime(0.05, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.05);
+    } else if (type === 'fanfare') {
+      const notes = [523.25, 659.25, 783.99, 1046.50];
+      notes.forEach((freq, i) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, ctx.currentTime + (i * 0.1));
+        gain.gain.setValueAtTime(0.15, ctx.currentTime + (i * 0.1));
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + (i * 0.1) + 0.4);
+        osc.start(ctx.currentTime + (i * 0.1));
+        osc.stop(ctx.currentTime + (i * 0.1) + 0.4);
+      });
+    }
+  } catch(e) {}
+}
+
 function updateStatDisplay() {
   const $ = id => document.getElementById(id);
-  const total = allQuestions.length || 1264;
+  const total = allQuestions.length || 1242;
   const pct = total > 0 ? Math.min(100, Math.round((userStats.correct / total) * 100)) : 0;
   const dashOffset = 176 - (176 * pct / 100);
 
@@ -86,6 +171,37 @@ function updateStatDisplay() {
   if($('stat-tests')) $('stat-tests').textContent = userStats.tests;
   if($('stat-correct')) $('stat-correct').textContent = userStats.correct;
   if($('stat-wrong')) $('stat-wrong').textContent = userStats.wrong;
+
+  // AI Forecast Probability
+  const totalAnswered = userStats.correct + userStats.wrong;
+  let aiPct = 50;
+  let aiStatus = '🟡 O\'rtacha';
+  let aiDesc = 'Imtihonga tayyorgarlik davom etmoqda.';
+  
+  if (totalAnswered >= 10) {
+    const accuracy = Math.round((userStats.correct / totalAnswered) * 100);
+    aiPct = Math.min(98, Math.max(25, Math.round(accuracy * 0.7 + (Math.min(totalAnswered, 200) / 200) * 28)));
+    if (aiPct >= 85) {
+      aiStatus = '🟢 Yuqori Tayyorgarlik!';
+      aiDesc = 'Haqiqiy GAI imtihonidan o\'tish ehtimolingiz juda baland!';
+    } else if (aiPct >= 70) {
+      aiStatus = '🟡 Yaxshi';
+      aiDesc = 'Biroz ko\'proq test ishlab o\'zingizga bo\'lgan ishonchni oshiring.';
+    } else {
+      aiStatus = '🔴 Past';
+      aiDesc = 'Xatolar ustida ishlash va qoidalarni qayta takrorlash kerak.';
+    }
+  }
+  
+  if($('profile-ai-pct')) $('profile-ai-pct').textContent = aiPct + '%';
+  if($('profile-ai-status')) $('profile-ai-status').textContent = aiStatus;
+  if($('profile-ai-desc')) $('profile-ai-desc').textContent = aiDesc;
+
+  // Badges Activation
+  if (userStats.tests >= 1 && $('badge-starter')) $('badge-starter').classList.add('active');
+  if (userStats.streak >= 3 && $('badge-streak')) $('badge-streak').classList.add('active');
+  if (userStats.correct >= 30 && $('badge-signs')) $('badge-signs').classList.add('active');
+  if (userStats.gaiPassed && $('badge-gai')) $('badge-gai').classList.add('active');
 }
 
 // Promo Timer Setup
@@ -216,6 +332,7 @@ function navigate(viewId) {
   if (viewId === 'view-news') renderNews();
   if (viewId === 'view-org') renderOrg();
   if (viewId === 'view-setup') renderCategories();
+  if (viewId === 'view-biletlar') renderBiletlar();
   if (viewId === 'view-leaderboard') loadLeaderboard();
 
   window.scrollTo(0, 0);
@@ -381,10 +498,12 @@ function answerQuestion(selected) {
   if (isCorrect) {
     if (selBtn) selBtn.classList.add('correct');
     haptic('success');
+    playSound('correct');
   } else {
     if (selBtn) selBtn.classList.add('wrong');
     if (corrBtn) corrBtn.classList.add('correct');
     haptic('error');
+    playSound('wrong');
   }
 
   // Explanation
@@ -394,6 +513,14 @@ function answerQuestion(selected) {
   }
 
   document.getElementById('live-score').textContent = `${testState.correct}/${testState.correct + testState.wrong}`;
+
+  // GAI Imtihonida 3-xatoda to'xtatish
+  if (testState.isGaiMode && testState.wrong >= 3) {
+    showToast("⚠️ GAI Imtihonida 3 ta xato bo'ldi. Imtihon to'xtatildi!");
+    setTimeout(() => { showResult(); }, 1200);
+    return;
+  }
+
   document.getElementById('next-btn').classList.remove('hidden');
 }
 
@@ -411,12 +538,24 @@ function showResult() {
   userStats.tests++;
   userStats.correct += testState.correct;
   userStats.wrong += testState.wrong;
-  saveStats();
-  updateStatDisplay();
-  syncLeaderboard(); // Sync score to server
+  
+  if (testState.biletNum) {
+    const biletKey = `bilet_${testState.biletNum}`;
+    const biletScore = { correct: testState.correct, total: testState.questions.length };
+    localStorage.setItem(biletKey, JSON.stringify(biletScore));
+  }
 
   const total = testState.questions.length;
   const pct = Math.round(testState.correct / total * 100);
+
+  if (testState.isGaiMode && testState.correct >= 18) {
+    userStats.gaiPassed = true;
+    playSound('fanfare');
+  }
+
+  saveStats();
+  updateStatDisplay();
+  syncLeaderboard();
 
   document.getElementById('result-pct').textContent = pct + '%';
   document.getElementById('result-correct').textContent = testState.correct + ' ta';
@@ -433,6 +572,161 @@ function showResult() {
   document.getElementById('result-msg').textContent = msg;
 
   navigate('view-result');
+
+  // Agar GAI topshirgan bo'lsa va 18+ to'g'ri bo'lsa -> Sertifikat ochiladi
+  if (testState.isGaiMode && testState.correct >= 18) {
+    setTimeout(() => { openCertModal(); }, 600);
+  }
+}
+
+// ═══════════════════════════════════════
+// ── GAI IMTIHONI (20/20) ──
+// ═══════════════════════════════════════
+function startGaiExam() {
+  if (!allQuestions.length) { showToast('❌ Savollar yuklanmadi!'); return; }
+  testState.questions = shuffle(allQuestions).slice(0, 20);
+  testState.current = 0;
+  testState.correct = 0;
+  testState.wrong = 0;
+  testState.isGaiMode = true;
+  testState.biletNum = null;
+
+  showToast('🎓 GAI Imtihoni boshlandi! 20 ta savol, 2 tagacha xato ruxsati.');
+  navigate('view-test');
+  renderQuestion();
+}
+
+// ═══════════════════════════════════════
+// ── 62 TA BILETLAR ──
+// ═══════════════════════════════════════
+function renderBiletlar() {
+  const container = document.getElementById('biletlar-grid');
+  if (!container) return;
+
+  const totalBiletlar = 62;
+  let tilesHtml = '';
+  for (let i = 1; i <= totalBiletlar; i++) {
+    const saved = localStorage.getItem(`bilet_${i}`);
+    let statusClass = '';
+    let statusText = '20 savol';
+    if (saved) {
+      const data = JSON.parse(saved);
+      if (data.correct >= 18) {
+        statusClass = 'passed';
+        statusText = `✅ ${data.correct}/20`;
+      } else {
+        statusClass = 'failed';
+        statusText = `❌ ${data.correct}/20`;
+      }
+    }
+    tilesHtml += `
+      <div class="bilet-tile ${statusClass}" onclick="startBilet(${i})">
+        <div class="bilet-num">#${i}</div>
+        <div class="bilet-status">${statusText}</div>
+      </div>
+    `;
+  }
+  container.innerHTML = tilesHtml;
+}
+
+function startBilet(num) {
+  const startIdx = (num - 1) * 20;
+  const biletQuestions = allQuestions.slice(startIdx, startIdx + 20);
+  if (!biletQuestions.length) {
+    showToast('❌ Bilet savollari topilmadi!');
+    return;
+  }
+  testState.questions = biletQuestions;
+  testState.current = 0;
+  testState.correct = 0;
+  testState.wrong = 0;
+  testState.isGaiMode = false;
+  testState.biletNum = num;
+
+  showToast(`📑 ${num}-Bilet boshlandi!`);
+  navigate('view-test');
+  renderQuestion();
+}
+
+// ═══════════════════════════════════════
+// ── YO'L BELGISI MODAL DARCHASI ──
+// ═══════════════════════════════════════
+let currentSelectedSign = null;
+
+function showSignDetail(id) {
+  const s = allSigns.find(sign => sign.id === id);
+  if (!s) return;
+  currentSelectedSign = s;
+
+  document.getElementById('sm-img').src = s.image_url || 'images/placeholder.png';
+  document.getElementById('sm-cat').textContent = s.category || 'Belgi';
+  document.getElementById('sm-name').textContent = s.name || 'Belgi';
+  document.getElementById('sm-desc').textContent = s.description || 'Ushbu belgi yo\'l harakati xavfsizligini ta\'minlash uchun o\'rnatiladi.';
+
+  const fineBox = document.getElementById('sm-fine-box');
+  const fineText = document.getElementById('sm-fine-text');
+  if (s.example) {
+    fineText.textContent = s.example;
+    fineBox.classList.remove('hidden');
+  } else {
+    fineText.textContent = 'Yo\'l harakati qoidalariga rioya qiling!';
+    fineBox.classList.remove('hidden');
+  }
+
+  document.getElementById('sign-modal').classList.remove('hidden');
+  playSound('click');
+  haptic('light');
+}
+
+function closeSignModal() {
+  document.getElementById('sign-modal').classList.add('hidden');
+  currentSelectedSign = null;
+}
+
+function quizOnThisSign() {
+  if (!currentSelectedSign) return;
+  const query = (currentSelectedSign.name || '').toLowerCase().split(' ')[0];
+  const matching = allQuestions.filter(q => (q.text || '').toLowerCase().includes(query) || (q.category || '').toLowerCase().includes('belgi'));
+  closeSignModal();
+  if (matching.length) {
+    testState.questions = shuffle(matching).slice(0, 10);
+  } else {
+    testState.questions = shuffle(allQuestions.filter(q => (q.category || '').toLowerCase().includes('belgi'))).slice(0, 10);
+  }
+  testState.current = 0;
+  testState.correct = 0;
+  testState.wrong = 0;
+  testState.isGaiMode = false;
+  testState.biletNum = null;
+  navigate('view-test');
+  renderQuestion();
+}
+
+// ═══════════════════════════════════════
+// ── SERTIFIKAT MODAL ──
+// ═══════════════════════════════════════
+function openCertModal() {
+  const modal = document.getElementById('cert-modal');
+  if (!modal) return;
+  const uName = document.getElementById('user-name')?.textContent || 'O\'quvchi';
+  document.getElementById('cert-name').textContent = uName;
+  document.getElementById('cert-score').textContent = `${testState.correct} / ${testState.questions.length}`;
+  document.getElementById('cert-date').textContent = new Date().toLocaleDateString('uz-UZ');
+  modal.classList.remove('hidden');
+}
+
+function closeCertModal() {
+  document.getElementById('cert-modal')?.classList.add('hidden');
+}
+
+function shareCertificate() {
+  const text = `🏆 Men Avtomaktab GAI Imtihonidan ${testState.correct}/20 natija bilan o'tdim va Sertifikat oldim! Siz ham sinab ko'ring:`;
+  const url = `https://t.me/share/url?url=https://t.me/avtovatanparvar_bot&text=${encodeURIComponent(text)}`;
+  if (tg?.openTelegramLink) {
+    tg.openTelegramLink(url);
+  } else {
+    window.open(url, '_blank');
+  }
 }
 
 async function syncLeaderboard() {

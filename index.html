@@ -88,11 +88,19 @@
 
       <!-- Quick Action Cards -->
       <div class="quick-grid">
-        <div class="quick-card card-green" onclick="switchTab('tab-tests')">
-          <div class="qcard-icon"><i class="fas fa-play-circle"></i></div>
+        <div class="quick-card card-green" onclick="startGaiExam()">
+          <div class="qcard-icon"><i class="fas fa-graduation-cap"></i></div>
           <div class="qcard-text">
-            <div class="qcard-title">Test Yechish</div>
-            <div class="qcard-sub">Bilimingizni sinang</div>
+            <div class="qcard-title">GAI Imtihoni</div>
+            <div class="qcard-sub">20 ta savol / 20 daq</div>
+          </div>
+          <i class="fas fa-chevron-right qcard-arrow"></i>
+        </div>
+        <div class="quick-card card-blue" onclick="navigate('view-biletlar')">
+          <div class="qcard-icon"><i class="fas fa-book"></i></div>
+          <div class="qcard-text">
+            <div class="qcard-title">62 ta Biletlar</div>
+            <div class="qcard-sub">Biletlar bo'yicha</div>
           </div>
           <i class="fas fa-chevron-right qcard-arrow"></i>
         </div>
@@ -100,23 +108,15 @@
           <div class="qcard-icon"><i class="fas fa-heart-broken"></i></div>
           <div class="qcard-text">
             <div class="qcard-title">Xatolarim</div>
-            <div class="qcard-sub">Qayta ishlang</div>
+            <div class="qcard-sub">Qayta mashq qiling</div>
           </div>
           <i class="fas fa-chevron-right qcard-arrow"></i>
         </div>
-        <div class="quick-card card-purple" onclick="switchTab('tab-duel')">
-          <div class="qcard-icon"><i class="fas fa-khanda"></i></div>
-          <div class="qcard-text">
-            <div class="qcard-title">Duel Jang</div>
-            <div class="qcard-sub">Raqib bilan</div>
-          </div>
-          <i class="fas fa-chevron-right qcard-arrow"></i>
-        </div>
-        <div class="quick-card card-blue" onclick="switchTab('tab-signs')">
+        <div class="quick-card card-purple" onclick="switchTab('tab-signs')">
           <div class="qcard-icon"><i class="fas fa-traffic-light"></i></div>
           <div class="qcard-text">
             <div class="qcard-title">Yo'l Belgilari</div>
-            <div class="qcard-sub">O'rganib oling</div>
+            <div class="qcard-sub">130 ta HD belgi</div>
           </div>
           <i class="fas fa-chevron-right qcard-arrow"></i>
         </div>
@@ -358,6 +358,12 @@
           <h2 id="duel-question-text">Savol yuklanmoqda...</h2>
         </div>
         <div class="options-list" id="duel-options"></div>
+        <div class="emoji-tray" id="duel-emoji-tray">
+          <div class="emoji-btn" onclick="sendDuelEmoji('👏')">👏</div>
+          <div class="emoji-btn" onclick="sendDuelEmoji('😂')">😂</div>
+          <div class="emoji-btn" onclick="sendDuelEmoji('🤯')">🤯</div>
+          <div class="emoji-btn" onclick="sendDuelEmoji('😡')">😡</div>
+        </div>
       </div>
 
       <!-- Duel Result -->
@@ -378,8 +384,9 @@
           </div>
         </div>
         <div class="action-row">
-          <button class="big-green-btn" onclick="duelPlayAgain()"><i class="fas fa-redo"></i> Qayta Jang</button>
-          <button class="outline-btn" onclick="switchTab('tab-home')"><i class="fas fa-home"></i> Chiqish</button>
+          <button class="big-green-btn" id="btn-duel-play-again" onclick="duelPlayAgain()"><i class="fas fa-redo"></i> Qayta o'ynash</button>
+          <button class="rematch-btn hidden" id="btn-duel-rematch" onclick="requestRematch()"><i class="fas fa-fire"></i> Revansh so'rash</button>
+          <button class="outline-btn" onclick="quitDuel()"><i class="fas fa-home"></i> Chiqish</button>
         </div>
       </div>
       <div style="height: 80px;"></div>
@@ -412,8 +419,54 @@
         </div>
       </div>
 
+      <!-- AI Pass Probability Card -->
+      <div class="ai-forecast-card">
+        <div class="aif-header">
+          <i class="fas fa-brain" style="color:#a855f7;"></i>
+          <span>AI Imtihondan O'tish Ehtimoli</span>
+        </div>
+        <div class="aif-body">
+          <div class="aif-pct-badge" id="profile-ai-pct">85%</div>
+          <div class="aif-text">
+            <div class="aif-status" id="profile-ai-status">🟢 Yuqori Tayyorgarlik!</div>
+            <div class="aif-desc" id="profile-ai-desc">Imtihondan o'tish imkoniyatingiz juda yuqori.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Badges (Nishonlar) -->
+      <div class="section-title"><span>🎖 Yutuqlar & Nishonlar</span></div>
+      <div class="badges-grid">
+        <div class="badge-item active" id="badge-starter">
+          <div class="badge-icon">🔰</div>
+          <div class="badge-title">Boshlang'ich</div>
+        </div>
+        <div class="badge-item" id="badge-streak">
+          <div class="badge-icon">🔥</div>
+          <div class="badge-title">3 Kunlik Olov</div>
+        </div>
+        <div class="badge-item" id="badge-signs">
+          <div class="badge-icon">🚦</div>
+          <div class="badge-title">Belgi Ustasi</div>
+        </div>
+        <div class="badge-item" id="badge-gai">
+          <div class="badge-icon">🏆</div>
+          <div class="badge-title">GAI Chempioni</div>
+        </div>
+      </div>
+
       <div class="section-title"><span>📖 Bo'limlar</span></div>
       <div class="profile-menu">
+        <div class="pm-item" onclick="toggleSound()">
+          <i class="fas fa-volume-up pm-icon" id="sound-icon" style="color:#38bdf8"></i>
+          <span>Ovozli Effektlar</span>
+          <span id="sound-status" style="margin-left:auto;font-size:13px;color:#58cc02;font-weight:bold;">Yoqilgan</span>
+        </div>
+        <div class="pm-item" onclick="navigate('view-biletlar')">
+          <i class="fas fa-book pm-icon" style="color:#38bdf8"></i>
+          <span>62 ta Rasmiy Biletlar</span>
+          <i class="fas fa-chevron-right pm-arrow"></i>
+        </div>
         <div class="pm-item" onclick="navigate('view-rules')">
           <i class="fas fa-book-open pm-icon" style="color:#a78bfa"></i>
           <span>YHQ Qoidalari</span>
@@ -596,6 +649,57 @@
         <i class="fas fa-play"></i> Testni Boshlash
       </button>
       <div style="height:80px;"></div>
+    </div>
+  </div>
+
+  <!-- BILETLAR VIEW -->
+  <div id="view-biletlar" class="overlay-view hidden">
+    <div class="ov-header">
+      <button class="icon-btn" onclick="navigate('back')"><i class="fas fa-arrow-left"></i></button>
+      <h2>📑 62 ta Rasmiy Biletlar</h2>
+    </div>
+    <div class="scroll-content">
+      <div class="bilet-info-card">
+        <p>Har bir bilet 20 ta savoldan iborat. Biletni tanlang va yechishni boshlang:</p>
+      </div>
+      <div id="biletlar-grid" class="biletlar-grid"></div>
+      <div style="height:80px;"></div>
+    </div>
+  </div>
+
+  <!-- SIGN DETAIL MODAL -->
+  <div id="sign-modal" class="confirm-overlay hidden">
+    <div class="sign-modal-card">
+      <button class="close-modal-btn" onclick="closeSignModal()"><i class="fas fa-times"></i></button>
+      <div class="sign-modal-img-wrap">
+        <img id="sm-img" src="" alt="Belgi rasmi">
+      </div>
+      <div class="sign-modal-badge" id="sm-cat">Taqiqlovchi</div>
+      <h3 id="sm-name">Belgi nomi</h3>
+      <p id="sm-desc">Belgi tavsifi...</p>
+      <div class="sm-fine-box" id="sm-fine-box">
+        <i class="fas fa-exclamation-triangle" style="color:#f59e0b;"></i>
+        <span id="sm-fine-text">Qoidabuzarlik uchun jarima mavjud</span>
+      </div>
+      <button class="big-green-btn" id="sm-quiz-btn" onclick="quizOnThisSign()">
+        <i class="fas fa-play"></i> Ushbu belgi bo'yicha test
+      </button>
+    </div>
+  </div>
+
+  <!-- CERTIFICATE MODAL -->
+  <div id="cert-modal" class="confirm-overlay hidden">
+    <div class="cert-modal-card">
+      <button class="close-modal-btn" onclick="closeCertModal()"><i class="fas fa-times"></i></button>
+      <div class="cert-gold-badge">🏆 SERTIFIKAT</div>
+      <h2>YHQ DAVLAT IMTIHONI G'OLIBI</h2>
+      <p class="cert-user-name" id="cert-name">Foydalanuvchi</p>
+      <p class="cert-score-text">Natija: <b id="cert-score">20 / 20</b> (100%)</p>
+      <p class="cert-date-text" id="cert-date">18.08.2026</p>
+      <div class="cert-stamp">✅ TASDIQLANDI</div>
+      <button class="big-green-btn" onclick="shareCertificate()">
+        <i class="fas fa-share-alt"></i> Sertifikatni Ulashish
+      </button>
     </div>
   </div>
 

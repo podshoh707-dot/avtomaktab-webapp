@@ -1,2394 +1,1042 @@
 [
   {
     "id": 1,
-    "category": "ogohlantiruvchi",
     "name": "1.1 Shlagbaumli temir yo'l kesishmasi",
+    "category": "ogohlantiruvchi",
     "image_url": "images/signs/sign_1.1.png",
-    "description": "Yaqinlashib kelayotgan xavfli burilish haqida ogohlantiradi. Sariq uchburchak ichida o'ngga buruvchi strelka.",
-    "example": "Tog' yo'llarida, tor burilishlarda o'rnatiladi. Haydovchi tezlikni kamaytirishi va ehtiyot bo'lishi kerak."
+    "description": "Shlagbaum bilan jihozlangan temir yo'l kesishmasiga yaqinlashayotganlik haqida ogohlantiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 2,
+    "name": "1.2 Shlagbaumsiz temir yo'l kesishmasi",
     "category": "ogohlantiruvchi",
-    "name": "1.2 Shlagbaumsiz temir yo’l kesishmasi",
     "image_url": "images/signs/sign_1.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "description": "Shlagbaum bilan jihozlanmagan temir yo'l kesishmasiga yaqinlashayotganlik haqida ogohlantiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 3,
+    "name": "1.3.1 Bir izli temir yo'l",
     "category": "ogohlantiruvchi",
-    "name": "1.3. Diqqat \"UZP\"",
-    "image_url": "images/signs/sign_3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.3.1.png",
+    "description": "Shlagbaumsiz bir izli temir yo'l kesishmasi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 4,
+    "name": "1.3.2 Ko'p izli temir yo'l",
     "category": "ogohlantiruvchi",
-    "name": "1.3.1 Bir izli temir yo’l",
-    "image_url": "images/signs/sign_1.3.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.3.2.png",
+    "description": "Shlagbaumsiz ikki va undan ortiq izli temir yo'l kesishmasi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 5,
+    "name": "1.4.1 Temir yo'l kesishmasiga yaqinlashish (o'ng tomon)",
     "category": "ogohlantiruvchi",
-    "name": "1.3.2 Ko’p izli temir yo’l",
-    "image_url": "images/signs/sign_1.3.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.4.1.png",
+    "description": "Aholi punktlaridan tashqarida temir yo'l kesishmasiga yaqinlashish haqida qo'shimcha ogohlantirish.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 6,
+    "name": "1.4.2 Temir yo'l kesishmasiga yaqinlashish (o'ng tomon)",
     "category": "ogohlantiruvchi",
-    "name": "1.4.1 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "images/signs/sign_1.4.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.4.2.png",
+    "description": "Aholi punktlaridan tashqarida temir yo'l kesishmasiga yaqinlashish haqida qo'shimcha ogohlantirish.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 7,
+    "name": "1.4.3 Temir yo'l kesishmasiga yaqinlashish (o'ng tomon)",
     "category": "ogohlantiruvchi",
-    "name": "1.4.2 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "images/signs/sign_1.4.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.4.3.png",
+    "description": "Aholi punktlaridan tashqarida temir yo'l kesishmasiga yaqinlashish haqida qo'shimcha ogohlantirish.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 8,
+    "name": "1.4.4 Temir yo'l kesishmasiga yaqinlashish (chap tomon)",
     "category": "ogohlantiruvchi",
-    "name": "1.4.3 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "images/signs/sign_1.4.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.4.4.png",
+    "description": "Aholi punktlaridan tashqarida temir yo'l kesishmasiga yaqinlashish haqida qo'shimcha ogohlantirish.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 9,
+    "name": "1.4.5 Temir yo'l kesishmasiga yaqinlashish (chap tomon)",
     "category": "ogohlantiruvchi",
-    "name": "1.4.4 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "images/signs/sign_1.4.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.4.5.png",
+    "description": "Aholi punktlaridan tashqarida temir yo'l kesishmasiga yaqinlashish haqida qo'shimcha ogohlantirish.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 10,
+    "name": "1.4.6 Temir yo'l kesishmasiga yaqinlashish (chap tomon)",
     "category": "ogohlantiruvchi",
-    "name": "1.4.5 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "images/signs/sign_1.4.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.4.6.png",
+    "description": "Aholi punktlaridan tashqarida temir yo'l kesishmasiga yaqinlashish haqida qo'shimcha ogohlantirish.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 11,
+    "name": "1.5 Tramvay yo'li bilan kesishuv",
     "category": "ogohlantiruvchi",
-    "name": "1.4.6 Temir yo’l kesishmasining yaqinligi haqida ogohlantirish",
-    "image_url": "images/signs/sign_1.4.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.5.png",
+    "description": "Chorrahadan tashqarida tramvay yo'li bilan kesishuv.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 12,
+    "name": "1.6 Teng ahamiyatli yo'llar kesishuvi",
     "category": "ogohlantiruvchi",
-    "name": "1.5 Tramvay yo’li bilan kesishuv",
-    "image_url": "images/signs/sign_1.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.6.png",
+    "description": "O'ngdan kelayotgan transport vositasiga yo'l berish qoidasi amal qiladigan chorraha.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 13,
+    "name": "1.7 Aylanma harakatlanish bilan kesishuv",
     "category": "ogohlantiruvchi",
-    "name": "1.6 Teng ahamiyatli yo’llar kesishuvi",
-    "image_url": "images/signs/sign_1.6.png",
-    "description": "Yo'l bir yo'nalishda torayishi haqida ogohlantiradi. Sariq uchburchak ichida torayuvchi yo'l tasviri.",
-    "example": "Ko'priklar, tunnel kirishlari va qurilish joylarida o'rnatiladi."
+    "image_url": "images/signs/sign_1.7.png",
+    "description": "Aylanma harakat tashkil etilgan chorrahaga yaqinlashayotganlik haqida ogohlantiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 14,
+    "name": "1.8 Svetofor bilan tartibga solish",
     "category": "ogohlantiruvchi",
-    "name": "1.7 Aylanma harakatlanish bilan kesishuv",
-    "image_url": "images/signs/sign_1.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.8.png",
+    "description": "Harakat svetofor bilan tartibga solinadigan chorraha yoki yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 15,
+    "name": "1.9 Ko'tarma ko'prik",
     "category": "ogohlantiruvchi",
-    "name": "1.8 Svetofor tartibga soladi",
-    "image_url": "images/signs/sign_1.8.png",
-    "description": "Ko'prik, estakada yoki o'tish joyi yaqinligini bildiradi. Sariq uchburchak ichida ko'prik tasviri.",
-    "example": "Ko'prikning eng kichik kengligida o'rnatiladi, haydovchi diqqatli bo'lishi kerak."
+    "image_url": "images/signs/sign_1.9.png",
+    "description": "Ko'tarma ko'prik yoki parom kechuviga yaqinlashayotganlik haqida ogohlantiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 16,
+    "name": "1.10 Sohilga chiqish",
     "category": "ogohlantiruvchi",
-    "name": "1.9 Ko’tarma ko’prik",
-    "image_url": "images/signs/sign_1.9.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.10.png",
+    "description": "Daryo, ko'l yoki suv havzasi sohiliga chiqish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 17,
+    "name": "1.11.1 Xavfli burilish (o'ngga)",
     "category": "ogohlantiruvchi",
-    "name": "1.10 Sohilga chiqish",
-    "image_url": "images/signs/sign_1.10.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.11.1.png",
+    "description": "Yo'lning ko'rinishi cheklangan o'ngga xavfli burilish qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 18,
+    "name": "1.11.2 Xavfli burilish (chapga)",
     "category": "ogohlantiruvchi",
-    "name": "1.11.1 Xavfli burilish",
-    "image_url": "images/signs/sign_1.11.1.png",
-    "description": "Bir nechta ketma-ket burilishlar haqida ogohlantiradi. Sariq uchburchak ichida zigzag yo'l tasviri.",
-    "example": "Tog' yo'llari va serpentinlarda o'rnatiladi. Haydovchi tezlikni sezilarli kamaytirishi kerak."
+    "image_url": "images/signs/sign_1.11.2.png",
+    "description": "Yo'lning ko'rinishi cheklangan chapga xavfli burilish qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 19,
+    "name": "1.12.1 Xavfli burilishlar (birinchisi o'ngga)",
     "category": "ogohlantiruvchi",
-    "name": "1.11.2 Xavfli burilish",
-    "image_url": "images/signs/sign_1.11.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.12.1.png",
+    "description": "Ketma-ket keladigan xavfli burilishlar.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 20,
+    "name": "1.12.2 Xavfli burilishlar (birinchisi chapga)",
     "category": "ogohlantiruvchi",
-    "name": "1.12.1 Xavfli burilishlar",
-    "image_url": "images/signs/sign_1.12.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.12.2.png",
+    "description": "Ketma-ket keladigan xavfli burilishlar.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 21,
+    "name": "1.13 Tik nishablik",
     "category": "ogohlantiruvchi",
-    "name": "1.12.2 Xavfli burilishlar",
-    "image_url": "images/signs/sign_1.12.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.13.png",
+    "description": "Xavfli tik nishablik qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 22,
+    "name": "1.14 Tik balandlik",
     "category": "ogohlantiruvchi",
-    "name": "1.13 Tik nishablik",
-    "image_url": "images/signs/sign_1.13.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.14.png",
+    "description": "Xavfli tik balandlikka ko'tarilish qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 23,
+    "name": "1.15 Sirpanchiq yo'l",
     "category": "ogohlantiruvchi",
-    "name": "1.14 Tik balandlik",
-    "image_url": "images/signs/sign_1.14.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.15.png",
+    "description": "Qatnov qismi o'ta sirpanchiq bo'lgan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 24,
+    "name": "1.16 Notekis yo'l",
     "category": "ogohlantiruvchi",
-    "name": "1.15 Sirpanchiq yo’l",
-    "image_url": "images/signs/sign_1.15.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.16.png",
+    "description": "Qatnov qismi to'lqinsimon, o'nqir-cho'nqir bo'lgan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 25,
+    "name": "1.17 Tosh otilishi",
     "category": "ogohlantiruvchi",
-    "name": "1.16 Notekis yo’l",
-    "image_url": "images/signs/sign_1.16.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.17.png",
+    "description": "Transport vositalari g'ildiraklari ostidan tosh, shag'al otilishi mumkin bo'lgan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 26,
+    "name": "1.18.1 Yo'lning torayishi (har ikki tomondan)",
     "category": "ogohlantiruvchi",
-    "name": "1.17 Tosh otilish xavfi",
-    "image_url": "images/signs/sign_1.17.png",
-    "description": "Boshqa belgilarda ko'rsatilmagan xavf haqida ogohlantiradi. Sariq uchburchak ichida undov belgisi.",
-    "example": "Qo'shimcha o'rnatish plitasi bilan birga ishlatiladi, xavf turi tushuntiriladi."
+    "image_url": "images/signs/sign_1.18.1.png",
+    "description": "Yo'lning qatnov qismi toraygan joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 27,
+    "name": "1.18.2 Yo'lning torayishi (o'ngdan)",
     "category": "ogohlantiruvchi",
-    "name": "1.18.1 Yo’lning torayishi",
-    "image_url": "images/signs/sign_1.18.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.18.2.png",
+    "description": "Yo'lning qatnov qismi o'ng tomondan toraygan joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 28,
+    "name": "1.18.3 Yo'lning torayishi (chapdan)",
     "category": "ogohlantiruvchi",
-    "name": "1.18.2 Yo’lning torayishi",
-    "image_url": "images/signs/sign_1.18.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.18.3.png",
+    "description": "Yo'lning qatnov qismi chap tomondan toraygan joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 29,
+    "name": "1.19 Ikki tomonlama harakat",
     "category": "ogohlantiruvchi",
-    "name": "1.18.3Yo’lning torayishi",
-    "image_url": "images/signs/sign_29.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.19.png",
+    "description": "Qarama-qarshi harakatlanish boshlanadigan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 30,
+    "name": "1.20 Piyodalar o'tish joyi",
     "category": "ogohlantiruvchi",
-    "name": "1.19 Ikki tomonlama harakatlanish",
-    "image_url": "images/signs/sign_1.19.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.20.png",
+    "description": "Piyodalar o'tish joyiga yaqinlashayotganlik haqida ogohlantiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 31,
+    "name": "1.21 Bolalar",
     "category": "ogohlantiruvchi",
-    "name": "1.20 Piyodalar o’tish joyi",
-    "image_url": "images/signs/sign_1.20.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.21.png",
+    "description": "Bolalar muassasalari yaqinidagi yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 32,
+    "name": "1.22 Velosiped yo'lkasi bilan kesishuv",
     "category": "ogohlantiruvchi",
-    "name": "1.21 Bolalar",
-    "image_url": "images/signs/sign_1.21.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.22.png",
+    "description": "Velosiped yo'lkasi bilan kesishuv joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 33,
+    "name": "1.23 Ta'mirlash ishlari",
     "category": "ogohlantiruvchi",
-    "name": "1.22 Velosiped yo’lkasi bilan kesishuv",
-    "image_url": "images/signs/sign_1.22.png",
-    "description": "Piyodalar o'tish joyi yaqinligi haqida ogohlantiradi. Sariq uchburchak ichida yurgan odam tasviri.",
-    "example": "Maktab, kasalxona yaqinida va belgilangan piyodalar o'tish joylarida o'rnatiladi."
+    "image_url": "images/signs/sign_1.23.png",
+    "description": "Yo'lda ta'mirlash ishlari olib borilayotgan joy.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 34,
+    "name": "1.24 Mol haydab o'tish",
     "category": "ogohlantiruvchi",
-    "name": "1.23 Ta’mirlash ishlari",
-    "image_url": "images/signs/sign_1.23.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.24.png",
+    "description": "Chorva mollari haydab o'tiladigan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 35,
+    "name": "1.25 Yovvoyi hayvonlar",
     "category": "ogohlantiruvchi",
-    "name": "1.24 Mol haydab o’tish",
-    "image_url": "images/signs/sign_1.24.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.25.png",
+    "description": "Yovvoyi hayvonlar chiqib qolish ehtimoli bo'lgan hudud.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 36,
+    "name": "1.26 Toshlar qulashi",
     "category": "ogohlantiruvchi",
-    "name": "1.25 Yovvoyi hayvonlar",
-    "image_url": "images/signs/sign_1.25.png",
-    "description": "Yo'l ta'miri va qurilish ishlari olib borilayotganini bildiradi. Sariq uchburchak ichida ishchi tasviri.",
-    "example": "Yo'l ta'miri joylarida o'rnatiladi. Haydovchi tezlikni 40 km/soatgacha kamaytirishi kerak."
+    "image_url": "images/signs/sign_1.26.png",
+    "description": "Tosh ko'chkisi, tosh qulashi mumkin bo'lgan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 37,
+    "name": "1.27 Yonlama shamol",
     "category": "ogohlantiruvchi",
-    "name": "1.26 Toshlar tushishi",
-    "image_url": "images/signs/sign_1.26.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.27.png",
+    "description": "Kuchli yonlama shamol esadigan yo'l qismi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 38,
+    "name": "1.28 Pastlab uchuvchi samolyotlar",
     "category": "ogohlantiruvchi",
-    "name": "1.27 Yonlama shamol",
-    "image_url": "images/signs/sign_1.27.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.28.png",
+    "description": "Samolyotlar pastlab uchadigan aerodrom yaqini.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 39,
+    "name": "1.29 Tunel",
     "category": "ogohlantiruvchi",
-    "name": "1.28 Pastlab uchuvchi samolyotlar",
-    "image_url": "images/signs/sign_1.28.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.29.png",
+    "description": "Sun'iy yoritilmagan yoki ko'rinishi cheklangan tunel.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 40,
+    "name": "1.30 Boshqa xavf-xatarlar",
     "category": "ogohlantiruvchi",
-    "name": "1.29 Tonnel",
-    "image_url": "images/signs/sign_1.29.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_1.30.png",
+    "description": "Boshqa ogohlantiruvchi belgilar bilan ko'zda tutilmagan xavflar.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 41,
-    "category": "ogohlantiruvchi",
-    "name": "1.30 Boshqa xavf-xatar",
-    "image_url": "images/signs/sign_1.30.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.1 Asosiy yo'l",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.1.png",
+    "description": "Tartibga solinmagan chorrahalarda haydovchiga birinchi bo'lib o'tish huquqini beradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 42,
-    "category": "ogohlantiruvchi",
-    "name": "1.31 Sun'iy yo'l notekisliklari",
-    "image_url": "images/signs/sign_1.31.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.2 Asosiy yo'lning oxiri",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.2.png",
+    "description": "Asosiy yo'l imtiyozi tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 43,
-    "category": "ogohlantiruvchi",
-    "name": "1.31.1 Burilishning yo’nalishi",
-    "image_url": "images/signs/sign_1.31.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.3.1 Ikkilamchi yo'l bilan kesishuv",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.3.1.png",
+    "description": "Asosiy yo'lda harakatlanayotganlikni bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 44,
-    "category": "ogohlantiruvchi",
-    "name": "1.31.2 Burilishning yo’nalishi",
-    "image_url": "images/signs/sign_1.31.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.3.2 Ikkilamchi yo'l tutashuvi (o'ngdan)",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.3.2.png",
+    "description": "O'ng tomondan ikkilamchi yo'l tutashgan joy.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 45,
-    "category": "ogohlantiruvchi",
-    "name": "1.31.3 Burilishning yo’nalishi",
-    "image_url": "images/signs/sign_1.31.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.3.3 Ikkilamchi yo'l tutashuvi (chapdan)",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.3.3.png",
+    "description": "Chap tomondan ikkilamchi yo'l tutashgan joy.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 46,
-    "category": "ogohlantiruvchi",
-    "name": "1.32 Tirbandlik",
-    "image_url": "images/signs/sign_1.32.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.4 Yo'l bering",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.4.png",
+    "description": "Kesib o'tilayotgan asosiy yo'ldagi transport vositalariga yo'l berish shart.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 47,
-    "category": "imtiyoz",
-    "name": "2.1. Asosiy yo’l",
-    "image_url": "images/signs/sign_2.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.5 To'xtamasdan harakatlanish taqiqlangan (STOP)",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.5.png",
+    "description": "To'xtamasdan o'tish qat'iyan man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 48,
-    "category": "imtiyoz",
-    "name": "2.2. Asosiy yo’lning oxiri",
-    "image_url": "images/signs/sign_2.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.6 Ro'paradagi harakatlanishning ustunligi",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.6.png",
+    "description": "Tor yo'lda qarama-qarshi transportga yo'l berish shart.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 49,
-    "category": "imtiyoz",
-    "name": "2.3.1. Ikkinchi darajali yo’l bilan kesishuv",
-    "image_url": "images/signs/sign_49.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "2.7 Ro'paradagi harakatlanishga nisbatan ustunlik",
+    "category": "imtiyozli",
+    "image_url": "images/signs/sign_2.7.png",
+    "description": "Tor yo'lda birinchi bo'lib o'tish huquqini beradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 50,
-    "category": "imtiyoz",
-    "name": "2.3.2 – tutashuv o’ngdan",
-    "image_url": "images/signs/sign_2.3.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "3.1 Kirish taqiqlangan (G'isht)",
+    "category": "taqiqlovchi",
+    "image_url": "images/signs/sign_3.1.png",
+    "description": "Barcha transport vositalarining kirishi taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 51,
-    "category": "imtiyoz",
-    "name": "2.3.3 – tutashuv chapdan",
-    "image_url": "images/signs/sign_2.3.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "3.2 Harakatlanish taqiqlangan",
+    "category": "taqiqlovchi",
+    "image_url": "images/signs/sign_3.2.png",
+    "description": "Barcha transport vositalarining harakatlanishi taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 52,
-    "category": "imtiyoz",
-    "name": "2.4 Yo’l bering",
-    "image_url": "images/signs/sign_2.4.png",
-    "description": "Chorrahada boshqa yo'l transportiga yo'l berish majburiy. Teskari sariq uchburchak.",
-    "example": "Bu belgini ko'rgan haydovchi asosiy yo'ldan kelayotgan transportga yo'l berishi shart."
+    "name": "3.3 Mexanik transport vositalari harakati taqiqlangan",
+    "category": "taqiqlovchi",
+    "image_url": "images/signs/sign_3.3.png",
+    "description": "Mexanik transport vositalari harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 53,
-    "category": "imtiyoz",
-    "name": "2.5 To’xtamasdan harakatlanish taqiqlangan",
-    "image_url": "images/signs/sign_2.5.png",
-    "description": "To'xtash chizig'idan oldin to'liq to'xtash majburiy. Qizil chegarali oq olti burchak ichida STOP yozuvi.",
-    "example": "Haydovchi chizig'dan oldin to'liq to'xtashi, yo'lni ko'rib, so'ng davom etishi kerak."
+    "name": "3.4 Yuk avtomobillari harakati taqiqlangan",
+    "category": "taqiqlovchi",
+    "image_url": "images/signs/sign_3.4.png",
+    "description": "Ruxsat etilgan to'la vazni 3.5 tonnadan ortiq yuk mashinalari harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 54,
-    "category": "imtiyoz",
-    "name": "2.6 Ro’para harakatlanishning ustunligi",
-    "image_url": "images/signs/sign_2.6.png",
-    "description": "Tor yo'lda qarshi kelayotgan transport ustunlikka ega. Qizil strelka bor belgi.",
-    "example": "Ko'prik yoki tor yo'lga kirish oldida o'rnatiladi. Qarshi transport o'tib bo'lgach, o'tish mumkin."
+    "name": "3.5 Mototsikllar harakati taqiqlangan",
+    "category": "taqiqlovchi",
+    "image_url": "images/signs/sign_3.5.png",
+    "description": "Mototsikllar harakati taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 55,
-    "category": "imtiyoz",
-    "name": "2.7 Ro’paradagi harakatlanishga nisbatan imtiyoz",
-    "image_url": "images/signs/sign_2.7.png",
-    "description": "Tor yo'lda shu yo'nalishdagi harakatga ustunlik beriladi. Sariq strelka bor belgi.",
-    "example": "Haydovchi bu belgini ko'rsa, o'zi ustun — qarshi transport unga yo'l berishi kerak."
+    "name": "3.6 Traktorlar harakati taqiqlangan",
+    "category": "taqiqlovchi",
+    "image_url": "images/signs/sign_3.6.png",
+    "description": "Traktor va o'ziyurar moslamalar harakati taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 56,
+    "name": "3.7 Tirkama bilan harakatlanish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.1 Kirish ta'qiqlangan",
-    "image_url": "images/signs/sign_3.1.png",
-    "description": "Barcha transport vositalarining harakatini taqiqlaydi. Qizil doira ichida oq gorizontal chiziq. Bu belgi odatda bir tomonlama yo'llar va qarama-qarshi yo'nalishlarga o'rnatiladi.",
-    "example": "Agar avto mashina bu belgini ko'rsa, u yo'lga kira olmaydi. Faqat yo'l xizmati va ruxsat etilgan transport o'tishi mumkin."
+    "image_url": "images/signs/sign_3.7.png",
+    "description": "Tirkamali yuk avtomobillari va tirkama ulovchilar harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 57,
+    "name": "3.8 Ot-arava harakati taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.2. Harakatlanish ta'qiqlangan",
-    "image_url": "images/signs/sign_3.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.8.png",
+    "description": "Ot-arava va minib yuruvchilar harakati taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 58,
+    "name": "3.9 Velosipedlar harakati taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.3. Mexanik transport vositalarining harakatlanishi taqiqlangan",
-    "image_url": "images/signs/sign_3.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.9.png",
+    "description": "Velosiped va mopedlar harakati taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 59,
+    "name": "3.10 Piyodalar harakati taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.4. Yuk avtomobillarining harakatlanishi taqiqlangan",
-    "image_url": "images/signs/sign_59.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.10.png",
+    "description": "Piyodalarning harakatlanishi taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 60,
+    "name": "3.11 Vazn cheklangan",
     "category": "taqiqlovchi",
-    "name": "3.5. Mototsikllar harakatlanishi taqiqlangan",
-    "image_url": "images/signs/sign_60.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.11.png",
+    "description": "Haqiqiy vazni ko'rsatilgandan ortiq bo'lgan transport vositalari harakati taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 61,
+    "name": "3.12 O'qqa tushadigan og'irlik cheklangan",
     "category": "taqiqlovchi",
-    "name": "3.6 Traktorlar harakatlanishi taqiqlangan",
-    "image_url": "images/signs/sign_3.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.12.png",
+    "description": "O'qqa tushadigan og'irligi ko'rsatilgandan ortiq transport harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 62,
+    "name": "3.13 Balandlik cheklangan",
     "category": "taqiqlovchi",
-    "name": "3.7 Tirkama bilan harakatlanish taqiqlangan",
-    "image_url": "images/signs/sign_3.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.13.png",
+    "description": "Gabarit balandligi ko'rsatilgandan ortiq transport harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 63,
+    "name": "3.14 Kenglik cheklangan",
     "category": "taqiqlovchi",
-    "name": "3.8 Ot-arava harakatlanishi taqiqlangan",
-    "image_url": "images/signs/sign_3.8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.14.png",
+    "description": "Gabarit kengligi ko'rsatilgandan ortiq transport harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 64,
+    "name": "3.15 Uzunlik cheklangan",
     "category": "taqiqlovchi",
-    "name": "3.9 Velosipedda harakatlanish ta'qiqlangan",
-    "image_url": "images/signs/sign_3.9.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.15.png",
+    "description": "Gabarit uzunligi ko'rsatilgandan ortiq transport harakati man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 65,
+    "name": "3.16 Minimal oraliq",
     "category": "taqiqlovchi",
-    "name": "3.10 Piyodalarning harakatlanishi ta'qiqlangan",
-    "image_url": "images/signs/sign_3.10.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.16.png",
+    "description": "Ko'rsatilgandan kam oraliqda harakatlanish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 66,
+    "name": "3.17.1 Bojxona",
     "category": "taqiqlovchi",
-    "name": "3.11 Vazn cheklangan",
-    "image_url": "images/signs/sign_3.11.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.17.1.png",
+    "description": "Bojxona punkti oldida to'xtamasdan o'tish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 67,
+    "name": "3.17.2 Xavf-xatar",
     "category": "taqiqlovchi",
-    "name": "3.12 O‘qqa tushadigan og‘irlik cheklangan",
-    "image_url": "images/signs/sign_3.12.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.17.2.png",
+    "description": "Yo'l-transport hodisasi yoki favqulodda holat sababli harakatlanish man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 68,
+    "name": "3.17.3 Nazorat punkti",
     "category": "taqiqlovchi",
-    "name": "3.13 Cheklangan balandlik",
-    "image_url": "images/signs/sign_3.13.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.17.3.png",
+    "description": "Nazorat punkti oldida to'xtamasdan o'tish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 69,
+    "name": "3.18.1 O'ngga burilish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.14 Cheklangan kenglik",
-    "image_url": "images/signs/sign_3.14.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.18.1.png",
+    "description": "Qatnov qismlarining eng yaqin kesishmasida o'ngga burilish man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 70,
+    "name": "3.18.2 Chapga burilish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.15 Cheklangan uzunlik",
-    "image_url": "images/signs/sign_3.15.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.18.2.png",
+    "description": "Qatnov qismlarining eng yaqin kesishmasida chapga burilish man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 71,
+    "name": "3.19 Qayrilib olish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.16 Eng kam oraliq",
-    "image_url": "images/signs/sign_3.16.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.19.png",
+    "description": "Qayrilib olish qat'iyan man etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 72,
+    "name": "3.20 Quvib o'tish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.17.1 Bojxona",
-    "image_url": "images/signs/sign_3.17.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.20.png",
+    "description": "Barcha transport vositalarini quvib o'tish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 73,
+    "name": "3.21 Quvib o'tish taqiqlangan zonaning oxiri",
     "category": "taqiqlovchi",
-    "name": "3.17.2 Xavf-xatar",
-    "image_url": "images/signs/sign_3.17.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.21.png",
+    "description": "3.20 belgisining ta'sir doirasi tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 74,
+    "name": "3.22 Yuk avtomobillarida quvib o'tish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.18.1 O’ngga burilish ta'qiqlanadi",
-    "image_url": "images/signs/sign_3.18.1.png",
-    "description": "O'ngga burilishni taqiqlaydi. Qizil doira ichida pastga va o'ngga burilgan o'q.",
-    "example": "Chorrahadan o'tganda o'ngga burilish mumkin emas. Haydovchi to'g'ri yoki chapga davom etishi kerak."
+    "image_url": "images/signs/sign_3.22.png",
+    "description": "Yuk avtomobillariga quvib o'tish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 75,
+    "name": "3.23 Yuk avtomobillarida quvib o'tish taqiqlangan zonaning oxiri",
     "category": "taqiqlovchi",
-    "name": "3.18.2 Chapga burilish taqiqlanadi",
-    "image_url": "images/signs/sign_3.18.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.23.png",
+    "description": "3.22 belgisi tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 76,
+    "name": "3.24 Yuqori tezlik cheklangan",
     "category": "taqiqlovchi",
-    "name": "3.19. Qayrilish ta'qiqlanadi",
-    "image_url": "images/signs/sign_76.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.24.png",
+    "description": "Belgida ko'rsatilganidan ortiq tezlikda harakatlanish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 77,
+    "name": "3.25 Yuqori tezlik cheklangan zonaning oxiri",
     "category": "taqiqlovchi",
-    "name": "3.20 Quvib o’tish taqiqlanadi",
-    "image_url": "images/signs/sign_3.20.png",
-    "description": "Harakatlanayotgan barcha transport vositalari uchun quvib o'tishni taqiqlaydi. Qizil doira ichida ikki mashina tasviri: qora va qizil.",
-    "example": "Tor ko'prik, burilish oldidagi yo'llarda o'rnatiladi. Quvib o'tish faqat belgi amal qiladigan zonadan tashqarida ruxsat etiladi."
+    "image_url": "images/signs/sign_3.25.png",
+    "description": "Tezlik cheklovi bekor qilinganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 78,
+    "name": "3.26 Tovush signali berish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.21 Quvib o’tish ta'qiqlangan hududning oxiri",
-    "image_url": "images/signs/sign_3.21.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.26.png",
+    "description": "YTHning oldini olishdan boshqa hollarda signal chalish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 79,
+    "name": "3.27 To'xtash taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.22 Yuk avtomobillarida quvib o’tish taqiqlangan",
-    "image_url": "images/signs/sign_3.22.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.27.png",
+    "description": "Transport vositalarining to'xtashi va to'xtab turishi taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 80,
+    "name": "3.28 To'xtab turish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.23 Yuk avtommobillarida quvib o’tish taqiqlangan hududning oxiri",
-    "image_url": "images/signs/sign_3.23.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.28.png",
+    "description": "Transport vositalarining to'xtab turishi taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 81,
+    "name": "3.29 Oyning toq kunlarida to'xtab turish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.24 Yuqori tezlik cheklangan",
-    "image_url": "images/signs/sign_3.24.png",
-    "description": "Belgilangan tezlikdan ortiq harakatlanishni taqiqlaydi. Qizil doira ichida tezlik raqami (40) ko'rsatilgan.",
-    "example": "Maktab, kasalxona, aholi punktlari yaqinida o'rnatiladi. Haydovchi ko'rsatilgan tezlikdan oshmasligi shart."
+    "image_url": "images/signs/sign_3.29.png",
+    "description": "Toq sanalarda to'xtab turish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 82,
+    "name": "3.30 Oyning juft kunlarida to'xtab turish taqiqlangan",
     "category": "taqiqlovchi",
-    "name": "3.25 Yuqori tezlik cheklangan hududning oxiri",
-    "image_url": "images/signs/sign_3.25.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.30.png",
+    "description": "Juft sanalarda to'xtab turish taqiqlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 83,
+    "name": "3.31 Barcha cheklovlarning oxiri",
     "category": "taqiqlovchi",
-    "name": "3.26 Tovuch moslamalaridan foydalanish ta'qiqlangan",
-    "image_url": "images/signs/sign_3.26.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_3.31.png",
+    "description": "Bir nechta taqiqlovchi belgilarning ta'siri tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 84,
-    "category": "taqiqlovchi",
-    "name": "3.27 To’xtash taqiqlangan",
-    "image_url": "images/signs/sign_3.27.png",
-    "description": "Transport vositalarini to'xtatish va to'xtab turishni taqiqlaydi. Qizil chiziq (P harfi ustidan o'tilgan) belgisi.",
-    "example": "Shahardagi keng ko'chalar va avtobek'atlarda o'rnatiladi. Yo'lovchi tushirish uchun ham to'xtoqib bo'lmaydi."
+    "name": "4.1.1 Harakatlanish to'g'riga",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.1.1.png",
+    "description": "Faqat to'g'riga harakatlanishga ruxsat etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 85,
-    "category": "taqiqlovchi",
-    "name": "3.28 To’xtab turish ta'qiqlangan",
-    "image_url": "images/signs/sign_3.28.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "4.1.2 Harakatlanish o'ngga",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.1.2.png",
+    "description": "Faqat o'ngga harakatlanishga ruxsat etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 86,
-    "category": "taqiqlovchi",
-    "name": "3.29 Oyning toq kunlarida to’xtab turish taqiqlanadi",
-    "image_url": "images/signs/sign_3.29.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "4.1.3 Harakatlanish chapga",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.1.3.png",
+    "description": "Faqat chapga yoki qayrilib olishga ruxsat etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 87,
-    "category": "taqiqlovchi",
-    "name": "3.30 Oyning juft kunlarida to’xtab turish taqiqlanadi",
-    "image_url": "images/signs/sign_3.30.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "4.1.4 Harakatlanish to'g'riga yoki o'ngga",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.1.4.png",
+    "description": "To'g'riga va o'ngga harakatlanishga ruxsat etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 88,
-    "category": "taqiqlovchi",
-    "name": "3.31 Barcha cheklovlarning oxiri",
-    "image_url": "images/signs/sign_3.31.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "4.1.5 Harakatlanish to'g'riga yoki chapga",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.1.5.png",
+    "description": "To'g'riga, chapga va qayrilib olishga ruxsat etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 89,
-    "category": "taqiqlovchi",
-    "name": "3.32 Xavfli yuklarga ega transport vositalarining harakati ta'qiqlanadi",
-    "image_url": "images/signs/sign_3.32.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "4.1.6 Harakatlanish o'ngga yoki chapga",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.1.6.png",
+    "description": "O'ngga, chapga va qayrilib olishga ruxsat etiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 90,
-    "category": "taqiqlovchi",
-    "name": "3.33 Portlovchi va yonuvchan yuklarga ega transport vositalarining harakatlanishi ta'qiqlanadi",
-    "image_url": "images/signs/sign_3.33.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "4.2.1 To'siqni o'ngdan chetlab o'tish",
+    "category": "buyuruvchi",
+    "image_url": "images/signs/sign_4.2.1.png",
+    "description": "To'siqni faqat o'ng tomondan aylanib o'tish buyuriladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 91,
+    "name": "4.2.2 To'siqni chapdan chetlab o'tish",
     "category": "buyuruvchi",
-    "name": "4.1.1 Harakatlanish to’g’riga",
-    "image_url": "images/signs/sign_4.1.1.png",
-    "description": "Faqat to'g'ri harakatlanish majburiy. Ko'k doira ichida oq yuqoriga ko'rsatuvchi strelka.",
-    "example": "Chorrahalarda bu belgi tursa, faqat to'g'ri borish mumkin, burilish taqiqlangan."
+    "image_url": "images/signs/sign_4.2.2.png",
+    "description": "To'siqni faqat chap tomondan aylanib o'tish buyuriladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 92,
+    "name": "4.2.3 To'siqni o'ngdan yoki chapdan chetlab o'tish",
     "category": "buyuruvchi",
-    "name": "4.1.2 Harakatlanish o’ngga",
-    "image_url": "images/signs/sign_4.1.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_4.2.3.png",
+    "description": "To'siqni har ikki tomondan chetlab o'tishga ruxsat beriladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 93,
+    "name": "4.3 Aylanma harakat",
     "category": "buyuruvchi",
-    "name": "4.1.3 Harakatlanish chapga",
-    "image_url": "images/signs/sign_4.1.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_4.3.png",
+    "description": "Strelkalar ko'rsatgan yo'nalish bo'yicha aylanma harakatlanish buyuriladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 94,
+    "name": "4.4 Yengil avtomobillar harakati",
     "category": "buyuruvchi",
-    "name": "4.1.4 Harakatlanish to’g’riga yoki o’ngga",
-    "image_url": "images/signs/sign_4.1.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_4.4.png",
+    "description": "Faqat yengil avtomobillar, avtobus va mototsikllar harakatlanishi mumkin.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 95,
+    "name": "4.5 Velosiped yo'lkasi",
     "category": "buyuruvchi",
-    "name": "4.1.5 Harakatlanish to’g’riga yoki chapga",
-    "image_url": "images/signs/sign_4.1.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_4.5.png",
+    "description": "Faqat velosiped va mopedlar harakati.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 96,
+    "name": "4.6 Piyodalar yo'lkasi",
     "category": "buyuruvchi",
-    "name": "4.1.6 Harakatlanish o’ngga yoki chapga",
-    "image_url": "images/signs/sign_4.1.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_4.6.png",
+    "description": "Faqat piyodalar harakati uchun ajratilgan maxsus yo'lka.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 97,
+    "name": "4.7 Eng kam tezlik belgilangan",
     "category": "buyuruvchi",
-    "name": "4.2.1 To’siqni o’ngdan chetlab o’tish",
-    "image_url": "images/signs/sign_4.2.1.png",
-    "description": "O'ngga burilish majburiy. Ko'k doira ichida o'ngga burilgan oq strelka.",
-    "example": "Agar bu belgi oldingizda tursa, siz faqat o'ngga burila olasiz, to'g'ri yoki chapga borolmaysiz."
+    "image_url": "images/signs/sign_4.7.png",
+    "description": "Ko'rsatilgan yoki undan yuqori tezlikda harakatlanish buyuriladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 98,
+    "name": "4.8 Eng kam tezlik belgilangan zonaning oxiri",
     "category": "buyuruvchi",
-    "name": "4.2.2 To’siqni chapdan chetlab o’tish",
-    "image_url": "images/signs/sign_4.2.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_4.8.png",
+    "description": "4.7 belgisining ta'siri tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 99,
-    "category": "buyuruvchi",
-    "name": "4.2.3 To’siqni o’ngdan yoki chapdan chetlab o’tish",
-    "image_url": "images/signs/sign_4.2.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.1 Avtomagistral",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.1.png",
+    "description": "Avtomagistral qoidalari amal qiladigan tezyurar yo'l.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 100,
-    "category": "buyuruvchi",
-    "name": "4.3 Aylanma harakatlanish",
-    "image_url": "images/signs/sign_4.3.png",
-    "description": "Aylanma harakatlanish majburiy. Ko'k doira ichida aylana ko'rsatuvchi uch strelka. Aylanma chorrahalarda o'rnatiladi.",
-    "example": "Aylanma chorrahada faqat soat mili aksida (chapga) aylanib harakat qilish mumkin."
+    "name": "5.2 Avtomagistralning oxiri",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.2.png",
+    "description": "Avtomagistral qoidalari tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 101,
-    "category": "buyuruvchi",
-    "name": "4.4 Yengil avtomobillar harakatlanadi",
-    "image_url": "images/signs/sign_4.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.3 Avtomobillar uchun mo'ljallangan yo'l",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.3.png",
+    "description": "Faqat avtomobillar va mototsikllar harakati uchun yo'l.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 102,
-    "category": "buyuruvchi",
-    "name": "4.5 Velosiped yo’lkasi",
-    "image_url": "images/signs/sign_4.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.4 Avtomobillar uchun mo'ljallangan yo'lning oxiri",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.4.png",
+    "description": "5.3 belgisi tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 103,
-    "category": "buyuruvchi",
-    "name": "4.6 Piyodalar yo’lkasi",
-    "image_url": "images/signs/sign_4.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.5 Bir tomonlama harakatli yo'l",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.5.png",
+    "description": "Transport vositalari butun kenglik bo'yicha bir yo'nalishda harakatlanadi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 104,
-    "category": "buyuruvchi",
-    "name": "4.6.1 Piyoda va velosipedlar birgalikda harakatlanish yo'li",
-    "image_url": "images/signs/sign_4.6.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.6 Bir tomonlama harakatli yo'lning oxiri",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.6.png",
+    "description": "5.5 belgisi tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 105,
-    "category": "buyuruvchi",
-    "name": "4.6.2 Piyoda va velosipedlar birgalikda harakatlanish yo'li oxiri",
-    "image_url": "images/signs/sign_4.6.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.8.1 Tasmalar bo'yicha harakatlanish yo'nalishlari",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.8.1.png",
+    "description": "Chorrahada tasmalar bo'yicha ruxsat etilgan yo'nalishlar.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 106,
-    "category": "buyuruvchi",
-    "name": "4.6.3 Ajratilgan piyoda va velosiped harakatlanish yo'li",
-    "image_url": "images/signs/sign_4.6.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.8.2 Tasma bo'yicha harakatlanish yo'nalishi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.8.2.png",
+    "description": "Alohida tasma bo'yicha harakatlanish yo'nalishi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 107,
-    "category": "buyuruvchi",
-    "name": "4.6.4 Ajratilgan piyoda va velosiped harakatlanish yo'li oxiri",
-    "image_url": "images/signs/sign_4.6.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.15 Aholi punkti boshlanishi (oq fon)",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.15.png",
+    "description": "Aholi punktlaridagi harakat tartibi (maksimal 60 km/soat) amal qiladi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 108,
-    "category": "buyuruvchi",
-    "name": "4.6.5 Ajratilgan piyoda va velosiped harakatlanish yo'li",
-    "image_url": "images/signs/sign_4.6.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.16.1 Piyodalar o'tish joyi (o'ng tomon)",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.16.1.png",
+    "description": "Piyodalarning yo'lni kesib o'tishi uchun ajratilgan xavfsiz o'tish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 109,
-    "category": "buyuruvchi",
-    "name": "4.6.6 Ajratilgan piyoda va velosiped harakatlanish yo'li oxiri",
-    "image_url": "images/signs/sign_4.6.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.16.2 Piyodalar o'tish joyi (chap tomon)",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.16.2.png",
+    "description": "Piyodalar o'tish joyining chap chegarasini belgilaydi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 110,
-    "category": "buyuruvchi",
-    "name": "4.7 Eng kam tezlik",
-    "image_url": "images/signs/sign_4.7.png",
-    "description": "Minimal harakatlanish tezligini belgilaydi. Ko'k doira ichida tezlik raqami. Haydovchi bu tezlikdan past ketishi mumkin emas.",
-    "example": "Magistral yo'llar va tez yo'llarda o'rnatiladi. Odatda 60 km/soat minimal tezlik."
+    "name": "5.17.1 Yer osti piyodalar o'tish joyi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.17.1.png",
+    "description": "Yer osti xavfsiz piyodalar o'tish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 111,
-    "category": "buyuruvchi",
-    "name": "4.8 Eng kam tezlik belgilangan yo’lning oxiri",
-    "image_url": "images/signs/sign_4.8.png",
-    "description": "Qish sharoitida g'ildiraklarga zanjir taqqash majburiy. Ko'k doira ichida zanjirli g'ildirak tasviri.",
-    "example": "Tog' yo'llarida, qishda muzlab qolgan yo'llarda o'rnatiladi."
+    "name": "5.17.2 Yer usti piyodalar o'tish joyi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.17.2.png",
+    "description": "Yer usti (ko'prikli) piyodalar o'tish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 112,
-    "category": "buyuruvchi",
-    "name": "4.9.1 Transport vositalarining xavfli yuklar bilan harakatlanish yo'nalishi",
-    "image_url": "images/signs/sign_4.9.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.19.1 Bir izli temir yo'l to'xtash joyi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.19.1.png",
+    "description": "Temir yo'l bekatiga yaqin joy.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 113,
-    "category": "buyuruvchi",
-    "name": "4.9.2 Transport vositalarining xavfli yuklar bilan harakatlanish yo'nalishi",
-    "image_url": "images/signs/sign_4.9.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.20.1 Avtobus yoki trolleybus to'xtash joyi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.20.1.png",
+    "description": "Yo'nalishli transport vositalarining to'xtash punkti.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 114,
-    "category": "buyuruvchi",
-    "name": "4.9.3 Transport vositalarining xavfli yuklar bilan harakatlanish yo'nalishi",
-    "image_url": "images/signs/sign_4.9.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.20.2 Tramvay to'xtash joyi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.20.2.png",
+    "description": "Tramvaylarning yo'lovchi tushirish-chiqarish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 115,
-    "category": "buyuruvchi",
-    "name": "4.10 Otda yurish  yo'li",
-    "image_url": "images/signs/sign_4.10.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "5.21 Taksi to'xtab turish joyi",
+    "category": "axborot",
+    "image_url": "images/signs/sign_5.21.png",
+    "description": "Yo'nalishsiz taksilar uchun to'xtab turish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 116,
+    "name": "5.22 Turar joy dahasi (Yashash zonasi)",
     "category": "axborot",
-    "name": "5.1  Avtomagistral",
-    "image_url": "images/signs/sign_5.1.png",
-    "description": "Magistral yo'l boshlanishi haqida xabar beradi. Ko'k to'rtburchak ichida oq yo'l tasviri. Bu yo'lda: piyodalar, velosipedchilar, mopedlar va harakatlanish tezligi 40 km/soatdan past bo'lgan transport yo'lolmaydi.",
-    "example": "Magistral yo'lda minimal tezlik 60 km/soat. To'xtash faqat belgilangan joylarda."
+    "image_url": "images/signs/sign_5.22.png",
+    "description": "Piyodalar ustunlikka ega bo'lgan turar-joy hududi (maksimal 20 km/soat).",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 117,
+    "name": "5.23 Turar joy dahasining oxiri",
     "category": "axborot",
-    "name": "5.2  Avtomagistralning oxiri",
-    "image_url": "images/signs/sign_5.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "image_url": "images/signs/sign_5.23.png",
+    "description": "5.22 belgisi tugaganini bildiradi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 118,
-    "category": "axborot",
-    "name": "5.3  Avtomobillar uchun mo’ljallangan yo’l",
-    "image_url": "images/signs/sign_5.3.png",
-    "description": "Shahar yoki qishloq hududi boshlanganini bildiradi. Oq yoki sariq belgi ichida aholi punkti nomi. Maksimal tezlik 60 km/soatga tushadi.",
-    "example": "Toshkent shahriga kirish belgisi: «TOSHKENT» yozuvi ko'rinadi. Bundan keyin tezlik 60 km/soat."
+    "name": "6.1 Tibbiy yordam punkti",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.1.png",
+    "description": "Birinchi tibbiy yordam punkti joylashgan joy.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 119,
-    "category": "axborot",
-    "name": "5.4  Avtomobillar uchun mo’ljallangan yo’lning oxiri",
-    "image_url": "images/signs/sign_5.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.2 Shifoxona",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.2.png",
+    "description": "Kasalxona yoki tibbiyot markazi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 120,
-    "category": "axborot",
-    "name": "5.5  Bir tomonlama harakatlanish yo’li",
-    "image_url": "images/signs/sign_5.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.3 Avtomobillarga yoqilg'i quyish shoxobchasi (AYOQSH)",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.3.png",
+    "description": "Benzin, gaz yoki elektr quvvatlash stansiyasi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 121,
-    "category": "axborot",
-    "name": "5.6  Bir tomonlama harakatlanish yo’lining oxiri",
-    "image_url": "images/signs/sign_5.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.4 Avtomobillarga texnik xizmat ko'rsatish ustaxonasi",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.4.png",
+    "description": "Avtoservis va ta'mirlash ustaxonasi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 122,
-    "category": "axborot",
-    "name": "5.7.1 Bir tomonlama harakatlanish yo’liga chiqish",
-    "image_url": "images/signs/sign_5.7.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.5 Avtomobillarni yuvish joyi (Moyka)",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.5.png",
+    "description": "Avtomobillarni yuvish shoxobchasi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 123,
-    "category": "axborot",
-    "name": "5.7.2 Bir tomonlama harakatlanish yo’liga chiqish",
-    "image_url": "images/signs/sign_5.7.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.6 Telefon",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.6.png",
+    "description": "Aloqa telefoni o'rnatilgan joy.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 124,
-    "category": "axborot",
-    "name": "5.8.1 Bo’laklar bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.7 Oshxona / Kafe",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.7.png",
+    "description": "Ovqatlanish joyi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 125,
-    "category": "axborot",
-    "name": "5.8.2 Bo’lak bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.8 Ichimlik suvi",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.8.png",
+    "description": "Toza ichimlik suvi manbai.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 126,
-    "category": "axborot",
-    "name": "5.8.2 Bo’lak bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.9 Mehmonxona yoki motel",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.9.png",
+    "description": "Mehmonxona yoki dam olish maskani.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 127,
-    "category": "axborot",
-    "name": "5.8.2 Bo’lak bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.10 Kemping",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.10.png",
+    "description": "Sayyohlar uchun chodirli lager.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 128,
-    "category": "axborot",
-    "name": "5.8.2 Bo’lak bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.11 Dam olish joyi",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.11.png",
+    "description": "Haydovchilar dam olishi uchun maxsus maydoncha.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 129,
-    "category": "axborot",
-    "name": "5.8.3 Bo’lakning boshlanishi",
-    "image_url": "images/signs/sign_5.8.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
+    "name": "6.12 Yo'l-patrul xizmati (YPX) maskani",
+    "category": "servis",
+    "image_url": "images/signs/sign_6.12.png",
+    "description": "YPX posti yoki doimiy nazorat maskani.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   },
   {
     "id": 130,
-    "category": "axborot",
-    "name": "5.8.3 Bo’lakning boshlanishi",
-    "image_url": "images/signs/sign_5.8.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 131,
-    "category": "axborot",
-    "name": "5.8.4 Bo’lakning boshlanishi",
-    "image_url": "images/signs/sign_5.8.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 132,
-    "category": "axborot",
-    "name": "5.8.5 Bo’lak oxiri",
-    "image_url": "images/signs/sign_5.8.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 133,
-    "category": "axborot",
-    "name": "5.8.5 Bo’lak oxiri",
-    "image_url": "images/signs/sign_5.8.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 134,
-    "category": "axborot",
-    "name": "5.8.7 Bo’laklar bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 135,
-    "category": "axborot",
-    "name": "5.8.7 Bo’laklar bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 136,
-    "category": "axborot",
-    "name": "5.8.8 Bo’laklar bo’yicha harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.8.8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 137,
-    "category": "axborot",
-    "name": "5.8.9 Bo’laklar soni",
-    "image_url": "images/signs/sign_5.8.9.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 138,
-    "category": "axborot",
-    "name": "5.9 Belgilangan yo’nalishli transport vositalari uchun mo’ljallangan bo’lak",
-    "image_url": "images/signs/sign_5.9.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 139,
-    "category": "axborot",
-    "name": "5.10.1 Belgilangan yo’nalishli transport vositalari uchun bo’lagi bor yo’l",
-    "image_url": "images/signs/sign_5.10.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 140,
-    "category": "axborot",
-    "name": "5.10.2  Belgilangan yo’nalishli transport vositalari uchun bo’lagi bor yo’l",
-    "image_url": "images/signs/sign_5.10.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 141,
-    "category": "axborot",
-    "name": "5.10.3 Belgilangan yo’nalishli transport vositalari uchun bo’lagi bor yo’l",
-    "image_url": "images/signs/sign_5.10.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 142,
-    "category": "axborot",
-    "name": "5.10.4 Belgilangan yo’nalishli transport vositalari uchun bo’lagi bor yo’lning oxiri",
-    "image_url": "images/signs/sign_5.10.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 143,
-    "category": "axborot",
-    "name": "5.11.1 Qayirilish joyi",
-    "image_url": "images/signs/sign_5.11.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 144,
-    "category": "axborot",
-    "name": "5.11.2 Qayirilish oralig’i",
-    "image_url": "images/signs/sign_5.11.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 145,
-    "category": "axborot",
-    "name": "5.12 Avtobus va trolleybus to’xtash joyi",
-    "image_url": "images/signs/sign_5.12.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 146,
-    "category": "axborot",
-    "name": "5.13 Tramvay to’xtash joyi",
-    "image_url": "images/signs/sign_5.13.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 147,
-    "category": "axborot",
-    "name": "5.14 Taksi to’xtab turish joyi",
-    "image_url": "images/signs/sign_5.14.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 148,
-    "category": "axborot",
-    "name": "5.15 To’xtab turish joyi",
-    "image_url": "images/signs/sign_5.15.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 149,
-    "category": "axborot",
-    "name": "5.16.1 Piyodalar o’tish joyi",
-    "image_url": "images/signs/sign_5.16.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 150,
-    "category": "axborot",
-    "name": "5.16.2 Piyodalar o’tish joyi",
-    "image_url": "images/signs/sign_5.16.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 151,
-    "category": "axborot",
-    "name": "5.17.1 Piyodalarning yer ostidan o’tish joyi",
-    "image_url": "images/signs/sign_5.17.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 152,
-    "category": "axborot",
-    "name": "5.17.2 Piyodalarning yer ostidan o’tish joyi",
-    "image_url": "images/signs/sign_5.17.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 153,
-    "category": "axborot",
-    "name": "5.17.3  Piyodalarning yer ustidan o’tish joyi",
-    "image_url": "images/signs/sign_5.17.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 154,
-    "category": "axborot",
-    "name": "5.17.4  Piyodalarning yer ustidan o’tish joyi",
-    "image_url": "images/signs/sign_5.17.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 155,
-    "category": "axborot",
-    "name": "5.18 Tavsiya etilgan tezlik",
-    "image_url": "images/signs/sign_5.18.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 156,
-    "category": "axborot",
-    "name": "5.19.1 Oxiri berk yo’l, ko’cha",
-    "image_url": "images/signs/sign_5.19.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 157,
-    "category": "axborot",
-    "name": "5.19.2 Oxiri berk yo’l, ko’cha",
-    "image_url": "images/signs/sign_5.19.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 158,
-    "category": "axborot",
-    "name": "5.19.3 Oxiri berk yo’l, ko’cha",
-    "image_url": "images/signs/sign_5.19.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 159,
-    "category": "axborot",
-    "name": "5.20.1 Yo’nalishlarning dastlabki ko’rsatkichi",
-    "image_url": "images/signs/sign_5.20.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 160,
-    "category": "axborot",
-    "name": "5.20.1 Yo’nalishlarning dastlabki ko’rsatkichi",
-    "image_url": "images/signs/sign_5.20.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 161,
-    "category": "axborot",
-    "name": "5.20.1 Yo’nalishlarning dastlabki ko’rsatkichi",
-    "image_url": "images/signs/sign_5.20.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 162,
-    "category": "axborot",
-    "name": "5.20.2 Yo’nalishlarning dastlabki ko’rsatkichi",
-    "image_url": "images/signs/sign_5.20.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 163,
-    "category": "axborot",
-    "name": "5.20.3 Harakatlanish tasviri",
-    "image_url": "images/signs/sign_5.20.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 164,
-    "category": "axborot",
-    "name": "5.21.1 Yo’nalish ko’rsatkichi",
-    "image_url": "images/signs/sign_5.21.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 165,
-    "category": "axborot",
-    "name": "5.21.2 Yo’nalishlar ko’rsatkichi",
-    "image_url": "images/signs/sign_5.21.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 166,
-    "category": "axborot",
-    "name": "5.22 Aholi yashaydigan joyning boshlanishi",
-    "image_url": "images/signs/sign_5.22.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 167,
-    "category": "axborot",
-    "name": "5.23 Aholi yashaydigan joyning oxiri",
-    "image_url": "images/signs/sign_5.23.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 168,
-    "category": "axborot",
-    "name": "5.24 Aholi yashaydigan joyning boshlanishi",
-    "image_url": "images/signs/sign_5.24.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 169,
-    "category": "axborot",
-    "name": "5.25 Aholi yashaydigan joyning oxiri",
-    "image_url": "images/signs/sign_5.25.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 170,
-    "category": "axborot",
-    "name": "5.26 Manzil nomi",
-    "image_url": "images/signs/sign_5.26.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 171,
-    "category": "axborot",
-    "name": "5.27 Masofalar ko’rsatkichi",
-    "image_url": "images/signs/sign_5.27.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 172,
-    "category": "axborot",
-    "name": "5.28 Kilometr belgisi",
-    "image_url": "images/signs/sign_5.28.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 173,
-    "category": "axborot",
-    "name": "5.29.1  Yo’l raqami",
-    "image_url": "images/signs/sign_5.29.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 174,
-    "category": "axborot",
-    "name": "5.29.2 Yo’l raqami",
-    "image_url": "images/signs/sign_5.29.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 175,
-    "category": "axborot",
-    "name": "5.29.2 Yo’l raqami",
-    "image_url": "images/signs/sign_5.29.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 176,
-    "category": "axborot",
-    "name": "5.29.2 Yo’l raqami",
-    "image_url": "images/signs/sign_5.29.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 177,
-    "category": "axborot",
-    "name": "5.30.1 Yuk avtomobillari uchun harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.30.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 178,
-    "category": "axborot",
-    "name": "5.30.2 Yuk avtomobillari uchun harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.30.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 179,
-    "category": "axborot",
-    "name": "5.30.3 Yuk avtomobillari uchun harakatlanish yo’nalishi",
-    "image_url": "images/signs/sign_5.30.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 180,
-    "category": "axborot",
-    "name": "5.31. Aylanib o’tish tasviri",
-    "image_url": "images/signs/sign_180.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 181,
-    "category": "axborot",
-    "name": "5.32.1 Chetlab o’tish yo’nalishi",
-    "image_url": "images/signs/sign_5.32.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 182,
-    "category": "axborot",
-    "name": "5.32.2 Chetlab o’tish yo’nalishi",
-    "image_url": "images/signs/sign_5.32.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 183,
-    "category": "axborot",
-    "name": "5.32.3 Chetlab o’tish yo’nalishi",
-    "image_url": "images/signs/sign_5.32.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 184,
-    "category": "axborot",
-    "name": "5.33 To’xtash",
-    "image_url": "images/signs/sign_5.33.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 185,
-    "category": "axborot",
-    "name": "5.34.1 Boshqa qatnov qismiga qayta tizilishning boshlang’ich ko’rsatkichi",
-    "image_url": "images/signs/sign_5.34.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 186,
-    "category": "axborot",
-    "name": "5.34.2 Boshqa qatnov qismiga qayta tizilishning boshlang’ich ko’rsatkichi",
-    "image_url": "images/signs/sign_5.34.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 187,
-    "category": "axborot",
-    "name": "5.35 Reversiv harakatlanish",
-    "image_url": "images/signs/sign_5.35.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 188,
-    "category": "axborot",
-    "name": "5.36 Reversiv harakatlanish oxiri",
-    "image_url": "images/signs/sign_5.36.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 189,
-    "category": "axborot",
-    "name": "5.37 Reversiv harakatlanish yo’liga chiqish",
-    "image_url": "images/signs/sign_5.37.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 190,
-    "category": "axborot",
-    "name": "5.38  Turar-joy dahasi",
-    "image_url": "images/signs/sign_5.38.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 191,
-    "category": "axborot",
-    "name": "5.39 Turar-joy dahasining oxiri",
-    "image_url": "images/signs/sign_5.39.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 192,
-    "category": "axborot",
-    "name": "5.40 Falokatli holatlar uchun kirish yo’li",
-    "image_url": "images/signs/sign_5.40.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 193,
-    "category": "axborot",
-    "name": "5.41  Surat va video",
-    "image_url": "images/signs/sign_5.41.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 194,
-    "category": "axborot",
-    "name": "5.43 Radar",
-    "image_url": "images/signs/sign_5.43.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 195,
-    "category": "axborot",
-    "name": "5.42 Qizil rangda o'ng tomonga burilish",
-    "image_url": "images/signs/sign_5.42.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 196,
-    "category": "axborot",
-    "name": "5.44 Velosipedlar uchun harakatlanish bo'lagi",
-    "image_url": "images/signs/sign_5.44.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 197,
-    "category": "axborot",
-    "name": "5.45 Velosipedlar uchun harakatlanish bo'lagining oxiri",
-    "image_url": "images/signs/sign_5.45.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 198,
+    "name": "6.13 Hojatxona",
     "category": "servis",
-    "name": "6.1 Tibbiy yordam ko’rsatish joyi",
-    "image_url": "images/signs/sign_6.1.png",
-    "description": "Birinchi tibbiy yordam punkti joylashganligi haqida xabar beradi. Ko'k to'rtburchak ichida oq xoch.",
-    "example": "Yo'lda baxtsiz hodisa yuz berganda, bu belgiga qarab eng yaqin tibbiy yordamni topish mumkin."
-  },
-  {
-    "id": 199,
-    "category": "servis",
-    "name": "6.2 Shifoxona",
-    "image_url": "images/signs/sign_6.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 200,
-    "category": "servis",
-    "name": "6.3 Yonilg’i shaxobchasi",
-    "image_url": "images/signs/sign_6.3.png",
-    "description": "Yaqin atrofda benzin quyish stantsiyasi (AZS) joylashganligini bildiradi. Ko'k to'rtburchak ichida benzin quyadigan tasvir.",
-    "example": "Uzoq magistral yo'llarda haydovchilarga eng yaqin AZSni topishga yordam beradi."
-  },
-  {
-    "id": 201,
-    "category": "servis",
-    "name": "6.4 Texnik xizmat ko’rsatish joyi",
-    "image_url": "images/signs/sign_6.4.png",
-    "description": "Texnik xizmat ko'rsatish (avtoservis) stantsiyasi yaqinligini bildiradi. Ko'k to'rtburchak ichida kalit tasviri.",
-    "example": "Transport buzilganda, bu belgi orqali eng yaqin autoservisni topish mumkin."
-  },
-  {
-    "id": 202,
-    "category": "servis",
-    "name": "6.5 Transport vositalarini yuvish joyi",
-    "image_url": "images/signs/sign_6.5.png",
-    "description": "Transport vositalarini to'xtatib qo'yish joyi yaqinligini bildiradi. Ko'k to'rtburchak ichida 'P' harfi.",
-    "example": "Shahar markazlari va tijorat hududlarida o'rnatiladi."
-  },
-  {
-    "id": 203,
-    "category": "servis",
-    "name": "6.6 Telefon",
-    "image_url": "images/signs/sign_6.6.png",
-    "description": "Kafe, restoran yoki oshxona yaqinligini bildiradi. Ko'k to'rtburchak ichida vilka va pichoq tasviri.",
-    "example": "Uzoq yo'llarda haydovchilar uchun ovqatlanish joyini ko'rsatadi."
-  },
-  {
-    "id": 204,
-    "category": "servis",
-    "name": "6.7 Oshxona",
-    "image_url": "images/signs/sign_6.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 205,
-    "category": "servis",
-    "name": "6.8 Ichimlik suvi",
-    "image_url": "images/signs/sign_6.8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 206,
-    "category": "servis",
-    "name": "6.9 Mehmonxona",
-    "image_url": "images/signs/sign_6.9.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 207,
-    "category": "servis",
-    "name": "6.10 Kemping",
-    "image_url": "images/signs/sign_6.10.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 208,
-    "category": "servis",
-    "name": "6.11 Dam olish joyi",
-    "image_url": "images/signs/sign_6.11.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 209,
-    "category": "servis",
-    "name": "6.12 Yo’l patrul xizmati maskani",
-    "image_url": "images/signs/sign_6.12.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 210,
-    "category": "servis",
-    "name": "6.13 Xalqaro avtomobillarni tashish nazorat punkti",
     "image_url": "images/signs/sign_6.13.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 211,
-    "category": "servis",
-    "name": "6.14 Xojatxona",
-    "image_url": "images/signs/sign_6.14.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 212,
-    "category": "servis",
-    "name": "6.15 Axlat quti",
-    "image_url": "images/signs/sign_6.15.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 213,
-    "category": "servis",
-    "name": "6.16 Basseyn yoki sohil bo'yi",
-    "image_url": "images/signs/sign_6.16.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 214,
-    "category": "servis",
-    "name": "6.17 Polisiya",
-    "image_url": "images/signs/sign_6.17.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 215,
-    "category": "qoshimcha",
-    "name": "7.1.1 Manzilgacha bo’lgan masofa",
-    "image_url": "images/signs/sign_7.1.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 216,
-    "category": "qoshimcha",
-    "name": "7.1.2 Manzilgacha bo’lgan masofa",
-    "image_url": "images/signs/sign_7.1.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 217,
-    "category": "qoshimcha",
-    "name": "7.1.3 Manzilgacha bo’lgan masofa",
-    "image_url": "images/signs/sign_7.1.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 218,
-    "category": "qoshimcha",
-    "name": "7.1.4 Manzilgacha bo’lgan masofa",
-    "image_url": "images/signs/sign_7.1.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 219,
-    "category": "qoshimcha",
-    "name": "7.2.1 Ta’sir oralig’i",
-    "image_url": "images/signs/sign_7.2.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 220,
-    "category": "qoshimcha",
-    "name": "7.2.2 Ta’sir oralig’i",
-    "image_url": "images/signs/sign_7.2.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 221,
-    "category": "qoshimcha",
-    "name": "7.2.3 Ta’sir oralig’i",
-    "image_url": "images/signs/sign_7.2.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 222,
-    "category": "qoshimcha",
-    "name": "7.2.4 Ta’sir oralig’i",
-    "image_url": "images/signs/sign_7.2.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 223,
-    "category": "qoshimcha",
-    "name": "7.2.5 Ta’sir oralig’i",
-    "image_url": "images/signs/sign_7.2.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 224,
-    "category": "qoshimcha",
-    "name": "7.2.6 Ta’sir oralig’i",
-    "image_url": "images/signs/sign_7.2.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 225,
-    "category": "qoshimcha",
-    "name": "7.3.1 Ta’sir yo’nalishlari",
-    "image_url": "images/signs/sign_7.3.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 226,
-    "category": "qoshimcha",
-    "name": "7.3.2 Ta’sir yo’nalishlari",
-    "image_url": "images/signs/sign_7.3.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 227,
-    "category": "qoshimcha",
-    "name": "7.3.3 Ta’sir yo’nalishlari",
-    "image_url": "images/signs/sign_7.3.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 228,
-    "category": "qoshimcha",
-    "name": "7.4.1 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 229,
-    "category": "qoshimcha",
-    "name": "7.4.2 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 230,
-    "category": "qoshimcha",
-    "name": "7.4.3 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 231,
-    "category": "qoshimcha",
-    "name": "7.4.4 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 232,
-    "category": "qoshimcha",
-    "name": "7.4.5 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 233,
-    "category": "qoshimcha",
-    "name": "7.4.6 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 234,
-    "category": "qoshimcha",
-    "name": "7.4.7 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 235,
-    "category": "qoshimcha",
-    "name": "7.4.8 Transport vositasining turi",
-    "image_url": "images/signs/sign_7.4.8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 236,
-    "category": "qoshimcha",
-    "name": "7.5.1 Shanba, yakshanba va bayram kunlari",
-    "image_url": "images/signs/sign_7.5.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 237,
-    "category": "qoshimcha",
-    "name": "7.5.2 Ish kunlari",
-    "image_url": "images/signs/sign_7.5.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 238,
-    "category": "qoshimcha",
-    "name": "7.5.3 Hafta kunlari",
-    "image_url": "images/signs/sign_7.5.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 239,
-    "category": "qoshimcha",
-    "name": "7.5.4 Amal qilish vaqti",
-    "image_url": "images/signs/sign_7.5.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 240,
-    "category": "qoshimcha",
-    "name": "7.5.5 Amal qilish vaqti",
-    "image_url": "images/signs/sign_7.5.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 241,
-    "category": "qoshimcha",
-    "name": "7.5.6 Amal qilish vaqti",
-    "image_url": "images/signs/sign_7.5.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 242,
-    "category": "qoshimcha",
-    "name": "7.5.7 Amal qilish vaqti",
-    "image_url": "images/signs/sign_7.5.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 243,
-    "category": "qoshimcha",
-    "name": "7.6.1 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 244,
-    "category": "qoshimcha",
-    "name": "7.6.2 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 245,
-    "category": "qoshimcha",
-    "name": "7.6.3 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 246,
-    "category": "qoshimcha",
-    "name": "7.6.4 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.4.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 247,
-    "category": "qoshimcha",
-    "name": "7.6.5 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.5.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 248,
-    "category": "qoshimcha",
-    "name": "7.6.6 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.6.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 249,
-    "category": "qoshimcha",
-    "name": "7.6.7 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 250,
-    "category": "qoshimcha",
-    "name": "7.6.8 Transport vositasini to’xtab turish joyiga qo’yish usuli",
-    "image_url": "images/signs/sign_7.6.8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 251,
-    "category": "qoshimcha",
-    "name": "7.7 Yurgizgichni ishlatmasdan to’xtab turish joyi",
-    "image_url": "images/signs/sign_7.7.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 252,
-    "category": "qoshimcha",
-    "name": "7.8 Pullik xizmat ko’rsatish joyi",
-    "image_url": "images/signs/sign_7.8.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 253,
-    "category": "qoshimcha",
-    "name": "7.9 To’xtab turish muddati cheklangan",
-    "image_url": "images/signs/sign_7.9.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 254,
-    "category": "qoshimcha",
-    "name": "7.10 Avtomobillarni ko’rikdan o’tkazish joyi",
-    "image_url": "images/signs/sign_7.10.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 255,
-    "category": "qoshimcha",
-    "name": "7.11 To’la vazni cheklangan",
-    "image_url": "images/signs/sign_7.11.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 256,
-    "category": "qoshimcha",
-    "name": "7.12 Xavfli yo’l yoqasi",
-    "image_url": "images/signs/sign_7.12.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 257,
-    "category": "qoshimcha",
-    "name": "7.13 Asosiy yo’lning yo’nalishi",
-    "image_url": "images/signs/sign_7.13.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 258,
-    "category": "qoshimcha",
-    "name": "7.14 Harakatlanish bo’lagi",
-    "image_url": "images/signs/sign_7.14.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 259,
-    "category": "qoshimcha",
-    "name": "7.15 Ko’zi ojiz piyodalar",
-    "image_url": "images/signs/sign_7.15.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 260,
-    "category": "qoshimcha",
-    "name": "7.16 Nam qoplama",
-    "image_url": "images/signs/sign_7.16.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 261,
-    "category": "qoshimcha",
-    "name": "7.17 Nogironlar",
-    "image_url": "images/signs/sign_7.17.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 262,
-    "category": "qoshimcha",
-    "name": "7.18 Nogironlar mustasno",
-    "image_url": "images/signs/sign_7.18.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 263,
-    "category": "qoshimcha",
-    "name": "7.19 Chorrahadagi kamera",
-    "image_url": "images/signs/sign_7.19.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 264,
-    "category": "qoshimcha",
-    "name": "7.20 Xavfli yuk",
-    "image_url": "images/signs/sign_7.20.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 265,
-    "category": "qoshimcha",
-    "name": "7.21 Evakuator ishlamoqda",
-    "image_url": "images/signs/sign_7.21.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 266,
-    "category": "qoshimcha",
-    "name": "7.21.1 Marshrutli transport vositasi turi",
-    "image_url": "images/signs/sign_7.21.1.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 267,
-    "category": "qoshimcha",
-    "name": "7.21.2 Marshrutli transport vositasi turi",
-    "image_url": "images/signs/sign_7.21.2.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 268,
-    "category": "qoshimcha",
-    "name": "7.21.3 Marshrutli transport vositasi turi",
-    "image_url": "images/signs/sign_7.21.3.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 269,
-    "category": "boshqa",
-    "name": "To'siq",
-    "image_url": "images/signs/sign_269.png",
-    "description": "Ushbu belgi yo'l harakati qoidalariga muvofiq o'rnatiladi.",
-    "example": ""
-  },
-  {
-    "id": 270,
-    "category": "taqiqlovchi",
-    "name": "3.1 Kirish taqiqlangan",
-    "image_url": "images/signs/sign_3.1.png",
-    "description": "Barcha transport vositalarining shu yo'nalishda harakatlanishini taqiqlaydi (marshrutli transport vositalaridan tashqari).",
-    "example": ""
-  },
-  {
-    "id": 271,
-    "category": "taqiqlovchi",
-    "name": "3.2 Harakatlanish taqiqlangan",
-    "image_url": "images/signs/sign_3.2.png",
-    "description": "Barcha transport vositalarining harakatlanishini taqiqlaydi.",
-    "example": ""
-  },
-  {
-    "id": 272,
-    "category": "taqiqlovchi",
-    "name": "3.3 Mexanik transport vositalarining harakatlanishi taqiqlangan",
-    "image_url": "images/signs/sign_3.3.png",
-    "description": "Motorli transport vositalarining kirishini taqiqlaydi.",
-    "example": ""
-  },
-  {
-    "id": 273,
-    "category": "taqiqlovchi",
-    "name": "3.20 Quvib o'tish taqiqlangan",
-    "image_url": "images/signs/sign_3.20.png",
-    "description": "Barcha transport vositalarini quvib o'tishni taqiqlaydi.",
-    "example": ""
-  },
-  {
-    "id": 274,
-    "category": "taqiqlovchi",
-    "name": "3.27 To'xtash taqiqlangan",
-    "image_url": "images/signs/sign_3.27.png",
-    "description": "Transport vositalarining to'xtashi va to'xtab turishini taqiqlaydi.",
-    "example": ""
-  },
-  {
-    "id": 275,
-    "category": "ogohlantiruvchi",
-    "name": "1.1 Shlagbaumli temir yo'l kesishmasi",
-    "image_url": "images/signs/sign_1.1.png",
-    "description": "Shlagbaum bilan jihozlangan temir yo'l kesishmasiga yaqinlashayotganligi haqida ogohlantiradi.",
-    "example": ""
-  },
-  {
-    "id": 276,
-    "category": "ogohlantiruvchi",
-    "name": "1.2 Shlagbaumsiz temir yo'l kesishmasi",
-    "image_url": "images/signs/sign_1.2.png",
-    "description": "Shlagbaumsiz temir yo'l kesishmasiga yaqinlashayotganligi haqida ogohlantiradi.",
-    "example": ""
-  },
-  {
-    "id": 277,
-    "category": "ogohlantiruvchi",
-    "name": "1.11.1 Xavfli burilish (o'ngga)",
-    "image_url": "images/signs/sign_1.11.1.png",
-    "description": "O'ng tomonga xavfli burilish borligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 278,
-    "category": "ogohlantiruvchi",
-    "name": "1.15 Sirpanchiq yo'l",
-    "image_url": "images/signs/sign_1.15.png",
-    "description": "Yo'lning sirpanchiq qismi boshlanayotganini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 279,
-    "category": "ogohlantiruvchi",
-    "name": "1.20 Piyodalar o'tish joyi",
-    "image_url": "images/signs/sign_1.20.png",
-    "description": "Oldinda piyodalar o'tish joyi borligi haqida ogohlantiradi.",
-    "example": ""
-  },
-  {
-    "id": 280,
-    "category": "axborot",
-    "name": "5.1 Avtomagistral",
-    "image_url": "images/signs/sign_5.1.png",
-    "description": "Avtomagistral qoidalari amal qiladigan yo'lning boshlanishi.",
-    "example": ""
-  },
-  {
-    "id": 281,
-    "category": "axborot",
-    "name": "5.2 Avtomagistral oxiri",
-    "image_url": "images/signs/sign_5.2.png",
-    "description": "Avtomagistral qoidalari amal qiladigan yo'lning tugashi.",
-    "example": ""
-  },
-  {
-    "id": 282,
-    "category": "axborot",
-    "name": "5.5 Bir tomonlama harakatlanish yo'li",
-    "image_url": "images/signs/sign_5.5.png",
-    "description": "Butun kengligi bo'yicha harakat faqat bir yo'nalishda bo'lgan yo'l.",
-    "example": ""
-  },
-  {
-    "id": 283,
-    "category": "axborot",
-    "name": "5.16.1 Piyodalar o'tish joyi",
-    "image_url": "images/signs/sign_5.16.1.png",
-    "description": "Piyodalar uchun ajratilgan maxsus yo'lak.",
-    "example": ""
-  },
-  {
-    "id": 284,
-    "category": "axborot",
-    "name": "5.19.1 Oxiri berk ko'cha",
-    "image_url": "images/signs/sign_5.19.1.png",
-    "description": "Teskari tomondan chiqish imkoni bo'lmagan yo'l.",
-    "example": ""
-  },
-  {
-    "id": 285,
-    "category": "buyuruvchi",
-    "name": "4.1.1 To'g'riga harakatlanish",
-    "image_url": "images/signs/sign_4.1.1.png",
-    "description": "Faqat to'g'riga harakatlanishga ruxsat beradi.",
-    "example": ""
-  },
-  {
-    "id": 286,
-    "category": "buyuruvchi",
-    "name": "4.1.2 O'ngga harakatlanish",
-    "image_url": "images/signs/sign_4.1.2.png",
-    "description": "Faqat o'ngga harakatlanishga ruxsat beradi.",
-    "example": ""
-  },
-  {
-    "id": 287,
-    "category": "buyuruvchi",
-    "name": "4.1.3 Chapga harakatlanish",
-    "image_url": "images/signs/sign_4.1.3.png",
-    "description": "Faqat chapga yoki qayrilishga ruxsat beradi.",
-    "example": ""
-  },
-  {
-    "id": 288,
-    "category": "buyuruvchi",
-    "name": "4.3 Aylana harakatlanish",
-    "image_url": "images/signs/sign_4.3.png",
-    "description": "Aylana shaklidagi chorrahada harakatlanish qoidasini ko'rsatadi.",
-    "example": ""
-  },
-  {
-    "id": 289,
-    "category": "buyuruvchi",
-    "name": "4.4 Yengil avtomobillar harakati",
-    "image_url": "images/signs/sign_4.4.png",
-    "description": "Faqat yengil avtomobillar va motosikllar harakatlanishi ruxsat etiladi.",
-    "example": ""
-  },
-  {
-    "id": 290,
-    "category": "imtiyoz",
-    "name": "2.1 Asosiy yo'l",
-    "image_url": "images/signs/sign_2.1.png",
-    "description": "Teng ahamiyatli bo'lmagan chorrahada birinchi o'tish huquqini beradi.",
-    "example": ""
-  },
-  {
-    "id": 291,
-    "category": "imtiyoz",
-    "name": "2.2 Asosiy yo'lning oxiri",
-    "image_url": "images/signs/sign_2.2.png",
-    "description": "2.1 belgisi o'z kuchini yo'qotganligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 292,
-    "category": "imtiyoz",
-    "name": "2.4 Yo'l bering",
-    "image_url": "images/signs/sign_2.4.png",
-    "description": "Kesishayotgan yo'ldagi transportlarga yo'l berish majburiyligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 293,
-    "category": "imtiyoz",
-    "name": "2.5 To'xtamasdan harakatlanish taqiqlangan",
-    "image_url": "images/signs/sign_2.5.png",
-    "description": "To'xtash chizig'i yoki chorraha oldida to'xtamasdan o'tish qat'iyan man etiladi.",
-    "example": ""
-  },
-  {
-    "id": 294,
-    "category": "imtiyoz",
-    "name": "2.6 Ro'para harakatlanishning ustunligi",
-    "image_url": "images/signs/sign_2.6.png",
-    "description": "Tor qismda ro'paradan kelayotgan transportga yo'l berish kerakligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 295,
-    "category": "servis",
-    "name": "6.1 Birinchi tibbiy yordam ko'rsatish joyi",
-    "image_url": "images/signs/sign_6.1.png",
-    "description": "Yaqin atrofda tibbiyot punkti borligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 296,
-    "category": "servis",
-    "name": "6.2 Kasalxona",
-    "image_url": "images/signs/sign_6.2.png",
-    "description": "Yaqin atrofda kasalxona mavjudligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 297,
-    "category": "servis",
-    "name": "6.3 AYoQSh",
-    "image_url": "images/signs/sign_6.3.png",
-    "description": "Avtomobillarga yoqilg'i quyish shoxobchasi borligini bildiradi.",
-    "example": ""
-  },
-  {
-    "id": 298,
-    "category": "servis",
-    "name": "6.4 Texnik xizmat ko'rsatish joyi",
-    "image_url": "images/signs/sign_6.4.png",
-    "description": "Avtomobillarga texnik xizmat ko'rsatish stansiyasi.",
-    "example": ""
-  },
-  {
-    "id": 299,
-    "category": "servis",
-    "name": "6.10 Mehmonxona yoki motel",
-    "image_url": "images/signs/sign_6.10.png",
-    "description": "Mehmonxona borligini bildiradi.",
-    "example": ""
+    "description": "Jamoat hojatxonasi.",
+    "example": "Yo'l harakati qoidalariga qat'iy amal qiling."
   }
 ]
