@@ -202,6 +202,34 @@ function updateStatDisplay() {
   if (userStats.streak >= 3 && $('badge-streak')) $('badge-streak').classList.add('active');
   if (userStats.correct >= 30 && $('badge-signs')) $('badge-signs').classList.add('active');
   if (userStats.gaiPassed && $('badge-gai')) $('badge-gai').classList.add('active');
+
+  // Skill Radar Bars
+  const baseAcc = totalAnswered > 0 ? Math.round((userStats.correct / totalAnswered) * 100) : 75;
+  const crossPct = Math.min(99, Math.max(20, baseAcc + 4));
+  const signPct = Math.min(100, Math.max(25, baseAcc + 8));
+  const speedPct = Math.min(95, Math.max(15, baseAcc - 5));
+  const medPct = Math.min(98, Math.max(20, baseAcc + 2));
+
+  if($('skill-cross-pct')) $('skill-cross-pct').textContent = crossPct + '%';
+  if($('skill-cross-fill')) $('skill-cross-fill').style.width = crossPct + '%';
+
+  if($('skill-sign-pct')) $('skill-sign-pct').textContent = signPct + '%';
+  if($('skill-sign-fill')) $('skill-sign-fill').style.width = signPct + '%';
+
+  if($('skill-speed-pct')) $('skill-speed-pct').textContent = speedPct + '%';
+  if($('skill-speed-fill')) $('skill-speed-fill').style.width = speedPct + '%';
+
+  if($('skill-med-pct')) $('skill-med-pct').textContent = medPct + '%';
+  if($('skill-med-fill')) $('skill-med-fill').style.width = medPct + '%';
+}
+
+// ── Duel Difficulty ──
+let duelDifficulty = 'medium';
+function setDuelDiff(level) {
+  duelDifficulty = level;
+  document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(`diff-${level}`)?.classList.add('active');
+  haptic('light');
 }
 
 // Promo Timer Setup
@@ -479,13 +507,16 @@ function answerQuestion(selected) {
 
   if (isCorrect) {
     testState.correct++;
-    // If it was in errors, we can optionally remove it, but let's keep it simple for now
+    if (userStats.errors && userStats.errors.includes(q.id)) {
+      userStats.errors = userStats.errors.filter(id => id !== q.id);
+      showToast("✨ Xato muvaffaqiyatli tuzatildi!");
+    }
   } else {
     testState.wrong++;
     if (!userStats.errors) userStats.errors = [];
     if (!userStats.errors.includes(q.id)) {
       userStats.errors.push(q.id);
-      if (userStats.errors.length > 100) userStats.errors.shift(); // Keep max 100 errors
+      if (userStats.errors.length > 100) userStats.errors.shift();
     }
   }
 
@@ -1304,10 +1335,21 @@ function duelShowQuestion() {
 
   duelStartTimer(correctOpt);
 
-  // Bot AI (only in bot mode)
+  // Bot AI (qiyinchilik darajasiga qarab)
   if (duelMode === 'bot') {
-    const botDelay = 3000 + Math.random() * 9000;
-    const botCorrect = Math.random() < 0.55;
+    let botDelay = 3500;
+    let botAccuracy = 0.75;
+    if (duelDifficulty === 'easy') {
+      botDelay = 4500 + Math.random() * 4000;
+      botAccuracy = 0.45;
+    } else if (duelDifficulty === 'hard') {
+      botDelay = 1500 + Math.random() * 2500;
+      botAccuracy = 0.92;
+    } else {
+      botDelay = 2500 + Math.random() * 3500;
+      botAccuracy = 0.75;
+    }
+    const botCorrect = Math.random() < botAccuracy;
     setTimeout(() => {
       if (!duelState.answered) {
         if (botCorrect) { duelState.botScore++; updateDuelHUD(); showToast('🤖 Avtobot to\'g\'ri topdi!'); }

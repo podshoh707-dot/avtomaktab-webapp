@@ -275,11 +275,13 @@
               <div class="vs-name">Avtobot</div>
               <div class="vs-score" id="duel-bot-score">0</div>
             </div>
-          </div>
-          <div class="duel-info-list">
-            <div class="dil-item"><i class="fas fa-question-circle"></i> 10 ta savol</div>
-            <div class="dil-item"><i class="fas fa-clock"></i> Har savol uchun 15 soniya</div>
-            <div class="dil-item"><i class="fas fa-bolt"></i> Tez javob — ko'proq ustunlik!</div>
+          <div class="duel-diff-selector">
+            <span class="diff-label">AI Qiyinlik darajasi:</span>
+            <div class="diff-buttons">
+              <button class="diff-btn" id="diff-easy" onclick="setDuelDiff('easy')">🟢 Oson</button>
+              <button class="diff-btn active" id="diff-medium" onclick="setDuelDiff('medium')">🟡 O'rta</button>
+              <button class="diff-btn" id="diff-hard" onclick="setDuelDiff('hard')">🔴 Master</button>
+            </div>
           </div>
           <button class="big-green-btn" onclick="startDuel()">
             <i class="fas fa-bolt"></i> Jangni Boshlash!
@@ -452,6 +454,37 @@
         <div class="badge-item" id="badge-gai">
           <div class="badge-icon">🏆</div>
           <div class="badge-title">GAI Chempioni</div>
+        </div>
+      <!-- Skill Radar Breakdown -->
+      <div class="section-title"><span>📊 Shaxsiy Bilim Diagrammasi</span></div>
+      <div class="skill-radar-card">
+        <div class="skill-bar-row">
+          <div class="skill-info">
+            <span>🚥 Chorrahalar & Harakat</span>
+            <b id="skill-cross-pct">88%</b>
+          </div>
+          <div class="skill-track"><div class="skill-fill" id="skill-cross-fill" style="width: 88%; background: #38bdf8;"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="skill-info">
+            <span>🚦 Yo'l Belgilari</span>
+            <b id="skill-sign-pct">92%</b>
+          </div>
+          <div class="skill-track"><div class="skill-fill" id="skill-sign-fill" style="width: 92%; background: #58cc02;"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="skill-info">
+            <span>⚡️ Tezlik & Qoidalar</span>
+            <b id="skill-speed-pct">76%</b>
+          </div>
+          <div class="skill-track"><div class="skill-fill" id="skill-speed-fill" style="width: 76%; background: #f59e0b;"></div></div>
+        </div>
+        <div class="skill-bar-row">
+          <div class="skill-info">
+            <span>🩺 Tibbiy Yordam & Texnika</span>
+            <b id="skill-med-pct">84%</b>
+          </div>
+          <div class="skill-track"><div class="skill-fill" id="skill-med-fill" style="width: 84%; background: #a855f7;"></div></div>
         </div>
       </div>
 
