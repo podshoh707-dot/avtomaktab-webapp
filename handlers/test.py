@@ -63,6 +63,28 @@ async def load_test_session(telegram_id: int):
 class TestStates(StatesGroup):
     taking_test = State()
 
+async def start_gai_exam_from_message(message: types.Message, state: FSMContext):
+    """Xabar orqali GAI imtihonini to'g'ridan-to'g'ri boshlash"""
+    async with async_session() as session:
+        result_q = await session.execute(select(Question.id).order_by(func.random()).limit(20))
+        q_ids = result_q.scalars().all()
+
+    if not q_ids:
+        await message.answer("❌ Hozircha bazada savollar topilmadi.")
+        return
+
+    await state.set_state(TestStates.taking_test)
+    await state.update_data(
+        questions=q_ids, current_idx=0, correct_answers=0, wrong_count=0,
+        is_gai_mode=True, is_marathon_mode=False, is_video_mode=False
+    )
+    await save_test_session(message.from_user.id, {
+        'questions': q_ids, 'current_idx': 0, 'correct_answers': 0,
+        'is_gai_mode': True, 'is_marathon_mode': False, 'selected_category': "Barchasi"
+    })
+    await send_question(message, state)
+
+
 @test_router.message(Command("test"), F.chat.type == "private")
 @test_router.message(F.text.in_([
     "🎯 Test Ishlash (1242 ta YHQ)", "🎯 Test Ishlash", "🎓 GAI Imtihoni (Sertifikatli)", "🎓 GAI Imtihoni",
@@ -72,16 +94,7 @@ class TestStates(StatesGroup):
 async def cmd_test(message: types.Message, state: FSMContext):
     await state.clear()
     if message.text in ["🎓 GAI Imtihoni (Sertifikatli)", "🎓 GAI Imtihoni"]:
-        # Darhol GAI imtihonini boshlash
-        # Mock callback query
-        class FakeCallback:
-            def __init__(self, msg):
-                self.message = msg
-                self.from_user = msg.from_user
-                self.data = "testcnt_gai"
-                self.bot = msg.bot
-            async def answer(self, *args, **kwargs): pass
-        await start_test(FakeCallback(message), state)
+        await start_gai_exam_from_message(message, state)
         return
     await test_menu(message, state)
 

@@ -249,8 +249,14 @@ function startPromoTimer() {
 
 // ── Data loading ──
 async function loadJSON(file) {
-  const r = await fetch(file);
-  return await r.json();
+  try {
+    const r = await fetch(file);
+    if (!r.ok) return [];
+    return await r.json();
+  } catch(e) {
+    console.warn("Failed to fetch " + file, e);
+    return [];
+  }
 }
 
 async function initApp() {
@@ -282,22 +288,35 @@ async function initApp() {
   loadStats();
 
   try {
-    [allQuestions, allSigns, allRules, allVideos, allNews, orgInfo] = await Promise.all([
+    const [q, s, r, v, n, o] = await Promise.all([
       loadJSON('questions.json'),
       loadJSON('signs.json'),
       loadJSON('rules.json'),
       loadJSON('videos.json'),
       loadJSON('news.json'),
-      loadJSON('org_info.json').catch(() => null)
+      loadJSON('org_info.json')
     ]);
+
+    allQuestions = Array.isArray(q) && q.length ? q : [];
+    allSigns = Array.isArray(s) && s.length ? s : [];
+    allRules = Array.isArray(r) && r.length ? r : [];
+    allVideos = Array.isArray(v) && v.length ? v : [];
+    allNews = Array.isArray(n) && n.length ? n : [];
+    orgInfo = o || null;
+
+    if (document.getElementById('stat-total-home')) {
+      document.getElementById('stat-total-home').textContent = allQuestions.length || 1242;
+    }
 
     updateStatDisplay();
     startPromoTimer();
     renderCategories(); // Pre-render categories for tests tab
-    showToast(`\u2705 ${allQuestions.length} ta savol yuklandi!`);
+    if (allQuestions.length) {
+      showToast(`✅ ${allQuestions.length} ta savol tayyor!`);
+    }
     syncLeaderboard(); // initial sync
   } catch(e) {
-    showToast('\u274C Ma\'lumotlar yuklanmadi');
+    showToast('❌ Ma\'lumotlar yuklanmadi');
     console.error(e);
   }
 }
@@ -1484,4 +1503,30 @@ function duelPlayAgain() {
   if (duelMode === 'bot') startDuel();
   else duelShowModeSelect();
 }
+
+// ── Global Window Exports for HTML onclick handlers ──
+window.switchTab = switchTab;
+window.navigate = navigate;
+window.startGaiExam = startGaiExam;
+window.startSpecialTest = startSpecialTest;
+window.beginTest = beginTest;
+window.renderCategories = renderCategories;
+window.selectCategory = selectCategory;
+window.selectCount = selectCount;
+window.renderBiletlar = renderBiletlar;
+window.startBilet = startBilet;
+window.answerQuestion = answerQuestion;
+window.nextQuestion = nextQuestion;
+window.finishTest = finishTest;
+window.toggleSound = toggleSound;
+window.setDuelDiff = setDuelDiff;
+window.startDuel = startDuel;
+window.duelShowModeSelect = duelShowModeSelect;
+window.duelPlayAgain = duelPlayAgain;
+window.openCertModal = openCertModal;
+window.closeCertModal = closeCertModal;
+window.openSignModal = openSignModal;
+window.closeSignModal = closeSignModal;
+window.quizOnThisSign = quizOnThisSign;
+window.showToast = showToast;
 
