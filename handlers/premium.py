@@ -57,7 +57,8 @@ async def premium_menu(message: types.Message, state: FSMContext):
         [InlineKeyboardButton(text=f"💳 To'lov Usullari ({tariff_price})", callback_data="premium_buy")],
         [InlineKeyboardButton(text="⭐ Telegram Stars orqali (Darhol)", callback_data="premium_stars")],
         [InlineKeyboardButton(text="🎟 Promokod kiritish", callback_data="premium_promo")],
-        [InlineKeyboardButton(text="🎁 Hamkorlik va Avtomaktablar", callback_data="premium_partner")]
+        [InlineKeyboardButton(text="🎁 Hamkorlik va Avtomaktablar", callback_data="premium_partner")],
+        [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
     ])
     
     text = (

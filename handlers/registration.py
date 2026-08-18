@@ -394,3 +394,20 @@ async def process_check_sub(callback: types.CallbackQuery, bot: Bot):
         await callback.message.answer("Iltimos, botdan foydalanish uchun /start buyrug'ini yuboring.")
 
 
+@registration_router.callback_query(F.data.in_(["back_to_main_menu", "back_to_main", "nav_main_menu", "main_menu"]))
+async def cb_back_to_main_menu(callback: types.CallbackQuery, state: FSMContext):
+    """Har qanday bo'limdan to'g'ridan-to'g'ri Bosh menyuga qaytarish"""
+    await state.clear()
+    try:
+        await callback.message.delete()
+    except Exception:
+        pass
+    async with async_session() as session:
+        result = await session.execute(select(User).where(User.telegram_id == callback.from_user.id))
+        user = result.scalars().first()
+        lang = user.language if user and user.language else "uz"
+        name = user.full_name if user and user.full_name else callback.from_user.full_name
+    await send_main_menu(callback.message, lang, name)
+    await callback.answer()
+
+

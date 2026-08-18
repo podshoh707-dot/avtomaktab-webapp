@@ -28,7 +28,8 @@ async def school_menu(message: types.Message, state: FSMContext):
 
     if not student:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="🔍 Profilimni Izlash & Bog'lash", callback_data="school_find_profile")]
+            [InlineKeyboardButton(text="🔍 Profilimni Izlash & Bog'lash", callback_data="school_find_profile")],
+            [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
         ])
         text = (
             f"🏫 <b>AVTOMAKTAB O'QUVCHILARI PORTALI</b>\n"
@@ -40,7 +41,8 @@ async def school_menu(message: types.Message, state: FSMContext):
     else:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="💳 Kontrakt To'lovini Amalga Oshirish", callback_data="school_pay")],
-            [InlineKeyboardButton(text="🔓 Akkauntni Profildan Uzish", callback_data="school_unlink")]
+            [InlineKeyboardButton(text="🔓 Akkauntni Profildan Uzish", callback_data="school_unlink")],
+            [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
         ])
         text = (
             f"🏫 <b>O'QUVCHI SHAXSIY KABINETI</b>\n"

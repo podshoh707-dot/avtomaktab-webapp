@@ -79,13 +79,14 @@ async def get_rules_keyboard_and_text(page: int = 1):
     "📖 YHQ Kitobi", "📚 YHQ Kitobi", "📖 YHQ kitobi",
     "📚 Йўл ҳаракати қоидалари", "📚 Правила дорожного движения"
 ]))
-async def rules_hub_menu(message: types.Message, state: FSMContext):
+async def rules_hub_menu(message: types.Message, state: FSMContext = None):
     if state:
         await state.clear()
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📖 YHQ Qoidalari Kitobi (30 ta bob)", callback_data="rules_page_1")],
         [InlineKeyboardButton(text="🎥 133 ta Rasmiy Video Darslar", callback_data="vsec_all")],
-        [InlineKeyboardButton(text="📱 Mini Ilovada O'rganish", web_app=WebAppInfo(url=WEBAPP_URL))]
+        [InlineKeyboardButton(text="📱 Mini Ilovada O'rganish", web_app=WebAppInfo(url=WEBAPP_URL))],
+        [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
     ])
     text = (
         "📚 <b>YHQ QOIDALARI VA VIDEO DARSLAR BAZASI</b>\n"
@@ -95,7 +96,16 @@ async def rules_hub_menu(message: types.Message, state: FSMContext):
         "🎥 <b>Video Darslar:</b> e-avtomaktab va Vatanparvar ning 133 ta rasmiy videodarsliklari.\n"
         "📱 <b>Mini Ilova:</b> Interaktiv animatsiyalar va qulay testlar."
     )
-    await message.answer(text, reply_markup=kb, parse_mode="HTML")
+    if isinstance(message, types.CallbackQuery):
+        await message.message.edit_text(text, reply_markup=kb, parse_mode="HTML")
+        await message.answer()
+    else:
+        await message.answer(text, reply_markup=kb, parse_mode="HTML")
+
+
+@menu_router.callback_query(F.data == "rules_hub")
+async def cb_rules_hub(callback: types.CallbackQuery, state: FSMContext = None):
+    await rules_hub_menu(callback, state)
 
 
 @menu_router.callback_query(F.data.regexp(r'^rules_page_\d+$'))
@@ -117,13 +127,7 @@ async def rules_nop(callback: types.CallbackQuery):
 
 @menu_router.callback_query(F.data == "rules_back")
 async def rules_back(callback: types.CallbackQuery):
-    keyboard, text = await get_rules_keyboard_and_text(1)
-    if callback.message.photo:
-        await callback.message.delete()
-        await callback.message.answer(text, reply_markup=keyboard, parse_mode="HTML")
-    else:
-        await callback.message.edit_text(text, reply_markup=keyboard, parse_mode="HTML")
-    await callback.answer()
+    await rules_hub_menu(callback)
 
 
 @menu_router.callback_query(F.data.regexp(r'^rule_\d+(?:_\d+)?$'))
@@ -141,7 +145,8 @@ async def show_rule(callback: types.CallbackQuery):
         return
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="🔙 Ro'yxatga qaytish", callback_data=f"rules_page_{page}")]
+        [InlineKeyboardButton(text="🔙 Boblar ro'yxatiga", callback_data=f"rules_page_{page}")],
+        [InlineKeyboardButton(text="🏠 Bosh menyu", callback_data="back_to_main_menu")]
     ])
 
     text = f"📖 <b>{rule.title}</b>\n\n{rule.text or 'Matn kiritilmagan.'}"
@@ -197,6 +202,11 @@ async def show_video_sections(target, is_callback=False):
             callback_data=f"vsec_{sec_name[:20]}_1"
         )])
 
+    buttons.append([
+        InlineKeyboardButton(text="🔙 YHQ Markaziga", callback_data="rules_hub"),
+        InlineKeyboardButton(text="🏠 Bosh menyu", callback_data="back_to_main_menu")
+    ])
+
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
     text = (
         f"🎥 <b>133 TA RASMIY VIDEO DARSLAR BAZASI</b>\n"
@@ -250,7 +260,10 @@ async def video_section(callback: types.CallbackQuery):
 
     if nav_row:
         buttons.append(nav_row)
-    buttons.append([InlineKeyboardButton(text="🔙 Bo'limlarga qaytish", callback_data="vback")])
+    buttons.append([
+        InlineKeyboardButton(text="🔙 Bo'limlarga qaytish", callback_data="vback"),
+        InlineKeyboardButton(text="🏠 Bosh menyu", callback_data="back_to_main_menu")
+    ])
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=buttons)
     sec_title = matched_vids[0].section if matched_vids else "Darslar"
@@ -277,7 +290,8 @@ async def show_video(callback: types.CallbackQuery):
     sec_prefix = (video.section or "Umumiy")[:20]
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🎬 Videoni Onlayn Ko'rish (HD)", url=video.video_url or video.youtube_url or "https://e-avtomaktab.uz")],
-        [InlineKeyboardButton(text="🔙 Ro'yxatga qaytish", callback_data=f"vsec_{sec_prefix}_1")]
+        [InlineKeyboardButton(text="🔙 Ro'yxatga qaytish", callback_data=f"vsec_{sec_prefix}_1")],
+        [InlineKeyboardButton(text="🏠 Bosh menyu", callback_data="back_to_main_menu")]
     ])
 
     text = (

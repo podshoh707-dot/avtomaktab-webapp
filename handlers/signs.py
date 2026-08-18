@@ -26,7 +26,8 @@ async def signs_menu(message: types.Message, state: FSMContext):
         [InlineKeyboardButton(text="🔑 Imtiyoz", callback_data="signs_cat_imtiyoz"),
          InlineKeyboardButton(text="🛠 Servis", callback_data="signs_cat_servis")],
         [InlineKeyboardButton(text="🔍 Belgini qidirish", callback_data="signs_search")],
-        [InlineKeyboardButton(text="📝 Belgilar bo'yicha test", callback_data="signs_test")]
+        [InlineKeyboardButton(text="📝 Belgilar bo'yicha test", callback_data="signs_test")],
+        [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
     ])
     await message.answer("🚦 YO'L BELGILARI\n\nKatalogdan bo'lim tanlang yoki belgini qidiring:", reply_markup=keyboard)
 

@@ -112,7 +112,8 @@ async def test_menu(message: types.Message, state: FSMContext):
         [InlineKeyboardButton(text="🎬 Video-Testlar (207 ta 3D Vaziyat)", callback_data="testcnt_videos")],
         [InlineKeyboardButton(text="⚡️ Ekspress Blits (10 ta tezkor)", callback_data="testcnt_10"),
          InlineKeyboardButton(text="🧠 Zaif tomonlarim (Xatolar)", callback_data="test_mistakes")],
-        [InlineKeyboardButton(text="📂 Barcha 70 ta Biletlar Katalogi", callback_data="biletpage_1")]
+        [InlineKeyboardButton(text="📂 Barcha 70 ta Biletlar Katalogi", callback_data="biletpage_1")],
+        [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
     ]
     
     markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
@@ -303,14 +304,16 @@ async def send_question(message_or_callback, state: FSMContext):
         cert_kb = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="📲 Sertifikatni Ulashish (Do'stlarga)", url=share_url)],
             [InlineKeyboardButton(text="🔄 Yangi test boshlash", callback_data="test_back_to_cats")],
-            [InlineKeyboardButton(text="👑 Xatolar tahlili", callback_data="test_mistakes")]
+            [InlineKeyboardButton(text="👑 Xatolar tahlili", callback_data="test_mistakes")],
+            [InlineKeyboardButton(text="🏠 Bosh menyu", callback_data="back_to_main_menu")]
         ])
 
         finish_kb = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="📲 Natijani Do'stlarga Ulashish", url=share_url)],
             [InlineKeyboardButton(text="🔄 Yangi test boshlash", callback_data="test_back_to_cats")],
             [InlineKeyboardButton(text="🎓 GAI Imtihonini topshirish", callback_data="testcnt_gai")],
-            [InlineKeyboardButton(text="👑 Xatolar tahlili", callback_data="test_mistakes")]
+            [InlineKeyboardButton(text="👑 Xatolar tahlili", callback_data="test_mistakes")],
+            [InlineKeyboardButton(text="🏠 Bosh menyu", callback_data="back_to_main_menu")]
         ])
 
         if is_gai and correct_count >= 18:

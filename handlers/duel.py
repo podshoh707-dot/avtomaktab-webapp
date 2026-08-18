@@ -37,7 +37,8 @@ async def duel_menu(message: types.Message):
                 text="🔗 Do'stga Chaqiruv Yuborish",
                 url=f"https://t.me/share/url?url={invite_link}&text=⚔️%20Meni%20Avtotest%20Duelida%20yengib%20ko'r!%20Avtomaktab%20botda%20jangga%20chaq"
             )],
-            [InlineKeyboardButton(text="🔄 Raqib kutilmoqda...", callback_data="duel_cancel")]
+            [InlineKeyboardButton(text="🔄 Raqib kutilmoqda (Bekor qilish)", callback_data="duel_cancel")],
+            [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
         ])
 
         await message.answer(
@@ -58,7 +59,13 @@ async def duel_cancel(callback: types.CallbackQuery):
     global WAITING_PLAYER
     if WAITING_PLAYER and WAITING_PLAYER['id'] == callback.from_user.id:
         WAITING_PLAYER = None
-    await callback.message.edit_text("🚫 Jang bekor qilindi. Qaytadan urinish uchun «⚔️ Battle» tugmasini bosing.")
+    cancel_kb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="🔙 Bosh menyu", callback_data="back_to_main_menu")]
+    ])
+    await callback.message.edit_text(
+        "🚫 Jang bekor qilindi. Bosh menyuga qaytishingiz mumkin:",
+        reply_markup=cancel_kb
+    )
     await callback.answer()
 
 
