@@ -29,7 +29,7 @@
   {
     "id": 2,
     "text": "Yo'naltirgichlarning qaysilari bo'ylab harakatlanishga ruxsat etiladi?",
-    "image_url": "images/1.2.1.jpg",
+    "image_url": "images/1.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -1222,7 +1222,7 @@
   {
     "id": 62,
     "text": "Bu belgilar aholi yashaydigan joylarda xavfli yo'l qismi boshlanishidan qancha masofada o'rnatiladi?",
-    "image_url": "images/7.2.1.jpg",
+    "image_url": "images/7.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -1787,7 +1787,7 @@
   {
     "id": 85,
     "text": "Transport vositalari chorrahadan quyidagi tartibda o'tadilar",
-    "image_url": "images/9.5.4.jpg",
+    "image_url": "images/9.5.jpg",
     "options": [
       {
         "letter": "A",
@@ -2198,7 +2198,7 @@
   {
     "id": 103,
     "text": "Qaysi belgi teng ahamiyatli yo'llar kesishish chorrahasiga yaqinlashib kelayotganlik haqida ogohlantiradi?",
-    "image_url": "images/11-3-kiril.jpg",
+    "image_url": "images/11.3.jpg",
     "options": [
       {
         "letter": "A",
@@ -2675,7 +2675,7 @@
   {
     "id": 122,
     "text": "Haydovchi tormozlanishda boshlangan avtomobilning sirpanib ketishini to'xtatish uchun bajarishi kerak:",
-    "image_url": "images/13-2-kiril.jpg",
+    "image_url": "images/13.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -4523,7 +4523,7 @@
   {
     "id": 198,
     "text": "Shatakka olingan mexanik transport vositasida qanday tashqi yoritish chiroqlari yoqilgan bo'lishi kerak?",
-    "image_url": "images/20.8.1.jpg",
+    "image_url": "images/20.8.jpg",
     "options": [
       {
         "letter": "A",
@@ -4757,7 +4757,7 @@
   {
     "id": 208,
     "text": "Bu yotiq chiziq quyidagi vazifani bajaradi:",
-    "image_url": "images/21.8.1.b.jpg",
+    "image_url": "images/21.8.jpg",
     "options": [
       {
         "letter": "A",
@@ -4849,7 +4849,7 @@
   {
     "id": 212,
     "text": "Ko'rsatilgan belgi ostidagi qo'shimcha axborot belgisi qanday maqsadda o'rnatilgan?",
-    "image_url": "images/22.2.b.jpg",
+    "image_url": "images/22.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -5079,7 +5079,7 @@
   {
     "id": 222,
     "text": "Ruxsat etilgan harakatlanish yo'nalishini ko'rsating:",
-    "image_url": "images/23.2.b.jpg",
+    "image_url": "images/23.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -5547,7 +5547,7 @@
   {
     "id": 242,
     "text": "Bu belgi nimani bildiradi?",
-    "image_url": "images/25.2.1.jpg",
+    "image_url": "images/25.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -5693,7 +5693,7 @@
   {
     "id": 248,
     "text": "Belgilangan yo'nalishdagi transport vositalari yoki taksilarning to'xtab turish maydonchalaridan ular bo'lmagan hollarda, (yo'nalishli transport voistalari harakatiga xalaqit bermasa) belgi ko'rsatkichlaridan qanday masofada to'xtash va to'xtab turish taqiqlanadi?",
-    "image_url": "images/25.8.b.jpg",
+    "image_url": "images/25.8.jpg",
     "options": [
       {
         "letter": "A",
@@ -5885,7 +5885,7 @@
   {
     "id": 256,
     "text": "Tumanga qarshi chiroqlardan qanday hollarda foydalanish mumkin?",
-    "image_url": "images/26.6.b.jpg",
+    "image_url": "images/26.6.jpg",
     "options": [
       {
         "letter": "A",
@@ -13627,7 +13627,7 @@
   {
     "id": 582,
     "text": "Quyidagi belgi tagidagi qo'shimcha axborot belgisi haydovchiga nima haqida xabar beradi?",
-    "image_url": "images/59.2.1.jpg",
+    "image_url": "images/59.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -15289,7 +15289,7 @@
   {
     "id": 652,
     "text": "Qaysi belgi \"Bir tomonlama harakatlanish yo'lining oxiri\" deb ataladi?",
-    "image_url": "images/66.2.1.ru.jpg",
+    "image_url": "images/66.2.jpg",
     "options": [
       {
         "letter": "A",
@@ -16198,7 +16198,7 @@
   {
     "id": 691,
     "text": "To'xtash va to'xtab turish taqiqlanadi:",
-    "image_url": "images/70.1.1.jpg",
+    "image_url": "images/70.1.jpg",
     "options": [
       {
         "letter": "A",
