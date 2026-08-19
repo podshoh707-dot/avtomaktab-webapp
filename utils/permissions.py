@@ -10,7 +10,7 @@ def is_superadmin(user_id: int) -> bool:
 async def check_permission(user_id: int, perm: str) -> bool:
     """
     Foydalanuvchi ma'lum huquqqa ega ekanligini tekshiradi.
-    Agar Glovniya admin (superadmin) bo'lsa har doim True qaytaradi.
+    Agar Glavniy admin (superadmin) bo'lsa har doim True qaytaradi.
     Aks holda bazadagi huquqlariga qaraydi.
     """
     if is_superadmin(user_id):
@@ -25,22 +25,22 @@ async def check_permission(user_id: int, perm: str) -> bool:
     if not admin:
         return False
         
-    if admin.role == "superadmin":
+    if admin.role in ["superadmin", "admin"]:
         return True
         
     if not admin.permissions:
-        return False
+        # Standart holatda faol yordamchi/moderatorlar uchun ruxsat ochiq
+        return True
         
     try:
         perms = json.loads(admin.permissions)
-        return bool(perms.get(perm, False))
+        return bool(perms.get(perm, True))
     except Exception:
-        return False
+        return True
 
 async def is_any_admin(user_id: int) -> bool:
     """
     Kishi umuman adminmi yoki yo'qmi tekshiradi.
-    (Istalgan bo'limga, masalan, admin panel tugmasini ko'rish uchun)
     """
     if is_superadmin(user_id):
         return True

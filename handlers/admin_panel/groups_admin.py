@@ -60,6 +60,7 @@ async def admin_groups_list(callback: types.CallbackQuery):
         buttons.append(nav_buttons)
 
     buttons.append([
+        InlineKeyboardButton(text="📢 Majburiy Obuna Kanallari", callback_data="admin_channels_menu"),
         InlineKeyboardButton(text="🔙 Orqaga", callback_data="admin_back_main")
     ])
 

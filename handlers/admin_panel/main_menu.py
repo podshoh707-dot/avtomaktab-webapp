@@ -30,15 +30,21 @@ async def get_pro_admin_keyboard(user_id: int):
         row3.append(InlineKeyboardButton(text="🎥 Video Darslar", callback_data="admin_videos"))
     if row3: keyboard.append(row3)
     
-    # 4. VIP To'lovlar va Guruhlar
+    # 4. VIP To'lovlar, Guruhlar va Avtomaktab
     row4 = []
     if await check_permission(user_id, "can_manage_premium"):
         row4.append(InlineKeyboardButton(text="💳 VIP & Promokodlar", callback_data="admin_premium"))
     if await check_permission(user_id, "can_manage_groups"):
         row4.append(InlineKeyboardButton(text="👥 Guruhlar & Kanallar", callback_data="admin_groups"))
     if row4: keyboard.append(row4)
+
+    # 5. Avtomaktab O'quvchilari
+    if await check_permission(user_id, "can_manage_content"):
+        keyboard.append([
+            InlineKeyboardButton(text="🎓 Avtomaktab O'quvchilari", callback_data="admin_school")
+        ])
     
-    # 5. Tizim va Adminlar boshqaruvi (faqat superadmin uchun)
+    # 6. Tizim va Adminlar boshqaruvi (faqat superadmin uchun)
     if is_superadmin(user_id):
         keyboard.append([
             InlineKeyboardButton(text="👮 Adminlar Boshqaruvi", callback_data="adm_mgmt"),

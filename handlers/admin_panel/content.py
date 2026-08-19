@@ -56,30 +56,61 @@ def back_kb(cb: str):
 # ══════════════════════════════════════════════════════════
 # 🎥 VIDEO DARSLAR — Admin
 # ══════════════════════════════════════════════════════════
-@content_router.callback_query(F.data == "admin_videos")
+@content_router.callback_query(F.data.startswith("admin_videos"))
 async def admin_videos_list(callback: types.CallbackQuery):
     if not await check_permission(callback.from_user.id, "can_manage_content"):
         await callback.answer("Sizda bu bo'limga ruxsat yo'q!", show_alert=True)
         return
+
+    data_parts = callback.data.split("_")
+    page = 1
+    if len(data_parts) > 2:
+        try:
+            page = int(data_parts[2])
+        except ValueError:
+            page = 1
+
+    per_page = 15
+    offset = (page - 1) * per_page
+
     async with async_session() as session:
-        result = await session.execute(select(VideoLesson).order_by(VideoLesson.id.desc()))
+        from sqlalchemy import func
+        total_result = await session.execute(select(func.count()).select_from(VideoLesson))
+        total = total_result.scalar() or 0
+
+        result = await session.execute(
+            select(VideoLesson).order_by(VideoLesson.id.asc()).offset(offset).limit(per_page)
+        )
         videos = result.scalars().all()
 
     buttons = []
     for v in videos:
-        row = [
-            InlineKeyboardButton(text=f"🎥 #{v.id} {v.topic[:35]}", callback_data=f"vid_admin_{v.id}"),
-        ]
-        buttons.append(row)
+        buttons.append([
+            InlineKeyboardButton(text=f"🎥 #{v.id} {v.topic[:35]}", callback_data=f"vid_admin_{v.id}")
+        ])
+
+    nav_buttons = []
+    if page > 1:
+        nav_buttons.append(InlineKeyboardButton(text="⬅️ Oldingi", callback_data=f"admin_videos_{page-1}"))
+    if offset + per_page < total:
+        nav_buttons.append(InlineKeyboardButton(text="Keyingi ➡️", callback_data=f"admin_videos_{page+1}"))
+    if nav_buttons:
+        buttons.append(nav_buttons)
 
     buttons.append([
         InlineKeyboardButton(text="➕ Yangi video qo'shish", callback_data="vid_add"),
         InlineKeyboardButton(text="🔙 Orqaga", callback_data="admin_back_main")
     ])
 
+    start_num = offset + 1
+    end_num = min(offset + per_page, total)
+
     await callback.message.edit_text(
-        f"🎥 VIDEO DARSLAR ({len(videos)} ta)\n\nVideoni tanlang yoki yangi qo'shing:",
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=buttons)
+        f"🎥 <b>VIDEO DARSLAR RO'YXATI</b> ({total} ta)\n"
+        f"Ko'rsatilmoqda: <b>{start_num}-{end_num}</b>\n\n"
+        f"Videoni tanlang yoki yangi qo'shing:",
+        reply_markup=InlineKeyboardMarkup(inline_keyboard=buttons),
+        parse_mode="HTML"
     )
     await callback.answer()
 
@@ -260,13 +291,31 @@ async def admin_video_add_url(message: types.Message, state: FSMContext):
 # ══════════════════════════════════════════════════════════
 # 📚 QOIDALAR — Admin
 # ══════════════════════════════════════════════════════════
-@content_router.callback_query(F.data == "admin_rules")
+@content_router.callback_query(F.data.startswith("admin_rules"))
 async def admin_rules_list(callback: types.CallbackQuery):
     if not await check_permission(callback.from_user.id, "can_manage_content"):
         await callback.answer("Sizda bu bo'limga ruxsat yo'q!", show_alert=True)
         return
+
+    data_parts = callback.data.split("_")
+    page = 1
+    if len(data_parts) > 2:
+        try:
+            page = int(data_parts[2])
+        except ValueError:
+            page = 1
+
+    per_page = 15
+    offset = (page - 1) * per_page
+
     async with async_session() as session:
-        result = await session.execute(select(Rule).order_by(Rule.id.desc()))
+        from sqlalchemy import func
+        total_result = await session.execute(select(func.count()).select_from(Rule))
+        total = total_result.scalar() or 0
+
+        result = await session.execute(
+            select(Rule).order_by(Rule.id.asc()).offset(offset).limit(per_page)
+        )
         rules = result.scalars().all()
 
     buttons = []
@@ -274,14 +323,29 @@ async def admin_rules_list(callback: types.CallbackQuery):
         buttons.append([
             InlineKeyboardButton(text=f"📖 #{r.id} {r.title[:40]}", callback_data=f"rule_admin_{r.id}")
         ])
+
+    nav_buttons = []
+    if page > 1:
+        nav_buttons.append(InlineKeyboardButton(text="⬅️ Oldingi", callback_data=f"admin_rules_{page-1}"))
+    if offset + per_page < total:
+        nav_buttons.append(InlineKeyboardButton(text="Keyingi ➡️", callback_data=f"admin_rules_{page+1}"))
+    if nav_buttons:
+        buttons.append(nav_buttons)
+
     buttons.append([
         InlineKeyboardButton(text="➕ Yangi qoida qo'shish", callback_data="rule_add"),
         InlineKeyboardButton(text="🔙 Orqaga", callback_data="admin_back_main")
     ])
 
+    start_num = offset + 1
+    end_num = min(offset + per_page, total)
+
     await callback.message.edit_text(
-        f"📚 QOIDALAR ({len(rules)} ta)\n\nQoidani tanlang yoki yangi qo'shing:",
-        reply_markup=InlineKeyboardMarkup(inline_keyboard=buttons)
+        f"📚 <b>YHQ QOIDALARI RO'YXATI</b> ({total} ta)\n"
+        f"Ko'rsatilmoqda: <b>{start_num}-{end_num}</b>\n\n"
+        f"Qoidani tanlang yoki yangi qo'shing:",
+        reply_markup=InlineKeyboardMarkup(inline_keyboard=buttons),
+        parse_mode="HTML"
     )
     await callback.answer()
 
